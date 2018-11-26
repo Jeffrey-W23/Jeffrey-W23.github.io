@@ -49,3 +49,10 @@
   background-color: #1a252f;
   border-color: #1a252f;
 }
+
+hr.seperator-line {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
