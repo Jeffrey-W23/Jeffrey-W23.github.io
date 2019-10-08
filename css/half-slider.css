@@ -5,13 +5,24 @@
  */
 
 .carousel-item {
-    height: 65vh;
+    height: 45vh;
     min-height: 300px;
     background: no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+.carousel-price {
+    color: white;
+    text-weight: 400;
+    text-align: center;
+    background-color: #3777dd;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .btn-xl {
@@ -35,20 +46,20 @@
     border-color: #18BC9C;
 }
 
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-    background-color: #128f76;
-    border-color: #128f76;
-}
+    .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+        background-color: #128f76;
+        border-color: #128f76;
+    }
 
 .btn-secondary {
     background-color: #2C3E50;
     border-color: #2C3E50;
 }
 
-.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
-    background-color: #1a252f;
-    border-color: #1a252f;
-}
+    .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+        background-color: #1a252f;
+        border-color: #1a252f;
+    }
 
 hr.seperator-line {
     border: 0;
@@ -59,22 +70,24 @@ hr.seperator-line {
 
 .img-responsive {
     width: 100%;
-	height: auto;
+    height: auto;
 }
 
 .button {
-  background-color: #3374FF;
-  border: none;
-  border-radius: 12px;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition: 0.3s;
-  display: inline-block;
-  text-decoration: none;
-  cursor: pointer;
+    background-color: #3374FF;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-.button:hover {opacity: 1}
+    .button:hover {
+        opacity: 1
+    }
