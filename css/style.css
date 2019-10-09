@@ -443,3 +443,89 @@ span.user-modal-forgot-btn
 	opacity: 0.7;
 }
 /* TICTACTOE BOARD */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
+#front-frame 
+{
+    margin-left: 20%; 
+    margin-right: 20%; 
+}
+
+/*  */
+#frontpage-text
+{
+    width: 60%; 
+    height: 100%; 
+    background-color: transparent; 
+    text-align: center;
+}
+
+/*  */
+#frontpage-images
+{
+    width: 35%; 
+    height: 100%; 
+    background-color: transparent; 
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/*  */
+@media (max-width: 1100px) 
+{
+    div#front-frame
+    {
+        margin-left: 10%;
+        margin-right: 10%; 
+    }
+}
+
+/*  */
+@media (max-width: 850px) 
+{
+    div#front-frame
+    {
+        margin-left: 5%;
+        margin-right: 5%; 
+    }
+}
+
+/*  */
+@media (max-width: 660px) 
+{
+    img#removeimage 
+    {
+        display: none;
+    }
+    
+    div#frontpage-text 
+    {
+        width: 100%;
+    }
+
+    div#front-frame
+    {
+        margin-left: 0%;
+        margin-right: 0%; 
+    }
+}
