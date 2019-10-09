@@ -113,6 +113,12 @@ hr.seperator-line {
     width:50%; 
 }
 
+/*  */
+#carousel-imagetext
+{
+    font-size:60px;
+}
+
 
 
 
@@ -127,6 +133,11 @@ hr.seperator-line {
         height:60%;
         width:60%; 
     }
+
+    h1#carousel-imagetext
+    {
+        font-size:50px;
+    }
 }
 
 /*  */
@@ -137,6 +148,11 @@ hr.seperator-line {
         height:70%;
         width:70%; 
     }
+
+    h1#carousel-imagetext
+    {
+        font-size:40px;
+    }
 }
 
 /*  */
@@ -146,6 +162,11 @@ hr.seperator-line {
     {
         height:80%;
         width:80%; 
+    }
+
+    h1#carousel-imagetext
+    {
+        font-size:30px;
     }
 }
 
