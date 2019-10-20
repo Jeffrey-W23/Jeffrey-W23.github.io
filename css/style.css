@@ -393,3 +393,116 @@ span.user-modal-forgot-btn
         padding-right: 10px;        
     }
 }
+
+
+
+
+
+
+
+
+
+.contact-btn 
+{
+    border: none;
+    color: #a3a3a3;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+    list-style: none;
+    display: block;
+    padding: 0.5rem;
+}
+
+.contact-btn:hover 
+{
+    color: #e9ecef;
+}
+
+@media (max-width: 992px) 
+{
+    .contact-btn
+    {
+        padding-left: 0;
+        padding-right: 0; 
+    }
+}
+
+
+
+
+
+
+
+.line-seperator 
+{ 
+  display: block;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0 none;
+  background-color:#b3b3b3;
+  height:1px;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 992px) 
+{
+    img#contactimage 
+    {
+        display: none;
+    }
+
+    div#contactmodal-text 
+    {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) 
+{
+    div#contactmodal-frame 
+    {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/*  */
+#contactmodal-frame 
+{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+/*  */
+#contactmodal-text {
+    width: 60%;
+    height: 100%;
+    background-color: transparent;
+    text-align: center;
+}
+
+/*  */
+#contactmodal-images {
+    width: 35%;
+    height: 100%;
+    background-color: transparent;
+    text-align: center;
+}
