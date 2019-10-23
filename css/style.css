@@ -259,11 +259,11 @@ span.user-modal-forgot-btn
 	background-color: #3777dd;
 	border: none;
 	color: white;
-	padding: 16px 32px;
+	padding: 12px 22px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	font-size: 16px;
+	font-size: 12px;
 	font-weight: bold;
 	margin: 4px 2px;
 	-webkit-transition-duration: 0.4s;
@@ -505,4 +505,15 @@ span.user-modal-forgot-btn
     height: 100%;
     background-color: transparent;
     text-align: center;
+}
+
+
+
+
+.parent {
+    position: relative;
+}
+
+.over-img {
+    position: absolute;
 }
