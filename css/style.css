@@ -1,257 +1,3 @@
-/* LOGOUT HEADER BUTTON */
-/* main styling for the logout button in the header */
-.logout-btn 
-{
-	border: none;
-	color: #e25d5d;
-	background-color: transparent;
-	font-size: 16px;
-	font-weight: 500;
-	cursor: pointer;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	margin-bottom: 0;
-	list-style: none;
-	display: block;
-	padding: 0.5rem 1rem;
-	padding-left: 0;
-}
-
-/* header logout button hover styling */
-.logout-btn:hover 
-{
-	color: #e9ecef;
-}
-/* LOGOUT HEADER BUTTON */
-
-/* LOGIN HEADER BUTTON */
-/* main styling for the login button in the header */
-.login-btn 
-{
-	border: none;
-	color: #37dd58;
-	background-color: transparent;
-	font-size: 16px;
-	font-weight: 500;
-	cursor: pointer;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	margin-bottom: 0;
-	list-style: none;
-	display: block;
-	padding: 0.5rem 1rem;
-	padding-left: 0;
-}
-
-/* header login button hover styling */
-.login-btn:hover 
-{
-	color: #e9ecef;
-}
-/* LOGIN HEADER BUTTON */
-
-/* SIGNUP HEADER BUTTON */
-/* main styling for the signup button in the header */
-.signup-btn 
-{
-	border: none;
-	color: #3777dd;
-	background-color: transparent;
-	font-size: 16px;
-	font-weight: 500;
-	cursor: pointer;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	margin-bottom: 0;
-	list-style: none;
-	display: block;
-	padding: 0.5rem 1rem;
-	padding-left: 0;
-}
-
-/* header signup button hover styling */
-.signup-btn:hover 
-{
-	color: #e9ecef;
-}
-/* SIGNUP HEADER BUTTON */
-
-/* USER LOGIN/SIGNUP MODALS */
-/* styling for user modal input fields */
-.user-modal input[type=text], input[type=password]
-{
-	width: 100%;
-	padding: 10px 10px;
-	margin: 8px 0;
-	display: inline-block;
-	border: 0px solid #ccc;
-	box-sizing: border-box;
-	background-color: #202020;
-	color: white;
-}
-
-/* styling for user modal button labels */
-.user-modal-btnlabel
-{
-	color:#b3b3b3;
-}
-
-/* styling for user modal buttons */
-.user-modal-btn
-{
-	background-color: #4CAF50;
-	color: white;
-	padding: 14px 20px;
-	margin: 8px 0;
-	border: none;
-	cursor: pointer;
-	width: 100%;
-}
-
-/* user modal button hover styling */
-.user-modal-btn:hover
-{
-	opacity: 0.8;
-}
-
-/* styling for user modal cancel buttons */
-.user-modal-cancel
-{
-	width: auto;
-	padding: 10px 18px;
-	background-color: #f44336;
-	color: white;
-	margin: 8px 0;
-	border: none;
-	cursor: pointer;
-}
-
-/* user modal cancel button hover styling */
-.user-modal-cancel:hover
-{
-	opacity: 0.8;
-}
-
-/* styling for user modal forgot password button */
-span.user-modal-forgot-btn
-{
-	float: right;
-	padding-top: 16px;
-}
-
-/* styling for the user modal title and cancel button*/
-.user-modal-title-container
-{
-	text-align: center;
-	margin: 24px 0 12px 0;
-	position: relative;
-}
-
-/* main styling for the user modal */
-.user-modal
-{
-	display: none;
-	position: fixed;
-	z-index: 1;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	overflow: auto;
-	padding-top: 60px;
-	margin: auto;
-	background-color: rgb(0,0,0);
-  	background-color: rgba(0,0,0,0.4);
-}
-
-/* main styling for the user modal content */
-.user-modal-content
-{
-	background-color: #2a2a2a;
-	margin: 5% auto 15% auto;
-	border: 1px solid #888;
-	width: 40%;
-}
-
-/* styling for user modal close button */
-.user-modal-close
-{
-	position: absolute;
-	right: 25px;
-	top: 0;
-	color: #b3b3b3;
-	font-size: 35px;
-	font-weight: bold;
-}
-
-/* user modal close button hover styling */
-.user-modal-close:hover, .user-modal-close:focus
-{
-	color: red;
-	cursor: pointer;
-}
-
-/* Styling for zoom animation for modal opening and closing */
-.user-modal-animate
-{
-	-webkit-animation: animatezoom 0.6s;
-	animation: animatezoom 0.6s;
-}
-
-/* Main logic for zoom animation */
-@-webkit-keyframes animatezoom 
-{
-	from 
-	{
-		-webkit-transform: scale(0)
-	} 
-	
-	to 
-	{
-		-webkit-transform: scale(1)
-	}
-}
-
-/* Main logic for zoom animation */
-@keyframes animatezoom 
-{
-	from 
-	{
-		transform: scale(0)
-	} 
-	
-	to 
-	{
-		transform: scale(1)
-	}
-}
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) 
-{
-	/* user modal forgot button styling for small screens */
-	span.user-modal-forgot-btn
-	{
-    	display: block;
-    	float: none;
-  	}
-  
-  	/* user modal cancel button styling for small screens */
-  	.user-modal-cancel
-  	{
-    	width: 100%;
-  	}
-}
-/* USER LOGIN/SIGNUP MODALS */
-
 /* DOWNLOAD BUTTON STYLING */
 /* main download button styling */
 .download-btn
@@ -314,7 +60,10 @@ span.user-modal-forgot-btn
     margin-left: 20%; 
     margin-right: 20%;
     padding-left: 35px; 
-    padding-right: 35px; 
+    padding-right: 35px;
+    padding-bottom: 35px; 
+    vertical-align:middle; 
+    text-align:center;
 }
 
 /*  */
@@ -323,7 +72,10 @@ span.user-modal-forgot-btn
     margin-left: 15%; 
     margin-right: 15%;
     padding-left: 35px; 
-    padding-right: 35px; 
+    padding-right: 35px;
+    padding-bottom: 35px; 
+    vertical-align:middle; 
+    text-align:center;
 }
 
 /*  */
@@ -333,6 +85,17 @@ span.user-modal-forgot-btn
     height: 100%; 
     background-color: transparent; 
     text-align: center;
+}
+
+/*  */
+.about-text
+{
+    width:100%; 
+    height:100%; 
+    background-color: transparent; 
+    padding:20px;
+    color: #b3b3b3; 
+    text-align: left;
 }
 
 /*  */

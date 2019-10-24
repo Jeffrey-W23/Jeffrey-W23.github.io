@@ -179,3 +179,48 @@ hr.seperator-line {
         width:85%; 
     }
 }
+
+
+
+
+
+
+
+
+.innerdiv 
+{
+    background: rgba(0, 0, 0, 0.3); 
+    width:100%; 
+    height:100%; 
+    position: relative;
+}
+
+.imagediv 
+{
+    padding-top: 0; 
+    padding-bottom: 0; 
+    bottom: 0; 
+    display: flex; 
+    justify-content: center; 
+    margin: auto; 
+    padding: 10px; 
+    position: absolute; 
+    height:100%; 
+    top:0;
+}
+
+.imagediv img
+{
+    object-fit: contain;
+    display:block; 
+    margin:auto;
+}
+
+.imagediv h1
+{
+    color: #b3b3b3; 
+    text-align: center; 
+    object-fit: contain; 
+    display:block; 
+    margin:auto;
+}
