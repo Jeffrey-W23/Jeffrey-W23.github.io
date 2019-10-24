@@ -318,6 +318,15 @@ span.user-modal-forgot-btn
 }
 
 /*  */
+#projectspage-frame 
+{
+    margin-left: 15%; 
+    margin-right: 15%;
+    padding-left: 35px; 
+    padding-right: 35px; 
+}
+
+/*  */
 #frontpage-text
 {
     width: 60%; 
@@ -341,7 +350,15 @@ span.user-modal-forgot-btn
 
 
 
-
+/*  */
+@media (max-width: 1480px) 
+{
+    div#projectspage-frame
+    {
+        margin-left: 5%;
+        margin-right: 5%; 
+    }
+}
 
 /*  */
 @media (max-width: 1280px) 
@@ -360,6 +377,12 @@ span.user-modal-forgot-btn
     {
         margin-left: 5%;
         margin-right: 5%; 
+    }
+
+    div#projectspage-frame
+    {
+        margin-left: 0%;
+        margin-right: 0%; 
     }
 }
 
@@ -388,6 +411,12 @@ span.user-modal-forgot-btn
 @media (max-width: 480px) 
 {
     div#frontpage-frame
+    {
+        padding-left: 10px; 
+        padding-right: 10px;        
+    }
+
+    div#projectspage-frame
     {
         padding-left: 10px; 
         padding-right: 10px;        

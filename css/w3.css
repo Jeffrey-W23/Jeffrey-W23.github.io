@@ -217,7 +217,12 @@
     -ms-flex: 25%; /* IE10 */
     flex: 25%;
     max-width: 100%;
-    padding: 0 40px;
+    padding: 0 30px;
+    background-color: #242424;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .column img {
@@ -226,11 +231,35 @@
     width: 100%;
 }
 
+.column p {
+    color: #b3b3b3; 
+    font-size: 14px; 
+    text-align:center; 
+    width: 100%; 
+    margin-top: 45px; 
+    margin-bottom: 25px;
+}
+
+.column h3 {
+    color: #b3b3b3; 
+    text-align:center; 
+    width: 100%; 
+    margin-top: 45px; 
+    margin-bottom: 25px;
+}
+
 /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1400px) {
     .column {
-        -ms-flex: 50%;
-        flex: 50%;
+        
+    }
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1000px) {
+    .column {
+        -ms-flex: 40%;
+        flex: 40%;
         max-width: 100%;
     }
 }
