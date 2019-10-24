@@ -249,13 +249,6 @@
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 1400px) {
-    .column {
-        
-    }
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 1000px) {
     .column {
         -ms-flex: 40%;
@@ -267,6 +260,76 @@
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
     .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+.row-solo {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+    margin-bottom: 20px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column-solo {
+    -ms-flex: 45%; /* IE10 */
+    flex: 45%;
+    max-width: 32%;
+    padding: 0 30px;
+    background-color: #242424;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.column-solo img {
+    margin-top: 60px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.column-solo p {
+    color: #b3b3b3; 
+    font-size: 14px; 
+    text-align:center; 
+    width: 100%; 
+    margin-top: 45px; 
+    margin-bottom: 25px;
+}
+
+.column-solo h4 {
+    color: #b3b3b3; 
+    text-align:center; 
+    width: 100%; 
+    margin-top: 45px; 
+    margin-bottom: 25px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1400px) {
+    .column-solo {
+        
+    }
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1000px) {
+    .column-solo {
+        -ms-flex: 40%;
+        flex: 40%;
+        max-width: 100%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column-solo {
         -ms-flex: 100%;
         flex: 100%;
         max-width: 100%;
