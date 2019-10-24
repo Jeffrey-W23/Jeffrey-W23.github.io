@@ -3,7 +3,8 @@
 .download-btn
 {
 	background-color: #3777dd;
-	border: none;
+	border:unset;
+    border-radius: 5px;
 	color: white;
 	padding: 12px 22px;
 	text-align: center;
@@ -16,6 +17,7 @@
 	transition-duration: 0.4s;
 	cursor: pointer;
 	text-decoration: none;
+    box-shadow: 2px 3px #1c1c1c;
 }
 
 /* main download button hover styling */

@@ -1,0 +1,199 @@
+﻿<!-- Setup -->
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
+
+<!-- Head -->
+<head>
+    <!-- Website Info -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Hello, my name is Thomas Wiltshire and I welcome you to my portfolio! Here you can view my resume, a few projects I have worked on as a part of my studies, and some fun code or game stuff I have done in my free time.">
+    <meta name="author" content="Thomas Wiltshire">
+    <meta property="og:url" content="https://thomaswiltshire.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Thomas Wiltshire - Portfolio" />
+    <meta property="og:description" content="Hello, my name is Thomas Wiltshire and I welcome you to my portfolio! Here you can view my resume, a few projects I have worked on as a part of my studies, and some fun code or game stuff I have done in my free time." />
+    <meta property="og:image" content="https://thomaswiltshire.com/images/previewimage.png" />
+
+    <!-- Website Title -->
+    <title>Thomas Wiltshire - Portfolio</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+    <!-- The main stylesheet for the website -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/half-slider.css" rel="stylesheet">
+
+    <!--  -->
+    <link href="css/w3.css" rel="stylesheet">
+</head>
+<!-- Head -->
+
+<!-- Body -->
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #2a2a2a;">
+            <div class="container">
+
+                <a class="navbar-brand" href="https://thomaswiltshire.com/" style="color: #b3b3b3;">THOMAS WILTSHIRE</a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Home -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://thomaswiltshire.com/">HOME</a>
+                        </li>
+
+                        <!-- Projects -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html">PROJECTS</a>
+                        </li>
+
+                        <!-- Resume -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="resume.html">RESUME</a>
+                        </li>
+
+                        <!-- Contact -->
+                        <li class="nav-item">
+                            <button class="contact-btn" onclick="document.getElementById('id01').style.display='block'">CONTACT</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Navigation -->
+
+    </header>
+    <!-- Header -->
+    
+    <!-- Main content background -->
+    <section class="py-5" style="background-color: #1E1F23;">
+
+        <!-- PDF VIEWER-->
+        <embed src="files/GypsysTale-TDD.pdf" type="application/pdf" height="700" width="100%" style="margin-top:10px;">
+
+        <!-- Download button-->
+        <div class="download-btn-container" style="position: fixed; bottom: 0; background-color: #1E1F23; margin-bottom:0px; margin-top:0px;">
+            <p style="color: #b3b3b3; font-size: 14px; text-align:center; margin-top:40px; margin-left:20px; margin-right:20px;">If there is any trouble viewing the document please feel free to download below.</p>
+            <a class="download-btn" style="margin-bottom:40px;" href="">DOWNLOAD</a>
+        </div>
+
+    </section>
+    <!-- Main content background -->
+
+    <!-- CONTACT MODAL -->
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4" style="background-color: #1E1F23;">
+
+            <!-- MODAL HEADER -->
+            <header class="w3-container w3-darker-grey">
+                <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright" style="position:center; font-size:41px;">&times;</span>
+                <h2 style="color: #b3b3b3; margin-top: 20px; margin-bottom: 20px;">CONTACT ME</h2>
+            </header>
+            <!-- MODAL HEADER -->
+
+            <!-- MODAL CONTENT -->
+            <div class="row" id="contactmodal-frame" style="vertical-align:middle; text-align:center;">
+                <div class="col-md-12" style="vertical-align:middle;">
+                    <div class="row" style="vertical-align:middle; background-color: transparent;">
+
+                        <!-- Contact Image -->
+                        <div id='contactmodal-images'>
+                            <img src="images/profilepic.png" id="contactimage" style="width:100%; height:100%; width:100%;" alt="Thomas" />
+                        </div>
+
+                        <!-- Contact Information -->
+                        <div id="contactmodal-text">
+                            <div style="width:100%; height:100%; background-color: transparent; padding-left:20px; padding-right:20px;">
+                                <h1 style="color: #b3b3b3; text-align: left;">I'M THOMAS WILTSHIRE</h1>
+                                <hr class="line-seperator" width="100%" align="right">
+                                <div style="text-align: left;"><h6 style="color: #b3b3b3; text-align: left; display: inline; margin-right:10px;">LOCATION:</h6><a style="color: #b3b3b3; text-align: left; display: inline; font-size:15px;" href="https://www.google.com/maps/@-37.5816687,143.8464057,15z?hl=en">MOUNT PLEASANT, VICTORIA AUSTRALIA</a></div>
+                                <div style="text-align: left;"><h6 style="color: #b3b3b3; text-align: left; display: inline; margin-right:10px;">EMAIL:</h6><a style="color: #b3b3b3; text-align: left; display: inline; font-size:15px;" href="mailto:thomas.wiltshire14@icloud.com">THOMAS.WILTSHIRE14@ICLOUD.COM</a></div>
+                                <div style="text-align: left;"><h6 style="color: #b3b3b3; text-align: left; display: inline; margin-right:10px;">PHONE:</h6><a style="color: #b3b3b3; text-align: left; display: inline; font-size:15px;" href="tel:+6146-666-1042">+61 466 661 042</a></div><br/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- MODAL CONTENT -->
+
+            <!-- MODAL FOOTER -->
+            <footer class="w3-container w3-darker-grey" style="padding: 10px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 mb-0 mb-lg-0" style="margin: auto;">
+                            <ul class="list-inline mb-0" style="text-align:center;">
+
+                                <!-- Twitter -->
+                                <li class="list-inline-item">
+                                    <a class="btn btn-social text-center rounded-circle" style="color: #b3b3b3;" href="https://twitter.com/Jeffrey_W23">
+                                        <i class="fab fa-fw fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <!-- Twitter -->
+
+                                <!-- Instagram -->
+                                <li class="list-inline-item">
+                                    <a class="btn btn-social text-center rounded-circle" style="color: #b3b3b3;" href="https://www.instagram.com/thomaswiltshire/">
+                                        <i class="fab fa-fw fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <!-- Instagram -->
+
+                                <!-- Github -->
+                                <li class="list-inline-item">
+                                    <a class="btn btn-social text-center rounded-circle" style="color: #b3b3b3;" href="https://github.com/Jeffrey-W23">
+                                        <i class="fab fa-fw fa-github"></i>
+                                    </a>
+                                </li>
+                                <!-- Github -->
+
+                                <!-- LinkedIn -->
+                                <li class="list-inline-item">
+                                    <a class="btn btn-social text-center rounded-circle" style="color: #b3b3b3;" href="https://www.linkedin.com/in/thomaswiltshire14/">
+                                        <i class="fab fa-fw fa-linkedin-in"></i>
+                                    </a>
+                                </li>
+                                <!-- LinkedIn -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- MODAL FOOTER -->
+
+        </div>
+    </div>
+    <!-- CONTACT MODAL -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+
+</body>
+<!-- Body -->
+
+</html>
+
+<!-- Template Used -->
+<!-- https://startbootstrap.com/template-overviews/freelancer/ -->
