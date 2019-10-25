@@ -38,6 +38,11 @@
     margin-bottom: 25px;
 }
 
+.download-btn-innercontainer 
+{
+    overflow: hidden; 
+    width:420px;
+}
 /* DOWNLOAD BUTTON STYLING */
 
 
@@ -182,6 +187,11 @@
     {
         padding-left: 10px; 
         padding-right: 10px;        
+    }
+
+    .download-btn-innercontainer 
+    {
+        width: 100%;
     }
 }
 
