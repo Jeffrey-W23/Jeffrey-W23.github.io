@@ -320,3 +320,35 @@
 .over-img {
     position: absolute;
 }
+
+
+
+
+
+
+
+
+/*  */
+.about-text-projects
+{
+    width:100%;
+    height:100%;
+    background-color: transparent;
+    padding:20px;
+    color: #b3b3b3;
+    padding-left:150px;
+    padding-right:150px;
+    text-align:center;
+}
+
+/*  */
+@media (max-width: 660px) 
+{
+    .about-text-projects 
+    {
+        padding-left: 20px;
+        padding-right: 20px;
+        width:100%;
+        padding:20px;
+    }
+}
