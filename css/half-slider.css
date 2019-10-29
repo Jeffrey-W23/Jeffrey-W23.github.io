@@ -92,20 +92,6 @@ hr.seperator-line {
     opacity: 1
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*  */
 #carousel-images
 {
@@ -118,12 +104,6 @@ hr.seperator-line {
 {
     font-size:60px;
 }
-
-
-
-
-
-
 
 /*  */
 @media (max-width: 1280px) 
@@ -179,13 +159,6 @@ hr.seperator-line {
         width:85%; 
     }
 }
-
-
-
-
-
-
-
 
 .innerdiv 
 {
