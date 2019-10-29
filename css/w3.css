@@ -225,6 +225,7 @@
     justify-content: space-between;
     border-radius: 15px;
     box-shadow: 2px 5px #1c1c1c;
+    line-height:1.75;
 }
 
 .column img {
