@@ -371,7 +371,7 @@
   margin: auto;
   display: block;
   width: 80%;
-  max-width: 900px;
+  max-width: 1200px;
 }
 
 /* Caption of Modal Image */
@@ -426,6 +426,7 @@
 @media only screen and (max-width: 700px){
   .ImgModal-content {
     width: 100%;
+    max-width: 900px;
   }
 }
 /* IMAGE VIWER */
