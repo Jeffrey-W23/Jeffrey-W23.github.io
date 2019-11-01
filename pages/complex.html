@@ -106,8 +106,8 @@
 
                     <!-- buttons-->
                     <div class="download-btn-container" style="margin-top:-30px; margin-bottom:10px;">
-                        <a class="download-btn" style="margin-left:5px; margin-right:5px;" href="../files/ComplexReadme.txt">README</a>
-                        <a class="download-btn" style="margin-left:5px; margin-right:5px;" href="https://github.com/Jeffrey-W23/AIE-CodeFolio">SOURCE CODE</a>
+                        <a class="download-btn" style="margin-left:5px; margin-right:5px; color:white;" onclick="document.getElementById('id02').style.display='block'">README</a>
+                        <a class="download-btn" style="margin-left:5px; margin-right:5px;" href="https://github.com/Jeffrey-W23/AIE-Assignment-ComplexSystem">SOURCE CODE</a>
                     </div>
 
                     <hr class="line-seperator" width="100%" align="middle">
@@ -148,10 +148,13 @@
                             <br><h4>PROJECT GOALS</h4><br>
 
                             <!-- Paragraph 1 -->
-                            <p></p>
+                            <p>The main purpose and goal of this assignment was to build a complex application, proving our knowledge and skills in the topic. As discussed above, I chose to develop a Lua Bindings application using C++ to replicate a basic Love2D engine.</p>
                             
                             <!-- Paragraph 2 -->
-                            <p></p><br>
+                            <p>The Minimum Viable Product (MVP) of the project was to create a simple working demo, showing functions and changing values from a Lua script running in the aieBootstrap engine, as well as having a finished complied statically-linked library (.lib) of the project.</p>
+                            
+                            <!-- Paragraph 3 -->
+                            <p>Other goals for the project, outside of the MVP, were to have a compiled dynamically-linked library (.dll) of the project, mapping extra functions in the renderer and input class, the ability to use with 3D, playing audio, as well as the ability to use fonts and texts. Most of the extra goals were met, minus 3D capabilities, playing audio, as well as some of the extra mappings.</p><br>
                             <!-- SECTION 2 -->
 
                             <!-- SECTION 3 -->
@@ -159,22 +162,16 @@
 
                             <ul>
                                 <!-- Dot point 1 -->
-                                <li></li>
+                                <li>Successfully created both a statically-linked library and a dynamically-linked library.</li>
 
                                 <!-- Dot point 2 -->
-                                <li></li>
+                                <li>Implemented the Lua C API.</li>
 
                                 <!-- Dot point 3 -->
-                                <li></li>
+                                <li>Gained a greater understanding of Visual Studio and problem-solving solution errors and difficulties.</li>
 
                                 <!-- Dot point 4 -->
-                                <li></li>
-
-                                <!-- Dot point 5 -->
-                                <li></li>
-
-                                <!-- Dot point 6 -->
-                                <li></li>
+                                <li>Gained a great understanding of Lua.</li>
                             </ul><br>
                             <!-- SECTION 3 -->
 
@@ -183,10 +180,13 @@
                             <br><h4>LESSONS LEARNED</h4><br>
 
                             <!-- Paragraph 1 -->
-                            <p></p>
+                            <p>Other than all the information listed above, which was all new stuff I learnt for the development of this project, I learnt a lot about how I work and how I take on work. </p>
                             
                             <!-- Paragraph 2 -->
-                            <p></p><br>
+                            <p>Personally, this project was stressful, I was having difficulties and I was unsure what topic to choose for the assignment. I ended up choosing scripting, because of previous knowledge of the topic, hoping it would help with completing the assignment. Once development started I got lost, developed and research the wrong stuff and it was an absolute disaster. So I slowed down, figured out exactly what it was I wanted to create and restarted my project. Everything went well after this, even finishing things listed as extras in my proposal. </p>
+                            
+                            <!-- Paragraph 3 -->
+                            <p>I think my main take away from this assignment is being aware that my lack of confidence and stresses almost got the best of me and almost ruined a project. But I realized what I was doing wrong, corrected mistakes, restarted development and continued developing and overcoming any confidence and stress issues I was facing.</p><br>
                             <!-- SECTION 4 -->
 
                         </div>
@@ -332,6 +332,56 @@
         </div>
     </div>
     <!-- CONTACT MODAL -->
+
+    <!-- README MODAL -->
+    <div id="id02" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4" style="background-color: #1E1F23;">
+
+            <!-- MODAL HEADER -->
+            <header class="w3-container w3-darker-grey">
+                <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-display-topright" style="position:center; font-size:41px;">&times;</span>
+                <h2 style="color: #b3b3b3; margin-top: 20px; margin-bottom: 20px;">README - BUILDING/RUNNING THE PROJECT</h2>
+            </header>
+            <!-- MODAL HEADER -->
+
+            <!-- MODAL CONTENT -->
+            <div class="row" id="contactmodal-frame" style="vertical-align:middle; text-align:center;">
+                <div class="col-md-12" style="vertical-align:middle;">
+                    <div class="row" style="vertical-align:middle; background-color: transparent; margin-bottom:0px;">
+
+                        <!-- Information -->
+                        <div style="width:100%; height:100%; background-color: transparent; padding-left:20px; padding-right:20px; color:#b3b3b3; text-align:left; line-height:1.75;">
+
+                            <p>UPGRADING THE PROJECT TO LATER VERSIONS OF VISUAL STUDIO SHOULD BE FINE. ORIGINALLY INTENDED FOR 2015 BUT TESTED UP TO 2019 AND WORKS FINE.</p><br />
+
+                            <p style="font-weight:bold;">For building and running the complex application:</p>
+
+                            <ol>
+                                <li>Confirm the "LuaBindingsDLL" and "Project3D" projects are unloaded (Under the solutions right-click menu).</li>
+                                <li>Confirm the "Project2D" project is set to the "StartUp Project" (Under the solutions right-click menu).</li>
+                                <li>Set the build settings at the top of Visual Studio to "Debug" and "x86" and build the "Bootstrap", "LuaBindings" and "Project2D" projects.</li>
+                                <li>Build/Run the "Project2D" project, it should fail with the following message: "The code execution cannot proceed because lua51.dll was not found. Reinstalling the program may fix this problem.".</li>
+                                <li>Close the application and copy "lua51.dll" from the root of the project directory.</li>
+                                <li>Navigate to the "AIE-Assignment-ComplexSystem\temp\Project2D\Win32\Debug" directory and paste the "lua51.dll", copied from the previous step.</li>
+                                <li>Build/Run the "Project2D" project again. The project should run as planned.</li>
+                            </ol>
+
+                            <br/><p style="font-weight:bold;">For access to the Demo.lua file (used for coding the example) follow the below steps:</p>
+
+                            <ol>
+                                <li>Navigate to the projects root directory and open the "bin" folder.</li>
+                                <li>Open the Demo.lua file in Visual Studio.</li>
+                            </ol>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- MODAL CONTENT -->
+
+        </div>
+    </div>
+    <!-- README MODAL -->
 
     <!-- Footer -->
     <footer class="py-5" style="background-color: #2a2a2a;">

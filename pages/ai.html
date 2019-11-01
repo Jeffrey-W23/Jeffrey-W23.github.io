@@ -106,6 +106,7 @@
 
                     <!-- buttons-->
                     <div class="download-btn-container" style="margin-top:-30px; margin-bottom:10px;">
+                        <a class="download-btn" style="margin-left:5px; margin-right:5px; color:white;" onclick="document.getElementById('id02').style.display='block'">README</a>
                         <a class="download-btn" style="margin-left:5px; margin-right:5px;" href="https://github.com/Jeffrey-W23/AIE-CodeFolio">SOURCE CODE  </a>
                     </div>
 
@@ -322,6 +323,53 @@
         </div>
     </div>
     <!-- CONTACT MODAL -->
+
+    <!-- README MODAL -->
+    <div id="id02" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4" style="background-color: #1E1F23;">
+
+            <!-- MODAL HEADER -->
+            <header class="w3-container w3-darker-grey">
+                <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-display-topright" style="position:center; font-size:41px;">&times;</span>
+                <h2 style="color: #b3b3b3; margin-top: 20px; margin-bottom: 20px;">README - BUILDING/RUNNING THE PROJECT</h2>
+            </header>
+            <!-- MODAL HEADER -->
+
+            <!-- MODAL CONTENT -->
+            <div class="row" id="contactmodal-frame" style="vertical-align:middle; text-align:center;">
+                <div class="col-md-12" style="vertical-align:middle;">
+                    <div class="row" style="vertical-align:middle; background-color: transparent; margin-bottom:0px;">
+
+                        <!-- Information -->
+                        <div style="width:100%; height:100%; background-color: transparent; padding-left:20px; padding-right:20px; color:#b3b3b3; text-align:left; line-height:1.75;">
+
+                            <p>UPGRADING THE PROJECT TO LATER VERSIONS OF VISUAL STUDIO SHOULD BE FINE. ORIGINALLY INTENDED FOR 2015 BUT TESTED UP TO 2019 AND WORKS FINE.</p><br />
+
+                            <p style="font-weight:bold;">For building and running the AI application:</p>
+
+                            <ol>
+                                <li>Confirm the "Project3D" project is unloaded (Under the solutions right-click menu).</li>
+                                <li>Confirm the "Project2D" project is set to the "StartUp Project" (Under the solutions right-click menu).</li>
+                                <li>Build/Run the "Project2D" project.</li>
+                            </ol>
+
+                            <br/><p style="font-weight:bold;">Navigating/Controlling the demo:</p>
+
+                            <ol>
+                                <li>To navigate AI examples use the specified number at the top of the application on the keyboard from 1-6.</li>
+                                <li>Some examples require user input, this will be either the mouse (for following or fleeing) or the WASD keys (for controlling a player).</li>
+                                <li>Lastly, any other input required will be specified at the bottom of the application.</li>
+                            </ol>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- MODAL CONTENT -->
+
+        </div>
+    </div>
+    <!-- README MODAL -->
 
     <!-- Footer -->
     <footer class="py-5" style="background-color: #2a2a2a;">
