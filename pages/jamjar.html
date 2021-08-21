@@ -1,4 +1,4 @@
-﻿<!-- Setup -->
+<!-- Setup -->
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
 
@@ -19,22 +19,22 @@
     <title>Thomas Wiltshire - Portfolio</title>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/favicon.PNG" />
+    <link rel="icon" type="image/png" href="../images/favicon.PNG" />
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
     <!-- The main stylesheet for the website -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 
     <!-- Custom styles for this template -->
-    <link href="css/half-slider.css" rel="stylesheet">
+    <link href="../css/half-slider.css" rel="stylesheet">
 
     <!--  -->
-    <link href="css/w3.css" rel="stylesheet">
+    <link href="../css/w3.css" rel="stylesheet">
 </head>
 <!-- Head -->
 
@@ -59,22 +59,22 @@
 
                         <!-- Home -->
                         <li class="nav-item">
-                            <a class="nav-link active" href="https://thomaswiltshire.com/">HOME</a>
+                            <a class="nav-link" href="https://thomaswiltshire.com/">HOME</a>
                         </li>
 
                         <!-- Projects -->
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/projects.html">PROJECTS</a>
+                            <a class="nav-link active" href="../pages/projects.html">PROJECTS</a>
                         </li>
 
                         <!-- Blog -->
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/blog.html">BLOG</a>
+                            <a class="nav-link" href="../pages/blog.html">BLOG</a>
                         </li>
 
                         <!-- Resume -->
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/resume.html">RESUME</a>
+                            <a class="nav-link" href="../pages/resume.html">RESUME</a>
                         </li>
 
                         <!-- Contact -->
@@ -90,149 +90,53 @@
     </header>
     <!-- Header -->
 
-    <!-- Carousel -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="margin-top: 55px;">
-
-        <div class="carousel-inner" role="listbox">
-
-            <!-- Slide Two : Zombie Game  -->
-            <div class="carousel-item active" style="background-image: url(images/zombiegif.gif)">
-                <div class="innerdiv">
-                    <a href="pages/zombie.html">
-                        <div class="carousel-caption imagediv">
-                            <img src="images/zombietitle.png" id="carousel-images"/>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <!-- Slide Two : Zombie Game  -->
-
-            <!-- Slide Four : AI Example  -->
-            <div class="carousel-item" style="background-image: url(images/ai.gif)">
-                <div class="innerdiv">
-                    <a href="pages/projects.html#University_Section">
-                        <div class="carousel-caption imagediv">
-                            <h1 id="carousel-imagetext">UNIVERSITY<br/>ASSIGNMENTS</h1>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <!-- Slide Four : AI Example  -->
-
-            <!-- Slide One : Toy Wars  -->
-            <div class="carousel-item" style="background-image: url(images/toygif.gif)">
-                <div class="innerdiv">
-                    <a href="pages/toywars.html">
-                        <div class="carousel-caption imagediv">
-                            <img src="images/toytitle.png" id="carousel-images"/>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <!-- Slide One : Toy Wars  -->
-
-            <!-- Slide Three : Gypsys Tale  -->
-            <div class="carousel-item" style="background-image: url(images/doggif.gif)">
-                <div class="innerdiv">
-                    <a href="pages/gypsy.html">
-                        <div class="carousel-caption imagediv">
-                            <img src="images/gypsystitle.png" id="carousel-images"/>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <!-- Slide Three : Gypsys Tale  -->
-
-        </div>
-
-        <!-- Prev Button -->
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <!-- Prev Button -->
-
-        <!-- Next Button -->
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-        <!-- Next Button -->
-
-    </div>
-    <!-- Carousel -->
-
     <!-- Main content background -->
-    <section class="py-5" style="background-color: #1E1F23;">
+    <section class="py-5" style="background-color: #3f3240;">
 
         <!-- Main content frame -->
-        <div class="row" id="frontpage-frame">
+        <div class="row" id="frontpage-frame" style="background-color: #1E1F23; margin-bottom:0px; border-radius: 15px; box-shadow: 2px 5px #1c1c1c;">
 
             <!-- page content -->
             <div class="col-md-12" style="vertical-align:middle;">
                 <div class="row" style="vertical-align:middle; background-color: transparent;">
 
-                    <!-- LEFT GROUP -->
-                    <div id="frontpage-text">
+                    <!-- TOP GROUP -->
+                    <!-- page title -->
+                    <img src="../images/bottitle2.png" class="img-responsive" style="margin-top:85px; margin-bottom:35px; height:50%; width:50%; display: block; margin-left: auto; margin-right: auto;"/>
+                    
+                    <!-- title info -->
+                    <div class="about-text-projects">
+                        <p>Created from boredom and a need for inspiration in games development, The JamJar is a Discord bot designed to help Game developers and Game Jam enthusiasts easily generate game ideas or themes for inspiration or motivation in their development. No need to think or use external sites, generate a random game idea right in discord with your team. Once installed use ?info to get started!</p><br>
+                    </div>
 
-                        <!-- page title -->
-                        <h1 class="col-md-12" style="margin-top:15px; margin-bottom:55px; color: #b3b3b3; text-align: left;">HI, I'M THOMAS WILTSHIRE</h1>
+                    <!-- buttons-->
+                    <div class="download-btn-container" style="margin-top:-30px; margin-bottom:10px;">
+                        <a class="download-btn" style="margin-left:5px; margin-right:5px; color:white;" onclick="document.getElementById('id02').style.display='block'">README</a>
+                        <a class="download-btn" style="margin-left:5px; margin-right:5px;" href="https://discord.com/oauth2/authorize?client_id=878253816531812412&permissions=105226767360&scope=bot%20applications.commands">INSTALL</a>
+                        <a class="download-btn" style="margin-left:5px; margin-right:5px;" href="https://github.com/Jeffrey-W23/JamJar">SOURCE CODE</a>
+                    </div>
+
+                    <!-- Images/Videos -->
+                    <hr class="line-seperator" width="100%" align="middle">
+
+                    <div class="col-md-6" style="vertical-align:middle; text-align:center; margin-bottom:15px; margin-top:15px;">
+                        <img src="../images/bot2screenshot.png" id="ImgViewer" class="img-responsive" style="width:100%;" alt="The Jam Jar Bot Screenshot" width="280" height="412" />
+                    </div>
+
+                    <div class="col-md-6" style="vertical-align:middle; text-align:center; margin-bottom:15px; margin-top:15px;">
+                        <video controls loop width="100%" style="">
+					        <source src="../images/bot2video.mp4" type="video/mp4">
+				        </video>
+                    </div>
+                    
+                    <hr class="line-seperator" width="100%" align="right">
+                    <!-- TOP GROUP -->
+
+                    <!-- LEFT GROUP -->
+                    <div id="frontpage-text" style="margin-top:20px; width:100%;">
 
                         <!-- INFORMATION TEXT -->
                         <div class="about-text">
-
-                            <!-- SECTION 1 -->
-                            <!-- Paragraph 1 -->
-                            <p>Welcome to my portfolio! Here you can view my <a id="about-links" href="pages/resume.html">resume</a>, some <a id="about-links" href="pages/projects.html">assignments/projects</a> developed during my studies, general information about myself, as well as <a id="about-links" href="pages/projects.html#Side_Section">side projects</a> and code I have completed during my free time.</p><br>
-                            <!-- SECTION 1 -->
-
-                            <!-- SECTION 2 -->
-                            <br><h4>EXPERIENCE AND SKILLS</h4><br>
-
-                            <ul>
-                                <!-- Dot point 1 -->
-                                <li>Languages: C# (3 years), C++ (3 years), Lua (3 years), HTML5/CSS (1 ½ year), Javascript (½ year).</li>
-
-                                <!-- Dot point 2 -->
-                                <li>Software: Visual Studio, Visual Studio Code, MonoDevelop, SVN, Git, Github, SourceTree.</li>
-                            
-                                <!-- Dot point 3 -->
-                                <li>Hardware: Development Lifecycles of iOS, Android, Windows and Macintosh.</li>
-
-                                <!-- Dot point 4 -->
-                                <li>Frameworks: Unity (2 years), Love2D (2 years), WinForms (1 year), UWP (1 year), UE4 (< ½ year).</li>
-
-                                <!-- Dot point 5 -->
-                                <li>Management: Formal education in project management (Agile, Scrum, Kanban, Waterfall), Documentation and UML.</li>
-
-                                <!-- Dot point 6 -->
-                                <li>Other: Great Teamwork and Troubleshooting Skills.</li>
-
-                                <!-- Dot point 7 -->
-                                <li>Punctual, Polite and Enthusiastic.</li>
-
-                                <!-- Dot point 8 -->
-                                <li>Teamwork and Troubleshooting Skills and Experience.</li>
-
-                            </ul><br>
-                            <!-- SECTION 2 -->
-
-                            <!-- SECTION 3 -->
-                            <!-- Title -->
-                            <br><h4>ABOUT ME</h4><br>
-
-                            <!-- Paragraph 1 -->
-                            <p>I'm a hard-working, passionate games programmer that is currently living in Melbourne Australia. Over the last 3 years, I have been studying at the <a id="about-links" href="https://aie.edu.au">Academy of Interactive Entertainment (AIE)</a> to obtain a Bachelor of Games and Virtual Worlds (Programming).</p>
-
-                            <!-- Paragraph 2 -->
-                            <p>My passion for programming started with a small community of developers and artist, attempting to recreate the video game Journey to the centre of <a id="about-links" href="https://projecthawkthorne.com/">Hawkthorne</a>, shown in episode 3.20 of NBC's <a id="about-links" href="https://en.wikipedia.org/wiki/Community_(TV_series)">Community</a>. I contributed to the project back in 2012 with the creation of various sprite-sheets <a id="about-links" href="https://projecthawkthorne.com/characters.html">(Abed: Cowboy, Jeff: Heather Popandlocklear, Jeff: Mercury Poisoning)</a> for different characters and skins. Sparking my curiosity, and soon pushing me towards exploring and experimenting with various scripts throughout the project. </p>
-
-                            <!-- Paragraph 3 -->
-                            <p>My experience with the Hawkthorne community is an important step in my development journey, as it leads directly to my discovery of the <a id="about-links" href="https://love2d.org">Love2D</a> engine, which I used to develop my first programming project. This project was <a id="about-links" href="pages/zombie.html">Zombie Game</a>, a project that ignited a fire in me that didn't stop for 3 straight months of development, only slowing down for a job at my local Mc Donalds.</p>
-
-                            <!-- Paragraph 4 -->
-                            <p>After the development of Zombie Game, I applied for a traineeship position at a local software development company known as <a id="about-links" href="http://www.acomputing.com.au/">Advance Computing</a>. I gained many important skills at Advance, made many great friends and got my first real start in programming. This traineeship pushed me towards my university degree at the Academy Of Interactive Entertainment (I have learnt more than I could ever imagine here, I can't praise this academy enough for the inspiration it has given me for games and programming), the rest is history!</p><br>
-                            <!-- SECTION 3 -->
 
                         </div>
                         <!-- INFORMATION TEXT -->
@@ -242,15 +146,6 @@
 
                     <!-- RIGHT GROUP -->
                     <div id='frontpage-images'>
-
-                        <!-- toy image -->
-                        <img src="images/icontoy.png" id="frontimgbear" />
-
-                        <!-- zombie image -->
-                        <img src="images/zombfull.png" id="frontimgzombiefull" />
-
-                        <!-- zombie image -->
-                        <img src="images/zombhalf.png" id="frontimgzombiehalf" />
 
                     </div>
                     <!-- RIGHT GROUP -->
@@ -264,6 +159,42 @@
 
     </section>
     <!-- Main content background -->
+
+    <!-- IMAGE MODAL -->
+    <!-- The Modal -->
+    <div id="ImageViewer" class="ImgModal">
+        <span class="ImgClose">&times;</span>
+        <img class="ImgModal-content" id="img01">
+        <div id="ImgCaption"></div>
+    </div>
+
+    <!-- Modal Script -->
+    <script>
+        // Get the modal
+        var modal = document.getElementById("ImageViewer");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("ImgViewer");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("ImgCaption");
+
+        img.onclick = function ()
+        {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("ImgClose")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function ()
+        { 
+            modal.style.display = "none";
+        }
+    </script>
+    <!-- IMAGE MODAL -->
 
     <!-- CONTACT MODAL -->
     <div id="id01" class="w3-modal">
@@ -283,7 +214,7 @@
 
                         <!-- Contact Image -->
                         <div id='contactmodal-images'>
-                            <img src="images/profilepic.png" id="contactimage" style="width:100%; height:100%; width:100%;" alt="Thomas" />
+                            <img src="../images/profilepic.png" id="contactimage" style="width:100%; height:100%; width:100%;" alt="Thomas" />
                         </div>
 
                         <!-- Contact Information -->
@@ -350,6 +281,51 @@
     </div>
     <!-- CONTACT MODAL -->
 
+    <!-- README MODAL -->
+    <div id="id02" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4" style="background-color: #1E1F23;">
+
+            <!-- MODAL HEADER -->
+            <header class="w3-container w3-darker-grey">
+                <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-display-topright" style="position:center; font-size:41px;">&times;</span>
+                <h2 style="color: #b3b3b3; margin-top: 20px; margin-bottom: 20px;">README - INSTALLATION AND CREDITS</h2>
+            </header>
+            <!-- MODAL HEADER -->
+
+            <!-- MODAL CONTENT -->
+            <div class="row" id="contactmodal-frame" style="vertical-align:middle; text-align:center;">
+                <div class="col-md-12" style="vertical-align:middle;">
+                    <div class="row" style="vertical-align:middle; background-color: transparent; margin-bottom:0px;">
+
+                        <!-- Information -->
+                        <div style="width:100%; height:100%; background-color: transparent; padding-left:20px; padding-right:20px; color:#b3b3b3; text-align:left; line-height:1.75;">
+
+                            <p style="font-weight:bold;">Installation and Usage Guide:</p>
+
+                            <ol>
+                                <li>Click the Install button at the top of the page. This install button will take you to the Discord Bot Authorization Webpage (discord account and login required).</li>
+                                <li>Read over and confirm the bot permissions required as well as selecting a server under the drop-down menu. Click authorize button, allowing the bot to be added to the selected server.</li>
+                                <li>Navigate to the selected server and type either "?info" or "?help" into a discord text chat to get started with the bot. Enjoy!</li>
+                            </ol>
+
+                            <br/><p style="font-weight:bold;">Special Thanks and Credit to the following:</p>
+
+                            <ul>
+                                <li>Gunnar Clovis: Author of 80% of the bots random themes, these themes being from one of Gunnar's similar game idea projects. <br/>Check it out: <a href="https://gunnar-clovis.itch.io/game-jam-theme-generator">https://gunnar-clovis.itch.io/game-jam-theme-generator</a>.<br/><br/></li>
+                                <li>Bartek: Author of %15 of the bots random themes, originally used as a list for LudumDare game themes. <br/>Check it out: <a href="https://gist.github.com/bananu7/9252503">https://gist.github.com/bananu7/9252503</a>.<br/><br/></li>
+                                <li>Marmellata Jam Font: Used for the JamJar logo. <br/>Check it out: <a href="https://www.dafont.com/marmellata-jam-demo.font">https://www.dafont.com/marmellata-jam-demo.font</a>.<br/><br/></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- MODAL CONTENT -->
+
+        </div>
+    </div>
+    <!-- README MODAL -->
+
     <!-- Footer -->
     <footer class="py-5" style="background-color: #2a2a2a;">
 
@@ -415,8 +391,8 @@
     <!-- Footer -->
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- Bootstrap core JavaScript -->
 
 </body>
