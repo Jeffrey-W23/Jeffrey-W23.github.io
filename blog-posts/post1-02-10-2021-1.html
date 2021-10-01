@@ -98,12 +98,11 @@
 
             <!-- page content -->
             <div class="col-md-12" style="vertical-align:middle;">
-                <div class="row" style="vertical-align:middle; background-color: transparent;">
-                    <div class="row" style="margin-top:45px;">
+                <div class="row" style="margin-top:45px; vertical-align:middle; background-color: transparent;">
                         
                         <!-- Content Column -->
-                        <div class="leftcolumn">
-
+                        <div class="blogpage">
+                            
                             <!-- Post #3 - 02/10/2021 -->
                             <div class="card" style="margin-bottom: 50px;">
                                 
@@ -119,76 +118,9 @@
                             </div>
                             <!-- Post #3 - 02/10/2021 -->
 
-                            <!-- Post #2 - 24/08/2021 -->
-                            <div class="card" style="margin-bottom: 50px;">
-                                
-                                <!-- Post Title, timestamp and description -->
-                                <h2 style="margin-top: 5px; margin-bottom:25px;">I COULDN'T THINK OF A GAME IDEA. A BOT CAN DO IT I GUESS...</h2>
-                                <p style="margin-top: 5px; margin-bottom:5px;">Sometimes as a programmer, you are so lazy that you just make bots to do stuff for you.</p>
-                                <p style="font-size: 14px; margin-top: 5px; margin-bottom:30px; color:#6985b8;">3:45 AM (AEST), August 24th, 2021</p>
-
-                                <!-- Post image -->
-                                <img src="../blog-images/blog-image2.png" style="margin-bottom:25px;" id="ImgViewer" class="blogimg" alt="JamJar [Screenshot by Thomas Wiltshire]. https://thomaswiltshire.com/pages/jamjar"/>
-                                
-                                <!-- Main post content -->
-                                <p>All I've wanted from these new lockdowns in Australia is to develop a new project or two, but ideas aren't flowing as well as they usually do when I can be out and about in the world being inspired by things. I decided the best solution for this was using a Game Jam to get inspired, which resulted in me thinking: "<i>How do they come up with themes? Generated right? Is there a Discord Bot, so I can always have it ready?</i>". Nope, it didn't look like there were any Discord Bots. <i>"I suppose I could make one and think of a game idea along the way!"</i>. (Spoilers: No game idea, but I did make a bot!)</p>
-                                <p>So I do have some experience making Discord Bots. Last year I spent a night creating and learning how to create my first bot ImpostorBot, a bot created to take advantage of the Among Us trend and make it easier to invite players. I spent a week or so polishing up ImpostorBot, playing with different Discord features, and that was that. I haven't had another idea until now, which I was surprised to find that development was easy compared to the last. See, all this idea took was learning how to do JSON parsing, which is the same as I expected, and then getting a list of themes, genres and limitations to use for the random generation.</p>
-                                <p>Genres and Limitations for the bot were easy to write; I wrote the Limitations myself and genres based on research of classic and modern-day genres used in the industry. However, the Themes list required a little more work. Initially, the development of the Themes list was manual and written by myself; this was slow and impractical. After some research of theme lists and other idea generators for game developers, I stumbled upon a project on itch.io by Gunnar Clovis; He had also made a theme generator, but instead of a Discord bot, he hosted it online. After a few email exchanges, he graciously allowed me to use his theme list, giving my bot millions of combinations along with the genres and limitations I had already written.</p>
-                                <p>Please check out some of Gunnar's work: <a id="about-links" href="https://twitter.com/gunnarclovis">@GunnarClovis</a>.</p>
-                                <p>After the database of ideas to generate was complete, there was nothing left to do but polish, name it and get it running on my Heroku server. Naming was pretty easy; I went with JamJar because its ideal usage is for game jams, so I thought the "Jam" of game jams is the ideas/themes part, and this bot is the "Jar" that holds it? I thought it was clever anyway.</p>
-                                
-                                <!-- Another image -->
-                                <a href="../pages/jamjar.html"><img src="../images/bottitle2.png" style="margin-bottom:30px; margin-top: 25px;" id="ImgViewer" class="blogimg"/></a>
-                                
-                                <!-- Continue main content -->
-                                <p>Now to get it running on my Heroku server did involve some sad news. To have two bots cost money to run each month, meaning ImpostorBot is no more. There is still a bright side to ImpostorBot's demise. Hopefully, I can list this bot on directories for Discord bots AND actually get some servers installing this one!</p>
-                                <p>It was a short but very fun and well worth project making JamJar! Hopefully, I can get it out into a few servers, as I honestly believe it's a fun little tool and very handy for other developers like me!</p>
-                            </div>
-                            <!-- Post #2 - 24/08/2021 -->
-
-                            <!-- Post #1 - 19/08/2021 -->
-                            <div class="card" style="margin-bottom: 50px;">
-                                
-                                <!-- Post Title, timestamp and description -->
-                                <h2 style="margin-top: 5px; margin-bottom:25px;">CREATING A STATIC BLOG</h2>
-                                <p style="margin-top: 5px; margin-bottom:5px;">My first post! Let's see how this goes...</p>
-                                <p style="font-size: 14px; margin-top: 5px; margin-bottom:30px; color:#6985b8;">5:00 AM (AEST), August 19th, 2021</p>
-
-                                <!-- Post image -->
-                                <img src="../blog-images/blog-image1.PNG" style="margin-bottom:25px;" id="ImgViewer" class="blogimg" alt="GitHub, Inc (2021). GitHub Pages [Screenshot by Thomas Wiltshire]. https://pages.github.com/"/>
-                                
-                                <!-- Main Post content -->
-                                <p>So I finally started a dev blog, a lot more effort than I first imagined, yet so simple...</p>
-                                <p>For the longest time, I've wanted to create a blog. I wanted somewhere I could talk about my development, to help with my motivation, an insight into the development of a project once I progressed further, but equally important, a place to talk about my life or at least my nerdy life. The problem is, making a blog when you use GitHub Pages isn't as easy as it would seem, near impossible in the traditional sense.</p>
-                                <p>See GitHub Pages is a static way to build a website, meaning you can't have databases, complicated designs, PHP or even run things like WordPress to handle the blog experience. Making a blog on GitHub Pages wasn't going to be easy, at least from what I could understand. I would most likely have to generate one locally, create a post through it and copy all the statically created files back into the Git repository each time I wanted to make a post. Generating the blog isn't the worst option, as projects like Jekyll can make this a simple and easy process. But I do feel like you lose a bit of control.</p>
-                                <p>One of the main hurdles I found when trying Jekyll was getting it working with my current Website as I didn't want any rebuilds or redesigns to make it work. Sadly for me, it didn't seem worth that extra work and instead, I elected a basic approach with standard HTML and CSS to create a base post and blog page template and leave it at that.</p>
-                                <p>It isn't all bad, I can use markdown to help create the &lt;p&gt; and &lt;h&gt; tags but yes, basically, I am writing a new page for every post, adding to the blog page for every post, all in HTML and its manual. However, it does keep things simple, still getting my hands dirty in code, even though it is only HTML, and I get to keep everything looking exactly how I like it. All in all, I did enjoy the experience of writing my first post using this method. It was fun.</p>
-                            </div>
-                            <!-- Post #1 - 19/08/2021 -->
-
                         </div>
                         <!-- Content Column -->
-
-                        <!-- Side Column -->
-                        <div class="rightcolumn">
-                            
-                            <!-- About blog panel -->
-                            <div class="card">
-                                <h4 style="margin-top: 5px; margin-bottom:15px;">About This Blog</h4>
-                                <p id="about-blog">The plans and hopes for this blog are simple, provide a greater understanding for myself and others on how my development projects came to be, along with a place to share my progress in life and my games development/software development journey!</p>
-                            </div>
-                            
-                            <!-- All posts panel -->
-                            <div class="card">
-                                <h4 style="margin-top: 5px; margin-bottom:15px;">All Posts</h4>
-                                <p><a id="about-links" href="../blog-posts/post1-02-10-2021-1.html">A Quick Progress Update</a><br/><a style="font-size:12px;"> Oct 2, 2021</a></p>
-                                <p><a id="about-links" href="../blog-posts/post1-24-08-2021.html">I Couldn't Think Of A Game Idea. A Bot Can Do It For Me, I Guess!</a><br/><a style="font-size:12px;"> Aug 24, 2021</a></p>
-                                <p><a id="about-links" href="../blog-posts/post1-19-08-2021.html">Creating A Static Blog</a><br/><a style="font-size:12px;"> Aug 19, 2021</a></p>
-                            </div>
-                        </div>
-                        <!-- Side Column -->
-
-                    </div>  
+                        
                 </div>
             </div>
             <!-- page content -->
