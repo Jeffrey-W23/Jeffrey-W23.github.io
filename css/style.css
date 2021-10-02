@@ -227,6 +227,13 @@ img#frontimgzombiehalf
 }
 
 /*  */
+.blogvid 
+{
+    width: 100%;
+    height: auto;
+}
+
+/*  */
 #about-blog 
 {
     font-size: 11px;
@@ -471,6 +478,11 @@ img#frontimgzombiehalf
 @media (min-width: 2500px)
 {
     img.blogimg
+    {
+        width: 60%;
+    }
+    
+    video.blogvid
     {
         width: 60%;
     }
