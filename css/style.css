@@ -477,16 +477,6 @@ img#frontimgzombiehalf
 /*  */
 @media (min-width: 2500px)
 {
-    img.blogimg
-    {
-        width: 60%;
-    }
-    
-    video.blogvid
-    {
-        width: 60%;
-    }
-
     #frontpage-images
     {
         width:40%;
