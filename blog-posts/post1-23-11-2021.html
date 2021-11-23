@@ -1,0 +1,331 @@
+<!-- Setup -->
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
+
+<!-- Head -->
+<head>
+    <!-- Website Info -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Hello, my name is Thomas Wiltshire and I welcome you to my portfolio! Here you can view my resume, a few projects I have worked on as a part of my studies, and some fun code or game stuff I have done in my free time.">
+    <meta name="author" content="Thomas Wiltshire">
+    <meta property="og:url" content="https://thomaswiltshire.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Thomas Wiltshire - Portfolio" />
+    <meta property="og:description" content="Hello, my name is Thomas Wiltshire and I welcome you to my portfolio! Here you can view my resume, a few projects I have worked on as a part of my studies, and some fun code or game stuff I have done in my free time." />
+    <meta property="og:image" content="https://thomaswiltshire.com/images/previewimage.png" />
+
+    <!-- Website Title -->
+    <title>Thomas Wiltshire - Portfolio</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../images/favicon.PNG" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+    <!-- The main stylesheet for the website -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/half-slider.css" rel="stylesheet">
+
+    <!--  -->
+    <link href="../css/w3.css" rel="stylesheet">
+</head>
+<!-- Head -->
+
+<!-- Body -->
+<body  style="background-color: #1E1F23;">
+
+    <!-- Header -->
+    <header>
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #2a2a2a;">
+            <div class="container">
+
+                <a class="navbar-brand" href="https://thomaswiltshire.com/" style="color: #b3b3b3;">THOMAS WILTSHIRE</a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Home -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://thomaswiltshire.com/">HOME</a>
+                        </li>
+
+                        <!-- Projects -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/projects.html">PROJECTS</a>
+                        </li>
+
+                        <!-- Blog -->
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../pages/blog.html">BLOG</a>
+                        </li>
+
+                        <!-- Resume -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/resume.html">RESUME</a>
+                        </li>
+
+                        <!-- Contact -->
+                        <li class="nav-item">
+                            <button class="contact-btn" onclick="document.getElementById('id01').style.display='block'">CONTACT</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Navigation -->
+
+    </header>
+    <!-- Header -->
+    
+    <!-- Main content background -->
+    <section class="py-5" style="background-color: #1E1F23;">
+
+        <!-- Main content frame -->
+        <div class="row" id="frontpage-frame">
+
+            <!-- page content -->
+            <div class="col-md-12" style="vertical-align:middle;">
+                <div class="row" style="margin-top:45px; vertical-align:middle; background-color: transparent;">
+                        
+                        <!-- Content Column -->
+                        <div class="blogpage">
+                            
+                            <!-- Post #9 - 23/11/2021 -->
+                            <div class="card" style="margin-bottom: 50px;">
+                            
+                                <!-- Post Title, timestamp and description -->
+                                <h2 style="margin-top: 5px; margin-bottom:25px;">A QUICK UPDATE ON NOT BEING AROUND, SOME WORK GOT DONE AT LEAST.</h2>
+                                <p style="margin-top: 5px; margin-bottom:5px;">Freedom means a lot to me, so I needed to embrace it before it's stolen again.</p>
+                                <p style="font-size: 14px; margin-top: 5px; margin-bottom:30px; color:#6985b8;">7:32 PM (AEST), November 23rd, 2021</p>
+
+                                <!-- Main post content -->
+                                <p>It's been a few weeks since I made a post here, so I wanted to make a quick update today on where I have been the last few weeks, but most importantly, an update on my development over that time.</p>
+                                <p>Just a few days after my last post here on the blog, my home state of Victoria came out of lockdown, and I had an opportunity to finally see my friends and family again for the first time in almost a year. I decided to take this time and relax, no development, just fun times with the people that matter most.</p>
+                                <p>Development during this time mostly involved solving a few small problems, mainly attempting and then reversing an upgrade to Netcode for GameObjects (More on that later). But other than a failed attempt to upgrade the multiplayer system, the equipping system for items seems to be working well and shooting and other weapons/equipable item functions are now the current focus. Sadly it's not a lot of progress for the month of November, but it's been a rough year so some time out of the house was well needed!</p>
+                                <p>Now onto the future; Current plans for development work is attempting to upgrade the project to Netcode for GameObjects again, as well as finishing up all the equipable item system scripts. But why am I talking about the upgrade to Netcode for GameObjects so much? Well now that Unity has taken over the development of MLAPI they have started cleaning the system up from inside and out, fixed bugs and hopefully simplified some of the functionality. My first attempt to upgrade was a few weeks ago when the new version was fresh and documentation wasn't so great, the game was unplayable and sadly spent a while getting MLAPI installed again as they seem to be scrubbing this version from the internet now. Things are looking up though, there are a few videos available, research, blog post and slightly improved documentation means I'll be giving the upgrade another go, wish me luck!</p>
+                                <p>Anyway, once these tasks above are eventually complete it's time to start creating a level, create some sort of simple Murder in the Dark gamemode and finally, it's ready for some mass testing with friends!</p>      
+                            </div>
+                            <!-- Post #9 - 23/11/2021 -->
+
+                        </div>
+                        <!-- Content Column -->
+                        
+                </div>
+            </div>
+            <!-- page content -->
+
+        </div>
+        <!-- Main content frame -->
+
+    </section>
+    <!-- Main content background -->
+
+    <!-- IMAGE MODAL -->
+    <!-- The Modal -->
+    <div id="ImageViewer" class="ImgModal">
+        <span class="ImgClose">&times;</span>
+        <img class="ImgModal-content" id="img01">
+        <div id="ImgCaption"></div>
+    </div>
+
+    <!-- Modal Script -->
+    <script>
+        // Get the modal
+        var modal = document.getElementById("ImageViewer");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("ImgViewer");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("ImgCaption");
+
+        img.onclick = function ()
+        {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("ImgClose")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function ()
+        { 
+            modal.style.display = "none";
+        }
+    </script>
+    <!-- IMAGE MODAL -->
+
+    <!-- CONTACT MODAL -->
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4" style="background-color: #1E1F23;">
+
+            <!-- MODAL HEADER -->
+            <header class="w3-container w3-darker-grey">
+                <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright" style="position:center; font-size:41px;">&times;</span>
+                <h2 style="color: #b3b3b3; margin-top: 20px; margin-bottom: 20px;">CONTACT ME</h2>
+            </header>
+            <!-- MODAL HEADER -->
+
+            <!-- MODAL CONTENT -->
+            <div class="row" id="contactmodal-frame" style="vertical-align:middle; text-align:center;">
+                <div class="col-md-12" style="vertical-align:middle;">
+                    <div class="row" style="vertical-align:middle; background-color: transparent; margin-bottom:0px;">
+
+                        <!-- Contact Image -->
+                        <div id='contactmodal-images'>
+                            <img src="../images/profilepic.png" id="contactimage" style="width:100%; height:100%; width:100%;" alt="Thomas" />
+                        </div>
+
+                        <!-- Contact Information -->
+                        <div id="contactmodal-text">
+                            <div style="width:100%; height:100%; background-color: transparent; padding-left:20px; padding-right:20px;">
+                                <h1 style="color: #b3b3b3; text-align: left;">I'M THOMAS WILTSHIRE</h1>
+                                <hr class="line-seperator" width="100%" align="right">
+                                <div style="text-align: left;"><h6 style="color: #b3b3b3; text-align: left; display: inline; margin-right:10px;">LOCATION:</h6><a style="color: #b3b3b3; text-align: left; display: inline; font-size:15px;" href="https://www.google.com/maps/@-37.8861393,145.2645268,14z?hl=en">FERNTREE GULLY, VICTORIA AUSTRALIA</a></div>
+                                <div style="text-align: left;"><h6 style="color: #b3b3b3; text-align: left; display: inline; margin-right:10px;">EMAIL:</h6><a style="color: #b3b3b3; text-align: left; display: inline; font-size:15px;" href="mailto:thomas.wiltshire14@icloud.com">THOMAS.WILTSHIRE14@ICLOUD.COM</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- MODAL CONTENT -->
+
+            <!-- MODAL FOOTER -->
+            <footer class="w3-container w3-darker-grey" style="padding: 10px; padding-bottom:0px;">
+                <div class="container">
+                    <div class="row" style="margin-bottom:5px;">
+                        <div class="col-md-6 mb-0 mb-lg-0" style="margin: auto;">
+                            <ul class="list-inline mb-0" style="text-align:center;">
+
+                                <!-- Twitter -->
+                                <li class="list-inline-item">
+                                    <a class="btn btn-social text-center rounded-circle" style="color: #b3b3b3;" href="https://twitter.com/Jeffrey_W23">
+                                        <i class="fab fa-fw fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <!-- Twitter -->
+
+                                <!-- Instagram -->
+                                <li class="list-inline-item">
+                                    <a class="btn btn-social text-center rounded-circle" style="color: #b3b3b3;" href="https://www.instagram.com/thomaswiltshire/">
+                                        <i class="fab fa-fw fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <!-- Instagram -->
+
+                                <!-- Github -->
+                                <li class="list-inline-item">
+                                    <a class="btn btn-social text-center rounded-circle" style="color: #b3b3b3;" href="https://github.com/Jeffrey-W23">
+                                        <i class="fab fa-fw fa-github"></i>
+                                    </a>
+                                </li>
+                                <!-- Github -->
+
+                                <!-- LinkedIn -->
+                                <li class="list-inline-item">
+                                    <a class="btn btn-social text-center rounded-circle" style="color: #b3b3b3;" href="https://www.linkedin.com/in/thomaswiltshire14/">
+                                        <i class="fab fa-fw fa-linkedin-in"></i>
+                                    </a>
+                                </li>
+                                <!-- LinkedIn -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- MODAL FOOTER -->
+
+        </div>
+    </div>
+    <!-- CONTACT MODAL -->
+
+    <!-- Footer -->
+    <footer class="py-5" style="background-color: #2a2a2a;">
+
+        <!-- Social Icons -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-5 mb-lg-0" style="margin: auto;">
+                    <ul class="list-inline mb-0" style="text-align:center;">
+
+                        <!-- Twitter -->
+                        <li class="list-inline-item">
+                            <a class="btn btn-social text-center rounded-circle" style="color: #b3b3b3;" href="https://twitter.com/Jeffrey_W23">
+                                <i class="fab fa-fw fa-twitter"></i>
+                            </a>
+                        </li>
+                        <!-- Twitter -->
+
+                        <!-- Instagram -->
+                        <li class="list-inline-item">
+                            <a class="btn btn-social text-center rounded-circle" style="color: #b3b3b3;" href="https://www.instagram.com/thomaswiltshire/">
+                                <i class="fab fa-fw fa-instagram"></i>
+                            </a>
+                        </li>
+                        <!-- Instagram -->
+
+                        <!-- Github -->
+                        <li class="list-inline-item">
+                            <a class="btn btn-social text-center rounded-circle" style="color: #b3b3b3;" href="https://github.com/Jeffrey-W23">
+                                <i class="fab fa-fw fa-github"></i>
+                            </a>
+                        </li>
+                        <!-- Github -->
+
+                        <!-- LinkedIn -->
+                        <li class="list-inline-item">
+                            <a class="btn btn-social text-center rounded-circle" style="color: #b3b3b3;" href="https://www.linkedin.com/in/thomaswiltshire14/">
+                                <i class="fab fa-fw fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <!-- LinkedIn -->
+
+                        <!-- Email -->
+                        <li class="list-inline-item">
+                            <a class="btn btn-social text-center rounded-circle" style="color: #b3b3b3;" href="mailto:thomas.wiltshire14@icloud.com">
+                                <i class="fab fas fa-envelope"></i>
+                            </a>
+                        </li>
+                        <!-- Email -->
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Social Icons -->
+
+        <!-- Copyright -->
+        <div class="container" style="margin-top: 30px;">
+            <p class="m-0 text-center" style="color: #b3b3b3;">COPYRIGHT &copy; THOMAS WILTSHIRE 2021</p>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+
+</body>
+<!-- Body -->
+
+</html>
+
+<!-- Template Used -->
+<!-- https://startbootstrap.com/template-overviews/freelancer/ -->
