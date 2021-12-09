@@ -1,0 +1,385 @@
+<!-- Setup -->
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
+
+<!-- Head -->
+<head>
+    <!-- Website Info -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Hello, my name is Thomas Wiltshire and I welcome you to my portfolio! Here you can view my resume, a few projects I have worked on as a part of my studies, and some fun code or game stuff I have done in my free time.">
+    <meta name="author" content="Thomas Wiltshire">
+    <meta property="og:url" content="https://thomaswiltshire.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Thomas Wiltshire - Portfolio" />
+    <meta property="og:description" content="Hello, my name is Thomas Wiltshire and I welcome you to my portfolio! Here you can view my resume, a few projects I have worked on as a part of my studies, and some fun code or game stuff I have done in my free time." />
+    <meta property="og:image" content="https://thomaswiltshire.com/images/previewimage.png" />
+
+    <!-- Website Title -->
+    <title>Thomas Wiltshire - Portfolio</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../images/favicon.PNG" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+    <!-- The main stylesheet for the website -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/half-slider.css" rel="stylesheet">
+
+    <!--  -->
+    <link href="../css/w3.css" rel="stylesheet">
+</head>
+<!-- Head -->
+
+<!-- Body -->
+<body  style="background-color: #1E1F23;">
+
+    <!-- Header -->
+    <header>
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #2a2a2a;">
+            <div class="container">
+
+                <a class="navbar-brand" href="https://thomaswiltshire.com/" style="color: #b3b3b3;">THOMAS WILTSHIRE</a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Home -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://thomaswiltshire.com/">HOME</a>
+                        </li>
+
+                        <!-- Projects -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/projects.html">PROJECTS</a>
+                        </li>
+
+                        <!-- Blog -->
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../pages/blog.html">BLOG</a>
+                        </li>
+
+                        <!-- Resume -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/resume.html">RESUME</a>
+                        </li>
+
+                        <!-- Contact -->
+                        <li class="nav-item">
+                            <button class="contact-btn" onclick="document.getElementById('id01').style.display='block'">CONTACT</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Navigation -->
+
+    </header>
+    <!-- Header -->
+    
+    <!-- Main content background -->
+    <section class="py-5" style="background-color: #1E1F23;">
+
+        <!-- Main content frame -->
+        <div class="row" id="frontpage-frame">
+
+            <!-- page content -->
+            <div class="col-md-12" style="vertical-align:middle;">
+                <div class="row" style="margin-top:45px; vertical-align:middle; background-color: transparent;">
+                        
+                        <!-- Content Column -->
+                        <div class="blogpage">
+                            
+                            <!-- Post #10 - 09/12/2021 -->
+                        <div class="card" style="margin-bottom: 50px;">
+                            
+                            <!-- Post Title, timestamp and description -->
+                            <h2 style="margin-top: 5px; margin-bottom:25px;">SIX SIMPLE WORDS. SYNC THE ACTION, NOT THE RESULT!</h2>
+                            <p style="margin-top: 5px; margin-bottom:5px;">Lot's to talk about in this post! Been a lack of action lately, but the shooting wasn't as easy as I thought.</p>
+                            <p style="font-size: 14px; margin-top: 5px; margin-bottom:30px; color:#6985b8;">3:00 PM (AEST), December 9th, 2021</p>
+
+                            <!-- Post video -->
+                            <!--<video controls loop width="100%" poster="../blog-images/blog-image5.png" style="margin-bottom:30px;" class="blogvid">
+                                <source src="../blog-images/blog-video5.mp4" type="video/mp4">
+                            </video> -->
+
+                            <!-- Shooting on the server title" -->
+                            <h5>Shooting On The Server</h5><p></p>
+
+                            <!-- Main post content -->
+                            <p>It's been a short while since my last post, but here we are with something to finally talk about on the blog! The main struggle of this latest build was achieving shooting over the network. See, I thought it would be easy to implement as it is probably the most popular feature people want to achieve when making a hobby multiplayer project. Boy, was I wrong!</p>
+                            <p>The first technique I attempted for shooting over the network was hosting the actual shooting event on the server, which did work, though with a minor flaw. This technique worked by requesting a bullet from an Object Pool spawned on the server, getting that bullet ready for fire and then doing the actual fire event on the server and pushing the position updates of that bullet to all the clients. Networking these bullets did work as intended, but clients had severe latency issues; Initial firing delays, despawning was out of sync, and bullets would fire before they had finished resetting. So the research began to find a better solution.</p>
+                            
+                            <!-- Paul Marsh: "Sync the action not the result." -->
+                            <br><h5>Sync The Action, Not The Result</h5><p></p>
+                            
+                            <!-- post content continues -->
+                            <p>After the previous attempts of getting shooting to work for my multiplayer game, I decided it was time to rest my mind and play Metroid Dread (Amazing, by the way). As usual, after playing a well-made game like Metroid Dread, my game developer mind started to race again, and I was ready to tackle shooting over the network once more. I decided it was time to look at it from a different angle and instead spent some time reading a variety of blogs and technical design documents. For example, one of my first finds was Valve's "Latency Compensating Methods in Client/Server In-game Protocol Design and Optimization" page, which is a long name but was great, and a very interesting read. After skimming the valve documentation, I continued my search and came across what would become the most important find of my research, and that was a small blog about an indie developer named Paul Marsh, containing six words that blew my mind.</p>
+                            <p>"Sync the action, not the result" was a small section of Paul Marsh's "Synchronizing player bullets...?" blog post of May 29th 2021. As soon as I read the title of this section, it clicked in my head exactly what he meant, and I instantly felt stupid that I never thought of it myself, but hey, that's the fun of programming.</p>
+                            
+                            <!-- Post image -->
+                            <img src="../blog-images/sync-action.png" style="margin-bottom:30px; margin-top: 25px;" id="ImgViewer" class="blogimg" alt="Simplified Fire Event Sync [by Paul Marsh]. https://pauliom.medium.com/synchronizing-player-bullets-48223d5c9ad7"/>
+                            
+                            <!-- post content continues -->
+                            <p>The concept of syncing the action instead of the results of said action is quite simple. Instead of spawning and accessing the Bullets from an Object Pool located on the server, this technique has the Bullets present on each client locally and simply tells the server it wants to fire one. The client essentially says to the server: "Oh Hey, I'm gonna fire my gun now, if that's okay?", the server confirms this event and tells all the connected clients: "Hey Everyone, Player 1 is firing the gun now!" which alerts those clients that it's time to shoot the bullet from Player 1's representation in their scene. The end result of this implementation, while still silently out of sync, is a much cleaner and polished looking shooting experience perfect for the kind of game I am creating.</p>
+                            <p>Paul Marsh's Blog was a great read, full of interesting posts about his development journey through MLAPI. I'll be coming back to this blog with my future MLAPI problems for sure!</p>
+                            <p>Check it out: <a id="about-links" href="https://pauliom.medium.com/synchronizing-player-bullets-48223d5c9ad7">https://pauliom.medium.com/synchronizing-player-bullets-48223d5c9ad7</a></p>
+
+
+
+                            <!-- And Now All The Other Stuff title -->
+                            <br><h5>And Now All The Other Stuff</h5><p></p>
+
+                            <!-- post content continues -->
+                            <p>Lastly, let's quickly talk about some of the other changes in this build, which mostly involves inventory and item changes. However, these changes were important for completing the bare requirements for building the Murder In The Dark Prototype, hopefully coming up real soon!</p>
+
+                            <!-- Post video -->
+                            <video controls loop width="100%" poster="../blog-images/blog-image5.png" style="margin-bottom:30px; margin-top: 25px;" class="blogvid">
+                                <source src="../blog-images/blog-video5.mp4" type="video/mp4">
+                            </video>
+
+                            <!-- post content continues -->
+                            <p>The changes to this weeks build (other than the shooting, of course) are the following:</p>
+
+                            <!-- Changes Bullet List -->
+                            <ul>
+                                <li>Equipping an item now works as intended. In the previous build, it was inconsistent and buggy.</li>
+                                <li>A Player can now drop items from their inventory, making them available again to other players. Dropping can be done using the middle mouse button when hovering over an item in the inventory panel.</li>
+                                <li>Aiming down-sights/zooming is back and working over the network. Zooming can be activated while holding a compatible equitable item and clicking the right mouse button.</li>
+                                <li>Plenty of bug fixes in this build too. The most notable bug fix was ensuring players that joined late weren't out of sync with the server. Often a player would join and other players would have invisible items.</li>
+                            </ul>
+
+                            <!-- post content continues -->
+                            <p>Same as the previous build, there is a new prototype available for anyone reading this post. Consider giving the game a try, and let me know what you think! The contact button at the top of the page has my social links and email, so don't be afraid to reach out and tell me all about the bugs! Thank You!</p>
+
+                            <!-- Download Button -->
+                            <br>
+                            <div style="margin-left: 20px;">
+                                <a class="download-btn" style="background-color:#2a2a2a; font-size: 14px; color: #b3b3b3;" href="../files/An Infestation (Pre-Alpha 0.1.2).zip"><i style="font-size:16px; color: #b3b3b3;" class="fa">&#xf1c6;</i>&nbsp;&nbsp;&nbsp;An Infestation (Pre-Alpha 0.1.2).zip</a>
+                            </div>
+                            <br>
+                        </div>
+                        <!-- Post #10 - 09/12/2021 -->
+
+                        </div>
+                        <!-- Content Column -->
+                        
+                </div>
+            </div>
+            <!-- page content -->
+
+        </div>
+        <!-- Main content frame -->
+
+    </section>
+    <!-- Main content background -->
+
+    <!-- IMAGE MODAL -->
+    <!-- The Modal -->
+    <div id="ImageViewer" class="ImgModal">
+        <span class="ImgClose">&times;</span>
+        <img class="ImgModal-content" id="img01">
+        <div id="ImgCaption"></div>
+    </div>
+
+    <!-- Modal Script -->
+    <script>
+        // Get the modal
+        var modal = document.getElementById("ImageViewer");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("ImgViewer");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("ImgCaption");
+
+        img.onclick = function ()
+        {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("ImgClose")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function ()
+        { 
+            modal.style.display = "none";
+        }
+    </script>
+    <!-- IMAGE MODAL -->
+
+    <!-- CONTACT MODAL -->
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4" style="background-color: #1E1F23;">
+
+            <!-- MODAL HEADER -->
+            <header class="w3-container w3-darker-grey">
+                <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright" style="position:center; font-size:41px;">&times;</span>
+                <h2 style="color: #b3b3b3; margin-top: 20px; margin-bottom: 20px;">CONTACT ME</h2>
+            </header>
+            <!-- MODAL HEADER -->
+
+            <!-- MODAL CONTENT -->
+            <div class="row" id="contactmodal-frame" style="vertical-align:middle; text-align:center;">
+                <div class="col-md-12" style="vertical-align:middle;">
+                    <div class="row" style="vertical-align:middle; background-color: transparent; margin-bottom:0px;">
+
+                        <!-- Contact Image -->
+                        <div id='contactmodal-images'>
+                            <img src="../images/profilepic.png" id="contactimage" style="width:100%; height:100%; width:100%;" alt="Thomas" />
+                        </div>
+
+                        <!-- Contact Information -->
+                        <div id="contactmodal-text">
+                            <div style="width:100%; height:100%; background-color: transparent; padding-left:20px; padding-right:20px;">
+                                <h1 style="color: #b3b3b3; text-align: left;">I'M THOMAS WILTSHIRE</h1>
+                                <hr class="line-seperator" width="100%" align="right">
+                                <div style="text-align: left;"><h6 style="color: #b3b3b3; text-align: left; display: inline; margin-right:10px;">LOCATION:</h6><a style="color: #b3b3b3; text-align: left; display: inline; font-size:15px;" href="https://www.google.com/maps/@-37.8861393,145.2645268,14z?hl=en">FERNTREE GULLY, VICTORIA AUSTRALIA</a></div>
+                                <div style="text-align: left;"><h6 style="color: #b3b3b3; text-align: left; display: inline; margin-right:10px;">EMAIL:</h6><a style="color: #b3b3b3; text-align: left; display: inline; font-size:15px;" href="mailto:thomas.wiltshire14@icloud.com">THOMAS.WILTSHIRE14@ICLOUD.COM</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- MODAL CONTENT -->
+
+            <!-- MODAL FOOTER -->
+            <footer class="w3-container w3-darker-grey" style="padding: 10px; padding-bottom:0px;">
+                <div class="container">
+                    <div class="row" style="margin-bottom:5px;">
+                        <div class="col-md-6 mb-0 mb-lg-0" style="margin: auto;">
+                            <ul class="list-inline mb-0" style="text-align:center;">
+
+                                <!-- Twitter -->
+                                <li class="list-inline-item">
+                                    <a class="btn btn-social text-center rounded-circle" style="color: #b3b3b3;" href="https://twitter.com/Jeffrey_W23">
+                                        <i class="fab fa-fw fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <!-- Twitter -->
+
+                                <!-- Instagram -->
+                                <li class="list-inline-item">
+                                    <a class="btn btn-social text-center rounded-circle" style="color: #b3b3b3;" href="https://www.instagram.com/thomaswiltshire/">
+                                        <i class="fab fa-fw fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <!-- Instagram -->
+
+                                <!-- Github -->
+                                <li class="list-inline-item">
+                                    <a class="btn btn-social text-center rounded-circle" style="color: #b3b3b3;" href="https://github.com/Jeffrey-W23">
+                                        <i class="fab fa-fw fa-github"></i>
+                                    </a>
+                                </li>
+                                <!-- Github -->
+
+                                <!-- LinkedIn -->
+                                <li class="list-inline-item">
+                                    <a class="btn btn-social text-center rounded-circle" style="color: #b3b3b3;" href="https://www.linkedin.com/in/thomaswiltshire14/">
+                                        <i class="fab fa-fw fa-linkedin-in"></i>
+                                    </a>
+                                </li>
+                                <!-- LinkedIn -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- MODAL FOOTER -->
+
+        </div>
+    </div>
+    <!-- CONTACT MODAL -->
+
+    <!-- Footer -->
+    <footer class="py-5" style="background-color: #2a2a2a;">
+
+        <!-- Social Icons -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-5 mb-lg-0" style="margin: auto;">
+                    <ul class="list-inline mb-0" style="text-align:center;">
+
+                        <!-- Twitter -->
+                        <li class="list-inline-item">
+                            <a class="btn btn-social text-center rounded-circle" style="color: #b3b3b3;" href="https://twitter.com/Jeffrey_W23">
+                                <i class="fab fa-fw fa-twitter"></i>
+                            </a>
+                        </li>
+                        <!-- Twitter -->
+
+                        <!-- Instagram -->
+                        <li class="list-inline-item">
+                            <a class="btn btn-social text-center rounded-circle" style="color: #b3b3b3;" href="https://www.instagram.com/thomaswiltshire/">
+                                <i class="fab fa-fw fa-instagram"></i>
+                            </a>
+                        </li>
+                        <!-- Instagram -->
+
+                        <!-- Github -->
+                        <li class="list-inline-item">
+                            <a class="btn btn-social text-center rounded-circle" style="color: #b3b3b3;" href="https://github.com/Jeffrey-W23">
+                                <i class="fab fa-fw fa-github"></i>
+                            </a>
+                        </li>
+                        <!-- Github -->
+
+                        <!-- LinkedIn -->
+                        <li class="list-inline-item">
+                            <a class="btn btn-social text-center rounded-circle" style="color: #b3b3b3;" href="https://www.linkedin.com/in/thomaswiltshire14/">
+                                <i class="fab fa-fw fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <!-- LinkedIn -->
+
+                        <!-- Email -->
+                        <li class="list-inline-item">
+                            <a class="btn btn-social text-center rounded-circle" style="color: #b3b3b3;" href="mailto:thomas.wiltshire14@icloud.com">
+                                <i class="fab fas fa-envelope"></i>
+                            </a>
+                        </li>
+                        <!-- Email -->
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Social Icons -->
+
+        <!-- Copyright -->
+        <div class="container" style="margin-top: 30px;">
+            <p class="m-0 text-center" style="color: #b3b3b3;">COPYRIGHT &copy; THOMAS WILTSHIRE 2021</p>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+
+</body>
+<!-- Body -->
+
+</html>
+
+<!-- Template Used -->
+<!-- https://startbootstrap.com/template-overviews/freelancer/ -->

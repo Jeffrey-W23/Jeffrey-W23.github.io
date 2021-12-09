@@ -103,6 +103,77 @@
                     <!-- Content Column -->
                     <div class="leftcolumn">
 
+                        <!-- Post #10 - 09/12/2021 -->
+                        <div class="card" style="margin-bottom: 50px;">
+                            
+                            <!-- Post Title, timestamp and description -->
+                            <h2 style="margin-top: 5px; margin-bottom:25px;">SIX SIMPLE WORDS. SYNC THE ACTION, NOT THE RESULT!</h2>
+                            <p style="margin-top: 5px; margin-bottom:5px;">Lot's to talk about in this post! Been a lack of action lately, but the shooting wasn't as easy as I thought.</p>
+                            <p style="font-size: 14px; margin-top: 5px; margin-bottom:30px; color:#6985b8;">3:00 PM (AEST), December 9th, 2021</p>
+
+                            <!-- Post video -->
+                            <!--<video controls loop width="100%" poster="../blog-images/blog-image5.png" style="margin-bottom:30px;" class="blogvid">
+                                <source src="../blog-images/blog-video5.mp4" type="video/mp4">
+                            </video> -->
+
+                            <!-- Shooting on the server title" -->
+                            <h5>Shooting On The Server</h5><p></p>
+
+                            <!-- Main post content -->
+                            <p>It's been a short while since my last post, but here we are with something to finally talk about on the blog! The main struggle of this latest build was achieving shooting over the network. See, I thought it would be easy to implement as it is probably the most popular feature people want to achieve when making a hobby multiplayer project. Boy, was I wrong!</p>
+                            <p>The first technique I attempted for shooting over the network was hosting the actual shooting event on the server, which did work, though with a minor flaw. This technique worked by requesting a bullet from an Object Pool spawned on the server, getting that bullet ready for fire and then doing the actual fire event on the server and pushing the position updates of that bullet to all the clients. Networking these bullets did work as intended, but clients had severe latency issues; Initial firing delays, despawning was out of sync, and bullets would fire before they had finished resetting. So the research began to find a better solution.</p>
+                            
+                            <!-- Paul Marsh: "Sync the action not the result." -->
+                            <br><h5>Sync The Action, Not The Result</h5><p></p>
+                            
+                            <!-- post content continues -->
+                            <p>After the previous attempts of getting shooting to work for my multiplayer game, I decided it was time to rest my mind and play Metroid Dread (Amazing, by the way). As usual, after playing a well-made game like Metroid Dread, my game developer mind started to race again, and I was ready to tackle shooting over the network once more. I decided it was time to look at it from a different angle and instead spent some time reading a variety of blogs and technical design documents. For example, one of my first finds was Valve's "Latency Compensating Methods in Client/Server In-game Protocol Design and Optimization" page, which is a long name but was great, and a very interesting read. After skimming the valve documentation, I continued my search and came across what would become the most important find of my research, and that was a small blog about an indie developer named Paul Marsh, containing six words that blew my mind.</p>
+                            <p>"Sync the action, not the result" was a small section of Paul Marsh's "Synchronizing player bullets...?" blog post of May 29th 2021. As soon as I read the title of this section, it clicked in my head exactly what he meant, and I instantly felt stupid that I never thought of it myself, but hey, that's the fun of programming.</p>
+                            
+                            <!-- Post image -->
+                            <img src="../blog-images/sync-action.png" style="margin-bottom:30px; margin-top: 25px;" id="ImgViewer" class="blogimg" alt="Simplified Fire Event Sync [by Paul Marsh]. https://pauliom.medium.com/synchronizing-player-bullets-48223d5c9ad7"/>
+                            
+                            <!-- post content continues -->
+                            <p>The concept of syncing the action instead of the results of said action is quite simple. Instead of spawning and accessing the Bullets from an Object Pool located on the server, this technique has the Bullets present on each client locally and simply tells the server it wants to fire one. The client essentially says to the server: "Oh Hey, I'm gonna fire my gun now, if that's okay?", the server confirms this event and tells all the connected clients: "Hey Everyone, Player 1 is firing the gun now!" which alerts those clients that it's time to shoot the bullet from Player 1's representation in their scene. The end result of this implementation, while still silently out of sync, is a much cleaner and polished looking shooting experience perfect for the kind of game I am creating.</p>
+                            <p>Paul Marsh's Blog was a great read, full of interesting posts about his development journey through MLAPI. I'll be coming back to this blog with my future MLAPI problems for sure!</p>
+                            <p>Check it out: <a id="about-links" href="https://pauliom.medium.com/synchronizing-player-bullets-48223d5c9ad7">https://pauliom.medium.com/synchronizing-player-bullets-48223d5c9ad7</a></p>
+
+
+
+                            <!-- And Now All The Other Stuff title -->
+                            <br><h5>And Now All The Other Stuff</h5><p></p>
+
+                            <!-- post content continues -->
+                            <p>Lastly, let's quickly talk about some of the other changes in this build, which mostly involves inventory and item changes. However, these changes were important for completing the bare requirements for building the Murder In The Dark Prototype, hopefully coming up real soon!</p>
+
+                            <!-- Post video -->
+                            <video controls loop width="100%" poster="../blog-images/blog-image5.png" style="margin-bottom:30px; margin-top: 25px;" class="blogvid">
+                                <source src="../blog-images/blog-video5.mp4" type="video/mp4">
+                            </video>
+
+                            <!-- post content continues -->
+                            <p>The changes to this weeks build (other than the shooting, of course) are the following:</p>
+
+                            <!-- Changes Bullet List -->
+                            <ul>
+                                <li>Equipping an item now works as intended. In the previous build, it was inconsistent and buggy.</li>
+                                <li>A Player can now drop items from their inventory, making them available again to other players. Dropping can be done using the middle mouse button when hovering over an item in the inventory panel.</li>
+                                <li>Aiming down-sights/zooming is back and working over the network. Zooming can be activated while holding a compatible equitable item and clicking the right mouse button.</li>
+                                <li>Plenty of bug fixes in this build too. The most notable bug fix was ensuring players that joined late weren't out of sync with the server. Often a player would join and other players would have invisible items.</li>
+                            </ul>
+
+                            <!-- post content continues -->
+                            <p>Same as the previous build, there is a new prototype available for anyone reading this post. Consider giving the game a try, and let me know what you think! The contact button at the top of the page has my social links and email, so don't be afraid to reach out and tell me all about the bugs! Thank You!</p>
+
+                            <!-- Download Button -->
+                            <br>
+                            <div style="margin-left: 20px;">
+                                <a class="download-btn" style="background-color:#2a2a2a; font-size: 14px; color: #b3b3b3;" href="../files/An Infestation (Pre-Alpha 0.1.2).zip"><i style="font-size:16px; color: #b3b3b3;" class="fa">&#xf1c6;</i>&nbsp;&nbsp;&nbsp;An Infestation (Pre-Alpha 0.1.2).zip</a>
+                            </div>
+                            <br>
+                        </div>
+                        <!-- Post #10 - 09/12/2021 -->
+                        
                         <!-- Post #9 - 23/11/2021 -->
                         <div class="card" style="margin-bottom: 50px;">
                             
@@ -334,6 +405,7 @@
                         <!-- All posts panel -->
                         <div class="card">
                             <h4 style="margin-top: 5px; margin-bottom:15px;">All Posts</h4>
+                            <p><a id="about-links" href="../blog-posts/post1-09-12-2021.html">Six Simple Words. Sync The Action, Not The Result!</a><br/><a style="font-size:12px;"> Dec 9, 2021</a></p>
                             <p><a id="about-links" href="../blog-posts/post1-23-11-2021.html">A Quick Update On Not Being Around, Some Work Got Done At Least.</a><br/><a style="font-size:12px;"> Nov 23, 2021</a></p>
                             <p><a id="about-links" href="../blog-posts/post1-22-10-2021.html">No Longer Is Your Fog Stolen By Others, And Interactable Objects Are, Get This.. Interactable!</a><br/><a style="font-size:12px;"> Oct 22, 2021</a></p>
                             <p><a id="about-links" href="../blog-posts/post1-12-10-2021-2.html">Fresh New Unity And Pretty New Colours!</a><br/><a style="font-size:12px;"> Oct 12, 2021</a></p>
