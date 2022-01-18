@@ -301,6 +301,25 @@ img#frontimgzombiehalf
     text-align:left;
     color: #b3b3b3;
 }
+
+/* Left column */
+.leftcolumn-mobile 
+{   
+    float: left;
+    width: 75%;
+    text-align:left;
+    color: #b3b3b3;
+}
+  
+/* Right column */
+.rightcolumn-mobile 
+{
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+    text-align:left;
+    color: #b3b3b3;
+}
   
 .card 
 { 
@@ -685,12 +704,12 @@ img#frontimgzombiehalf
         margin: 0px;
     }
 
-    .leftcolumn
+    .leftcolumn-mobile
     {
         display: none;
     }
 
-    .rightcolumn
+    .rightcolumn-mobile
     {
         display: none;
     }
