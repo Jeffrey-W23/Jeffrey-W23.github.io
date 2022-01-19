@@ -604,7 +604,7 @@ img#frontimgzombiehalf
 {
     div#frontpage-text 
     {
-        width: 100%;
+        width: 80%;
     }
 
     div#frontpage-frame
@@ -644,96 +644,37 @@ img#frontimgzombiehalf
         display: none;
     }
 
-
-
-
-
-
+    div#frontpage-frame
+    {
+        margin-left: 0%;
+        margin-right: 0%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 
     /*  */
     #frontpage-text
     {
-        width: 100%;
+        width: 80%;
     }
-
-
-
-
-
-
 
     /*  */
     #frontpage-images
     {
-        display: block;
-        width: 100%;
-        overflow: hidden;
-        margin: auto;
-        padding: auto;
+        
+        width: 20%;
+        
+     
     }
-
-    .project-mini-row 
-    {
-        width: 15%;
-        float: left;
-        margin-left: 5px;
-        margin-right: 5px;
-        margin-top: 15px;
-    }
-    
-
-
-
-
-
-    .column-mini {
-        -ms-flex: 100%;
-        flex: 100%;
-        width: 100%;
-        display: block;
-        margin: 0px;
-        padding-top: 12px;
-        padding-left: 12px;
-        padding-right: 12px;
-    }
-
-    .column-mini p {
-        display: none;
-        padding: 0px;
-        margin: 0px;
-    }
-
-    .column-mini img 
-    {
-        width: 100%;
-        padding: 0px;
-        margin: 0px;
-    }
-
-
-
-
-
-
 }
 
 /*  */
 @media (max-width: 700px) 
 {
-    .project-mini-row 
-    {
-        width: 14%;
-        float: left;
-        margin-left: 5px;
-        margin-right: 5px;
-        margin-top: 10px;
-        padding: 2px;
-    }
-
     .column-mini {
         -ms-flex: 100%;
         flex: 100%;
-        width: 40%;
+        width: 0%;
         display: block;
         margin: 0px;
         padding-top: 0px;
@@ -750,7 +691,7 @@ img#frontimgzombiehalf
 
     .column-mini img 
     {
-        width: 40%;
+        width: 100%;
         padding: 0px;
         margin: 0px;
     }
@@ -769,6 +710,36 @@ img#frontimgzombiehalf
     {
         display: block;
         padding: 30px;
+        font-size: 14px;
+    }
+
+    div#frontpage-text 
+    {
+        width: 100%;
+    }
+
+    .project-mini-row 
+    {
+        height: 25px;
+        width: 25px;
+        background-color: rgb(88, 87, 87);
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    #frontpage-images
+    {
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 0px;
+        padding: auto;
+        text-align: center;
+    }
+
+    #frontpage-images img
+    {
+        display: none;
     }
 }
 
@@ -840,20 +811,10 @@ img#frontimgzombiehalf
 
 @media (max-width: 400px)
 {
-    .project-mini-row 
-    {
-        width: 12%;
-        float: left;
-        margin-left: 5px;
-        margin-right: 5px;
-        margin-top: 10px;
-        padding: 2px;
-    }
-
     .column-mini {
         -ms-flex: 100%;
         flex: 100%;
-        width: 40%;
+        width: 0%;
         display: block;
         margin: 0px;
         padding-top: 0px;
@@ -873,6 +834,30 @@ img#frontimgzombiehalf
         width: 40%;
         padding: 0px;
         margin: 0px;
+    }
+
+    .project-mini-row 
+    {
+        height: 15px;
+        width: 15px;
+        background-color: rgb(88, 87, 87);
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    #frontpage-images
+    {
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 0px;
+        padding: auto;
+        text-align: center;
+    }
+
+    #frontpage-images img
+    {
+        display: none;
     }
 }
 
@@ -934,24 +919,7 @@ img#frontimgzombiehalf
 
 @media (max-width: 620px)
 {
-    .download-btn-mobile
-    {
-        margin-top: 15px;
-        font-size: 10px;
-        padding: 5px;
-    }
-
-    .text-block p
-    {
-        display: none;
-    }
-
-    .text-block img
-    {
-        width: 100%;
-        padding-top: 15px; 
-        padding-bottom: 10px;
-    }
+    
 }
 
 /*  */
@@ -970,9 +938,33 @@ img#frontimgzombiehalf
 
     .download-btn-mobile
     {
-        margin-top: 15px;
-        font-size: 10px;
-        padding: 5px;
+        display: none;
+    }
+
+    .text-block
+    {
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-right: 25px;
+        margin-left: 25px;
+        margin-bottom: 50px;
+        background: none;
+        text-align: center;
+        bottom: 0px;
+        left: 0px;
+        vertical-align: middle;
+    }
+
+    .text-block p
+    {
+        display: none;
+    }
+
+    .text-block img
+    {
+        width: 60%;
+        padding-top: 10px; 
+        padding-bottom: 10px;
     }
 }
 
