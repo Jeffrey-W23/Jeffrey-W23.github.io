@@ -454,6 +454,17 @@ img#frontimgzombiehalf
     display: none;
 }
 
+.project-card-mobileh3
+    {
+        border-radius: 18px; 
+        margin: auto; 
+        padding: 15px; 
+        vertical-align: middle; 
+        horizontal-align: middle; 
+        width: 100%; 
+        display: none;
+    }
+
 .project-card-mobile img
 {
     border-radius: 18px;
@@ -686,6 +697,16 @@ img#frontimgzombiehalf
         display: block;
         padding: 30px;
         font-size: 14px;
+    }
+    
+    .project-card-mobileh3
+    {
+        display: block;
+        padding: 30px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
     }
 }
 
