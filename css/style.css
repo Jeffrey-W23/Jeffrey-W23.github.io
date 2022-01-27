@@ -213,7 +213,8 @@ img#frontimgzombiehalf
 }
 
 /*  */
-#contactmodal-text {
+#contactmodal-text 
+{
     width: 60%;
     height: 100%;
     background-color: transparent;
@@ -222,7 +223,8 @@ img#frontimgzombiehalf
 }
 
 /*  */
-#contactmodal-images {
+#contactmodal-images 
+{
     width: 35%;
     height: 100%;
     background-color: transparent;
@@ -231,12 +233,14 @@ img#frontimgzombiehalf
 }
 
 /*  */
-.parent {
+.parent 
+{
     position: relative;
 }
 
 /*  */
-.over-img {
+.over-img 
+{
     position: absolute;
 }
 
@@ -303,22 +307,26 @@ img#frontimgzombiehalf
 }
 
 /* Left column */
-.leftcolumn-mobile 
+.projects-leftcolumn 
 {   
     float: left;
-    width: 75%;
     text-align:left;
     color: #b3b3b3;
+    padding: 10px; 
+    margin: 0px; 
+    border-radius: 18px; 
+    width: 25%;
 }
   
 /* Right column */
-.rightcolumn-mobile 
+.projects-rightcolumn 
 {
     float: left;
-    width: 25%;
-    padding-left: 20px;
     text-align:left;
     color: #b3b3b3;
+    width: 75%; 
+    margin: auto; 
+    padding: 30px;
 }
   
 .card 
@@ -339,16 +347,9 @@ img#frontimgzombiehalf
     clear: both;
 }
 
-
-
-
-
-
-
-
-
 /* Create four equal columns that sits next to each other */
-.project-mini-row {
+.project-mini-row 
+{
     background-color: #242424;
     margin: 3%;
     border-radius: 15px;
@@ -361,12 +362,14 @@ img#frontimgzombiehalf
     padding: 0 4px;
 }
 
-.container {
+.container 
+{
     position: relative;
-  }
+}
   
-  /* Bottom right text */
-  .text-block {
+/* Bottom right text */
+.preview-text-block 
+{
     position:absolute;
     bottom: 10px;
     left: 40px;
@@ -380,30 +383,17 @@ img#frontimgzombiehalf
     padding-right: 20px;
     margin-right: 65%;
     margin-bottom: 15px;
-  }
+}
 
-  .text-block img
-  {
+.preview-text-block img
+{
     width: 60%; 
     height: 60%; 
     padding-top: 15px; 
     padding-bottom: 20px;
-  }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-.column-mini 
+.preview-button 
 {
     -ms-flex: 25%; /* IE10 */
     flex: 25%;
@@ -420,7 +410,7 @@ img#frontimgzombiehalf
     line-height:1.75;
 }
 
-.column-mini img 
+.preview-button img 
 {
     margin-top: 60px;
     vertical-align: middle;
@@ -429,7 +419,7 @@ img#frontimgzombiehalf
     padding: auto;
 }
 
-.column-mini p 
+.preview-button p 
 {
     color: #b3b3b3; 
     font-size: 14px; 
@@ -443,7 +433,7 @@ img#frontimgzombiehalf
     line-height:1.3;
 }
 
-.project-card-mobile
+.projects-mobile
 {
     border-radius: 18px; 
     margin: auto; 
@@ -454,20 +444,15 @@ img#frontimgzombiehalf
     display: none;
 }
 
-.project-card-mobileh3
-    {
-        border-radius: 18px; 
-        margin: auto; 
-        padding: 15px; 
-        vertical-align: middle; 
-        horizontal-align: middle; 
-        width: 100%; 
-        display: none;
-    }
-
-.project-card-mobile img
+.projects-mobile-title
 {
-    border-radius: 18px;
+    border-radius: 18px; 
+    margin: auto; 
+    padding: 15px; 
+    vertical-align: middle; 
+    horizontal-align: middle; 
+    width: 100%; 
+    display: none;
 }
 
 .download-btn-mobile
@@ -493,17 +478,6 @@ img#frontimgzombiehalf
     box-shadow: none;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /*  */
 @media (max-width: 1480px) 
 {
@@ -517,7 +491,7 @@ img#frontimgzombiehalf
 /*  */
 @media (max-width: 1420px) 
 {
-    .text-block
+    .preview-text-block
     {
         font-size: x-small;
     }
@@ -536,7 +510,6 @@ img#frontimgzombiehalf
     {
         margin-left: 20%;
         margin-right: 20%;
-        
     }
 }
 
@@ -546,8 +519,7 @@ img#frontimgzombiehalf
     div#frontpage-frame
     {
         margin-left: 25%;
-        margin-right: 25%;
-        
+        margin-right: 25%; 
     }
 }
 
@@ -564,7 +536,6 @@ img#frontimgzombiehalf
     {
         margin-left: 30%;
         margin-right: 30%;
-        
     }
 }
 
@@ -672,34 +643,31 @@ img#frontimgzombiehalf
     /*  */
     #frontpage-images
     {
-        
         width: 20%;
-        
-     
     }
 }
 
 /*  */
 @media (max-width: 700px) 
 {
-    .leftcolumn-mobile
+    .projects-leftcolumn
     {
         display: none;
     }
 
-    .rightcolumn-mobile
+    .projects-rightcolumn
     {
         display: none;
     }
 
-    .project-card-mobile
+    .projects-mobile
     {
         display: block;
         padding: 30px;
         font-size: 14px;
     }
     
-    .project-card-mobileh3
+    .projects-mobile-title
     {
         display: block;
         padding: 30px;
@@ -709,15 +677,6 @@ img#frontimgzombiehalf
         padding-bottom: 0px;
     }
 }
-
-
-
-
-
-
-
-
-
 
 /*  */
 @media (min-width: 2000px) 
@@ -771,14 +730,9 @@ img#frontimgzombiehalf
     }
 }
 
-
-
-
-
-
 @media (max-width: 400px)
 {
-    .column-mini {
+    .preview-button {
         -ms-flex: 100%;
         flex: 100%;
         width: 0%;
@@ -789,14 +743,14 @@ img#frontimgzombiehalf
         padding-right: 0px;
     }
 
-    .column-mini p {
+    .preview-buttoni p {
         display: none;
         padding: 0px;
         margin: 0px;
         width: 0%;
     }
 
-    .column-mini img 
+    .preview-button img 
     {
         width: 40%;
         padding: 0px;
@@ -828,10 +782,6 @@ img#frontimgzombiehalf
     }
 }
 
-
-
-
-
 /*  */
 @media (max-width: 992px) 
 {
@@ -859,7 +809,7 @@ img#frontimgzombiehalf
 /*  */
 @media (max-width: 600px) 
 {
-    .column-mini {
+    .preview-button {
         -ms-flex: 100%;
         flex: 100%;
         max-width: 100%;
@@ -871,7 +821,7 @@ img#frontimgzombiehalf
         padding-right: 20px;
     }
 
-    div.text-block
+    div.preview-text-block
     {
         padding-left: 10px;
         padding-right: 10px;
@@ -929,7 +879,7 @@ img#frontimgzombiehalf
         display: none;
     }
 
-    .column-mini {
+    .preview-button {
         -ms-flex: 100%;
         flex: 100%;
         width: 0%;
@@ -940,14 +890,14 @@ img#frontimgzombiehalf
         padding-right: 0px;
     }
 
-    .column-mini p {
+    .preview-button p {
         display: none;
         padding: 0px;
         margin: 0px;
         width: 0%;
     }
 
-    .column-mini img 
+    .preview-button img 
     {
         width: 100%;
         padding: 0px;
@@ -983,7 +933,7 @@ img#frontimgzombiehalf
         display: none;
     }
 
-    .text-block
+    .preview-text-block
     {
         padding-left: 65px;
         padding-right: 65px;
@@ -997,12 +947,12 @@ img#frontimgzombiehalf
         vertical-align: middle;
     }
 
-    .text-block p
+    .preview-text-block p
     {
         display: none;
     }
 
-    .text-block img
+    .preview-text-block img
     {
         width: 70%;
         padding-top: 10px; 
