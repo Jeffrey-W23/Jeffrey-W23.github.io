@@ -478,101 +478,28 @@ img#frontimgzombiehalf
     box-shadow: none;
 }
 
+/* ------------------------ MIN WIDTH ------------------------ */
 /*  */
-@media (max-width: 1480px) 
+@media (min-width: 1000px) 
 {
-    div#projectspage-frame
+    p#about-blog 
     {
-        margin-left: 5%;
-        margin-right: 5%; 
+        font-size: 14px;
     }
 }
 
 /*  */
-@media (max-width: 1420px) 
-{
-    .preview-text-block
-    {
-        font-size: x-small;
-    }
-}
-
-/*  */
-@media (min-width: 2200px) 
-{
-    div#projectspage-frame
-    {
-        padding-left: 300px; 
-        padding-right: 300px; 
-    }
-
-    div#frontpage-frame
-    {
-        margin-left: 20%;
-        margin-right: 20%;
-    }
-}
-
-/*  */
-@media (min-width: 2400px) 
+@media (min-width: 1500px) 
 {
     div#frontpage-frame
     {
-        margin-left: 25%;
-        margin-right: 25%; 
+        margin-left: 7%;
+        margin-right: 7%;
     }
 }
 
 /*  */
-@media (min-width: 3000px) 
-{
-    div#projectspage-frame
-    {
-        padding-left: 530px; 
-        padding-right: 530px; 
-    }
-
-    div#frontpage-frame
-    {
-        margin-left: 30%;
-        margin-right: 30%;
-    }
-}
-
-/*  */
-@media (min-width: 3700px) 
-{
-    div#frontpage-frame
-    {
-        margin-left: 35%;
-        margin-right: 35%;  
-    }
-}
-
-/*  */
-@media (min-width: 5000px) 
-{
-    div#frontpage-frame
-    {
-        margin-left: 40%;
-        margin-right: 40%;  
-    }
-}
-
-/*  */
-@media (max-width: 1300px) 
-{
-    div#frontpage-frame
-    {
-        margin-left: 0%;
-        margin-right: 0%;
-        padding-left: 0%;
-        padding-right: 0%;
-    }
-}
-
-/*  */
-@media (max-width: 1700px) 
+@media (min-width: 1700px) 
 {
     div#frontpage-frame
     {
@@ -582,99 +509,12 @@ img#frontimgzombiehalf
 }
 
 /*  */
-@media (max-width: 900px) 
+@media (min-width: 1850px) 
 {
-    div#frontpage-text 
-    {
-        width: 80%;
-    }
-
     div#frontpage-frame
     {
-        margin-left: 0%;
-        margin-right: 0%;
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
-    img#frontimgbear 
-    {
-        display: none;
-    }
-
-    img#frontimgzombiefull 
-    {
-        display: none;
-    }
-
-    img#frontimgzombiehalf 
-    {
-        display: none;
-    }
-}
-
-/* */
-@media (max-width: 1000px)
-{
-    div#skills-about-text 
-    {
-        width: 100%;
-    }
-
-    img#profileimage 
-    {
-        display: none;
-    }
-
-    div#frontpage-frame
-    {
-        margin-left: 0%;
-        margin-right: 0%;
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
-    /*  */
-    #frontpage-text
-    {
-        width: 80%;
-    }
-
-    /*  */
-    #frontpage-images
-    {
-        width: 20%;
-    }
-}
-
-/*  */
-@media (max-width: 700px) 
-{
-    .projects-leftcolumn
-    {
-        display: none;
-    }
-
-    .projects-rightcolumn
-    {
-        display: none;
-    }
-
-    .projects-mobile
-    {
-        display: block;
-        padding: 30px;
-        font-size: 14px;
-    }
-    
-    .projects-mobile-title
-    {
-        display: block;
-        padding: 30px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        padding-top: 0px;
-        padding-bottom: 0px;
+        margin-left: 15%;
+        margin-right: 15%; 
     }
 }
 
@@ -710,26 +550,109 @@ img#frontimgzombiehalf
 }
 
 /*  */
-@media (max-width: 480px) 
-{
+@media (min-width: 2150px) 
+{  
     div#frontpage-frame
     {
-        padding-left: 10px; 
-        padding-right: 10px;        
-    }
-
-    div#projectspage-frame
-    {
-        padding-left: 10px; 
-        padding-right: 10px;        
-    }
-
-    .download-btn-innercontainer 
-    {
-        width: 100%;
+        margin-left: 20%;
+        margin-right: 20%; 
     }
 }
 
+/*  */
+@media (min-width: 2200px) 
+{
+    div#projectspage-frame
+    {
+        padding-left: 300px; 
+        padding-right: 300px; 
+    }
+}
+
+/*  */
+@media (min-width: 2500px)
+{
+    div#frontpage-frame
+    {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    #frontpage-images
+    {
+        width:20%;
+    }
+
+    div#frontpage-text 
+    {
+        width: 80%;
+    }
+
+    div#skills-about-text
+    {
+        width: 50%;
+    }
+
+    #about-images
+    {
+        width:50%;
+    }
+
+    img#frontimgbear 
+    {
+        margin-top: 100px;
+    }
+}
+
+/*  */
+@media (min-width: 3000px) 
+{
+    div#projectspage-frame
+    {
+        padding-left: 530px; 
+        padding-right: 530px; 
+    }
+
+    div#frontpage-frame
+    {
+        margin-left: 30%;
+        margin-right: 30%;  
+    }
+}
+
+/*  */
+@media (min-width: 3700px) 
+{
+    div#frontpage-frame
+    {
+        margin-left: 32%;
+        margin-right: 32%;  
+    }
+}
+
+/*  */
+@media (min-width: 4150px) 
+{
+    div#frontpage-frame
+    {
+        margin-left: 35%;
+        margin-right: 35%;  
+    }
+}
+
+/*  */
+@media (min-width: 5000px) 
+{
+    div#frontpage-frame
+    {
+        margin-left: 40%;
+        margin-right: 40%;  
+    }
+}
+/* ------------------------ MIN WIDTH ------------------------ */
+
+/* ------------------------ MAX WIDTH ------------------------ */
+/*  */
 @media (max-width: 400px)
 {
     .preview-button {
@@ -783,24 +706,15 @@ img#frontimgzombiehalf
 }
 
 /*  */
-@media (max-width: 992px) 
+@media (max-width: 480px) 
 {
-    .contact-btn
+    div#projectspage-frame
     {
-        padding-left: 0;
-        padding-right: 0; 
-    }
-}
-
-/*  */
-@media (max-width: 992px) 
-{
-    img#contactimage 
-    {
-        display: none;
+        padding-left: 10px; 
+        padding-right: 10px;        
     }
 
-    div#contactmodal-text 
+    .download-btn-innercontainer 
     {
         width: 100%;
     }
@@ -852,11 +766,47 @@ img#frontimgzombiehalf
     }
 }
 
+/*  */
+@media (max-width: 700px) 
+{
+    .projects-leftcolumn
+    {
+        display: none;
+    }
+
+    .projects-rightcolumn
+    {
+        display: none;
+    }
+
+    .projects-mobile
+    {
+        display: block;
+        padding: 30px;
+        font-size: 14px;
+    }
+    
+    .projects-mobile-title
+    {
+        display: block;
+        padding: 30px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+}
+
 @media (max-width: 768px)
 {
     .mySlides
     {
         min-width: 100%;
+    }
+
+    .PreviewSlide
+    {
+        max-width: none;
     }
 }
 
@@ -907,6 +857,10 @@ img#frontimgzombiehalf
     div#frontpage-text 
     {
         width: 100%;
+        background-color: #242424;
+        padding-top: 15px;
+        border-top-left-radius: 3%;
+        border-top-right-radius: 3%;
     }
 
     .project-mini-row 
@@ -918,7 +872,7 @@ img#frontimgzombiehalf
         display: inline-block;
     }
 
-    #frontpage-images
+    div#frontpage-images
     {
         display: block;
         width: 100%;
@@ -926,6 +880,9 @@ img#frontimgzombiehalf
         margin-bottom: 0px;
         padding: auto;
         text-align: center;
+        background-color: #242424;
+        border-bottom-left-radius: 55%;
+        border-bottom-right-radius: 55%;
     }
 
     #frontpage-images img
@@ -961,39 +918,98 @@ img#frontimgzombiehalf
 }
 
 /*  */
-@media (min-width: 1000px) 
+@media (max-width: 900px) 
 {
-    p#about-blog 
+    div#frontpage-frame
     {
-        font-size: 14px;
-    }
-}
-
-/*  */
-@media (min-width: 2500px)
-{
-    #frontpage-images
-    {
-        width:20%;
-    }
-
-    div#frontpage-text 
-    {
-        width: 80%;
-    }
-
-    div#skills-about-text
-    {
-        width: 50%;
-    }
-
-    #about-images
-    {
-        width:50%;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
     img#frontimgbear 
     {
-        margin-top: 100px;
+        display: none;
+    }
+
+    img#frontimgzombiefull 
+    {
+        display: none;
+    }
+
+    img#frontimgzombiehalf 
+    {
+        display: none;
     }
 }
+
+/*  */
+@media (max-width: 992px) 
+{
+    .contact-btn
+    {
+        padding-left: 0;
+        padding-right: 0; 
+    }
+
+    img#contactimage 
+    {
+        display: none;
+    }
+
+    div#contactmodal-text 
+    {
+        width: 100%;
+    }
+}
+
+/* */
+@media (max-width: 1000px)
+{
+    div#frontpage-frame
+    {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    div#skills-about-text 
+    {
+        width: 100%;
+    }
+
+    img#profileimage 
+    {
+        display: none;
+    }
+
+    /*  */
+    #frontpage-images
+    {
+        width: 20%;
+    }
+}
+
+/*  */
+@media (max-width: 1420px) 
+{
+    .preview-text-block
+    {
+        font-size: x-small;
+    }
+}
+
+/*  */
+@media (max-width: 1500px) 
+{
+    div#projectspage-frame
+    {
+        margin-left: 5%;
+        margin-right: 5%; 
+    }
+
+    div#frontpage-frame
+    {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+/* ------------------------ MAX WIDTH ------------------------ */
