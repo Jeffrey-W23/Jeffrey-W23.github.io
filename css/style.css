@@ -769,6 +769,14 @@ img#frontimgzombiehalf
 /*  */
 @media (max-width: 700px) 
 {
+    div#frontpage-frame
+    {
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
     .projects-leftcolumn
     {
         display: none;
@@ -922,8 +930,8 @@ img#frontimgzombiehalf
 {
     div#frontpage-frame
     {
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 8px;
+        padding-right: 8px;
     }
 
     img#frontimgbear 
@@ -965,12 +973,6 @@ img#frontimgzombiehalf
 /* */
 @media (max-width: 1000px)
 {
-    div#frontpage-frame
-    {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
     div#skills-about-text 
     {
         width: 100%;
@@ -1008,8 +1010,8 @@ img#frontimgzombiehalf
 
     div#frontpage-frame
     {
-        margin-left: 2%;
-        margin-right: 2%;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 }
 /* ------------------------ MAX WIDTH ------------------------ */
