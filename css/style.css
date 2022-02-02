@@ -724,7 +724,7 @@ img#frontimgzombiehalf
         padding-right: 0px;
     }
 
-    .preview-buttoni p {
+    .preview-button p {
         display: none;
         padding: 0px;
         margin: 0px;
@@ -927,6 +927,9 @@ img#frontimgzombiehalf
         background-color: rgb(88, 87, 87);
         border-radius: 50%;
         display: inline-block;
+        border-width:2px;
+        border-style:solid;
+        border-color:rgb(124, 124, 124);
     }
 
     div#frontpage-images

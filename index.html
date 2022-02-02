@@ -343,16 +343,17 @@
 
                     <!-- SCRIPT FOR PREVIEW SLIDES -->
                     <script>
-                        //
+                        
+                        // index for the current active preview slide
                         var nSlideIndex = 1;
 
-                        //
+                        // Auto move to next slide every 7.25 seconds
                         setInterval(function() {PlusSlides(1)}, 7250);
 
-                        //
+                        // Function for moving to the next slide with arrows
                         function PlusSlides(nIndex) 
                         {
-                            //
+                            // Run the function for changing slides
                             DisplayDiv(nSlideIndex += nIndex);
                         }
                         
