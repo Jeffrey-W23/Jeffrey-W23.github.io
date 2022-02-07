@@ -94,118 +94,179 @@
     <section class="py-5" style="background-color: #1E1F23;">
 
         <!-- Main content frame -->
-        <div class="row" id="frontpage-frame" style="background-color: #242424; margin-bottom:0px; border-radius: 15px; box-shadow: 2px 5px #1c1c1c;">
+        <div class="row" id="frontpage-frame">
 
             <!-- page content -->
-            <div class="col-md-12" style="vertical-align:middle;">
-                <div class="row" style="vertical-align:middle; background-color: transparent;">
+            <div class="col-md-12" style="vertical-align:middle; padding: 0px;">
+                <div class="row content-inner-frame" style="padding: 0px;">
 
-                    <!-- TOP GROUP -->
-                    <!-- page title -->
-                    <h1 class="col-md-12" style="margin-top:55px; margin-bottom:35px; text-align:center; color: #b3b3b3;">Complex System - Lua CPP Bindings</h1>
-                    
-                    <!-- title info -->
-                    <div class="about-text-projects">
-                        <p>This was a project that I completed in my second-year studies at AIE as a part of our complex systems learning outcome. For this assignment, I developed a project for developing games with scriptable objects (Inspiration being the Love2D engine), taking advantage of Lua C++ Bindings.</p><br>
-                    </div>
+                    <!------------------------------------------------------------------->
+                    <!-- LEFT PANEL -->
+                    <div id="frontpage-text" style="margin: 0px;">
 
-                    <!-- buttons-->
-                    <div class="download-btn-container" style="margin-top:-30px; margin-bottom:10px;">
-                        <a class="download-btn" style="margin-left:5px; margin-right:5px; color:white;" onclick="document.getElementById('id02').style.display='block'">README</a>
-                        <a class="download-btn" style="margin-left:5px; margin-right:5px;" href="https://github.com/Jeffrey-W23/AIE-Assignment-ComplexSystem">SOURCE CODE</a>
-                    </div>
+                        <!-- TITLE SECTION MOBILE -->
+                        <div class="mobile-title-section">
 
-                    <hr class="line-seperator" width="100%" align="middle">
+                            <!-- Project Logo -->
+                            <h4 class="col-md-12" style="margin-top:55px; margin-bottom:35px; text-align:center; color: #b3b3b3;">Complex System - Lua CPP Bindings</h4>
 
-                    <!-- Images/Videos -->
-                    <div class="col-md-6" style="vertical-align:middle; text-align:center; margin-bottom:15px; margin-top:15px;">
-                        <img src="../images/complex.PNG" id="ImgViewer" class="img-responsive" style="width:100%;" alt="Lua CPP Bindings project in action." width="280" height="412" />
-                    </div>
+                            <!-- Description Logo -->
+                            <div style="padding-bottom: 15px; ">
+                                <hr class="line-seperator" style="height: 2px; background: #474747;">
+                                <p style="color: #b3b3b3; font-size: small; text-align: center;">This was a project that I completed in my second-year studies at AIE as a part of our complex systems learning outcome. For this assignment, I developed a project for developing games with scriptable objects (Inspiration being the Love2D engine), taking advantage of Lua C++ Bindings.</p>
+                            </div>
+                        </div>
+                        <!-- TITLE SECTION MOBILE -->
 
-                    <div class="col-md-6" style="vertical-align:middle; text-align:center; margin-bottom:15px; margin-top:15px;">
-                        <video controls loop width="100%" style="">
-					        <source src="../images/complex.mp4" type="video/mp4">
-				        </video>
-                    </div>
+                        <!-- IMAGE SLIDER -->
+                        <!-- IMG 1 -->
+                        <div class="container PreviewSlide" style="margin: 0px;">
 
-                    <hr class="line-seperator" width="100%" align="right">
-                    <!-- TOP GROUP -->
+                            <!-- Video -->
+                            <video controls loop width="100%" style="width:100%; border-radius: 1%;" class="blogvid">
+                                <source src="../images/complex.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <!-- IMG 1 -->
+                        <!-- IMAGE SLIDER -->
 
-                    <!-- LEFT GROUP -->
-                    <div id="frontpage-text" style="margin-top:60px; width:100%;">
+                        <!-- BUTTON SECTION MOBILE -->
+                        <div class="mobile-title-section" style="margin-top: 8px;">
 
-                        <!-- INFORMATION TEXT -->
-                        <div class="about-text">
+                            <!-- buttons-->
+                            <div>
+                                <a class="project-download-btn" style="margin-left: auto; margin-right: auto; width: 100%;" href="https://github.com/Jeffrey-W23/AIE-Assignment-ComplexSystem">SOURCE CODE</a>
+                            </div>
 
-                            <!-- SECTION 1 -->
-                            <!-- Title -->
-                            <h4>INTRODUCTION</h4><br>
-
-                            <!-- Paragraph 1 -->
-                            <p>This project was developed over a few weeks as a part of my studies at the Academy of Interactive Entertainment (AIE). The main purpose of the assignment was to show our abilities to complete complex tasks and expand our knowledge and programming skills.</p>
-                            
-                            <!-- Paragraph 2 -->
-                            <p>The assignment required us to pick a complex topic of research and to figure out a software solution to prove our knowledge. I chose Lua Bindings for my topic and developed a program that would allow for the aieBootstrap game engine to use Lua as a scripting language for development. The project was developed using C++ and was inspired by my love, no pun intended, of the Love2D engine, something I used quite extensively during the development of Zombie Game.</p><br>
-                            <!-- SECTION 1 -->
-
-                            <!-- SECTION 2 -->
-                            <!-- Title -->
-                            <br><h4>PROJECT GOALS</h4><br>
-
-                            <!-- Paragraph 1 -->
-                            <p>The main purpose and goal of this assignment was to build a complex application, proving our knowledge and skills in the topic. As discussed above, I chose to develop a Lua Bindings application using C++ to replicate a basic Love2D engine.</p>
-                            
-                            <!-- Paragraph 2 -->
-                            <p>The Minimum Viable Product (MVP) of the project was to create a simple working demo, showing functions and changing values from a Lua script running in the aieBootstrap engine, as well as having a finished complied statically-linked library (.lib) of the project.</p>
-                            
-                            <!-- Paragraph 3 -->
-                            <p>Other goals for the project, outside of the MVP, were to have a compiled dynamically-linked library (.dll) of the project, mapping extra functions in the renderer and input class, the ability to use with 3D, playing audio, as well as the ability to use fonts and texts. Most of the extra goals were met, minus 3D capabilities, playing audio, as well as some of the extra mappings.</p><br>
-                            <!-- SECTION 2 -->
-
-                            <!-- SECTION 3 -->
-                            <br><h4>PERSONAL ACCOMPLISHMENTS</h4><br>
-
-                            <ul>
-                                <!-- Dot point 1 -->
-                                <li>Successfully created both a statically-linked library and a dynamically-linked library.</li>
-
-                                <!-- Dot point 2 -->
-                                <li>Implemented the Lua C API.</li>
-
-                                <!-- Dot point 3 -->
-                                <li>Gained a greater understanding of Visual Studio and problem-solving solution errors and difficulties.</li>
-
-                                <!-- Dot point 4 -->
-                                <li>Gained a great understanding of Lua.</li>
-                            </ul><br>
-                            <!-- SECTION 3 -->
-
-                            <!-- SECTION 4 -->
-                            <!-- Title -->
-                            <br><h4>LESSONS LEARNED</h4><br>
-
-                            <!-- Paragraph 1 -->
-                            <p>Other than all the information listed above, which was all new stuff I learnt for the development of this project, I learnt a lot about how I work and how I take on work. </p>
-                            
-                            <!-- Paragraph 2 -->
-                            <p>Personally, this project was stressful, I was having difficulties and I was unsure what topic to choose for the assignment. I ended up choosing scripting, because of previous knowledge of the topic, hoping it would help with completing the assignment. Once development started I got lost, developed and research the wrong stuff and it was an absolute disaster. So I slowed down, figured out exactly what it was I wanted to create and restarted my project. Everything went well after this, even finishing things listed as extras in my proposal. </p>
-                            
-                            <!-- Paragraph 3 -->
-                            <p>I think my main take away from this assignment is being aware that my lack of confidence and stresses almost got the best of me and almost ruined a project. But I realized what I was doing wrong, corrected mistakes, restarted development and continued developing and overcoming any confidence and stress issues I was facing.</p><br>
-                            <!-- SECTION 4 -->
+                            <!-- buttons-->
+                            <div>
+                                <a class="project-download-btn" style="margin-left: auto; margin-right: auto; width: 100%; background-color:darkslateblue; color:white;" onclick="document.getElementById('id02').style.display='block'">README</a>
+                            </div>
 
                         </div>
-                        <!-- INFORMATION TEXT -->
+                        <!-- BUTTON SECTION MOBILE -->
+
+                        <!-- MAIN CONTENT SECTION -->
+                        <div style="background-color: #1c1c1c; margin: 15px; margin-top: 8px; border-radius: 10px; border: 1px;">
+                            <div style="color: #b3b3b3; text-align: left; padding: 30px;">
+    
+                                <!-- SECTION 1 -->
+                                <!-- Title -->
+                                <h4>INTRODUCTION</h4><br>
+
+                                <!-- Paragraph 1 -->
+                                <p>This project was developed over a few weeks as a part of my studies at the Academy of Interactive Entertainment (AIE). The main purpose of the assignment was to show our abilities to complete complex tasks and expand our knowledge and programming skills.</p>
+                                
+                                <!-- Paragraph 2 -->
+                                <p>The assignment required us to pick a complex topic of research and to figure out a software solution to prove our knowledge. I chose Lua Bindings for my topic and developed a program that would allow for the aieBootstrap game engine to use Lua as a scripting language for development. The project was developed using C++ and was inspired by my love, no pun intended, of the Love2D engine, something I used quite extensively during the development of Zombie Game.</p><br>
+                                <!-- SECTION 1 -->
+
+                                <!-- SECTION 2 -->
+                                <!-- Title -->
+                                <br><h4>PROJECT GOALS</h4><br>
+
+                                <!-- Paragraph 1 -->
+                                <p>The main purpose and goal of this assignment was to build a complex application, proving our knowledge and skills in the topic. As discussed above, I chose to develop a Lua Bindings application using C++ to replicate a basic Love2D engine.</p>
+                                
+                                <!-- Paragraph 2 -->
+                                <p>The Minimum Viable Product (MVP) of the project was to create a simple working demo, showing functions and changing values from a Lua script running in the aieBootstrap engine, as well as having a finished complied statically-linked library (.lib) of the project.</p>
+                                
+                                <!-- Paragraph 3 -->
+                                <p>Other goals for the project, outside of the MVP, were to have a compiled dynamically-linked library (.dll) of the project, mapping extra functions in the renderer and input class, the ability to use with 3D, playing audio, as well as the ability to use fonts and texts. Most of the extra goals were met, minus 3D capabilities, playing audio, as well as some of the extra mappings.</p><br>
+                                <!-- SECTION 2 -->
+
+                                <!-- SECTION 3 -->
+                                <br><h4>PERSONAL ACCOMPLISHMENTS</h4><br>
+
+                                <ul>
+                                    <!-- Dot point 1 -->
+                                    <li>Successfully created both a statically-linked library and a dynamically-linked library.</li>
+
+                                    <!-- Dot point 2 -->
+                                    <li>Implemented the Lua C API.</li>
+
+                                    <!-- Dot point 3 -->
+                                    <li>Gained a greater understanding of Visual Studio and problem-solving solution errors and difficulties.</li>
+
+                                    <!-- Dot point 4 -->
+                                    <li>Gained a great understanding of Lua.</li>
+                                </ul><br>
+                                <!-- SECTION 3 -->
+
+                                <!-- SECTION 4 -->
+                                <!-- Title -->
+                                <br><h4>LESSONS LEARNED</h4><br>
+
+                                <!-- Paragraph 1 -->
+                                <p>Other than all the information listed above, which was all new stuff I learnt for the development of this project, I learnt a lot about how I work and how I take on work. </p>
+                                
+                                <!-- Paragraph 2 -->
+                                <p>Personally, this project was stressful, I was having difficulties and I was unsure what topic to choose for the assignment. I ended up choosing scripting, because of previous knowledge of the topic, hoping it would help with completing the assignment. Once development started I got lost, developed and research the wrong stuff and it was an absolute disaster. So I slowed down, figured out exactly what it was I wanted to create and restarted my project. Everything went well after this, even finishing things listed as extras in my proposal. </p>
+                                
+                                <!-- Paragraph 3 -->
+                                <p>I think my main take away from this assignment is being aware that my lack of confidence and stresses almost got the best of me and almost ruined a project. But I realized what I was doing wrong, corrected mistakes, restarted development and continued developing and overcoming any confidence and stress issues I was facing.</p>
+                                <!-- SECTION 4 -->
+    
+                            </div>
+
+                        </div>
+                        <!-- MAIN CONTENT SECTION -->
 
                     </div>
-                    <!-- LEFT GROUP -->
+                    <!-- LEFT PANEL -->
 
-                    <!-- RIGHT GROUP -->
-                    <div id='frontpage-images'>
+                    <!-- RIGHT PANEL -->
+                    <div id='frontpage-images' style="padding: 0px; padding-right: 15px; padding-top: 15px; margin: 0px;">
 
+                        <!-- TITLE SECTION -->
+                        <div class="project-title">
+
+                            <!-- Project Logo -->
+                            <h4 class="col-md-12" style="margin-top:55px; margin-bottom:35px; text-align:center; color: #b3b3b3;">Complex System - Lua CPP Bindings</h4>
+
+                            <!-- buttons-->
+                            <div>
+                                <a class="project-download-btn" style="margin-left: auto; margin-right: auto; width: 100%;" href="https://github.com/Jeffrey-W23/AIE-Assignment-ComplexSystem">SOURCE CODE</a>
+                            </div>
+
+                            <!-- buttons-->
+                            <div>
+                                <a class="project-download-btn" style="margin-left: auto; margin-right: auto; width: 100%; background-color:darkslateblue; color:white;" onclick="document.getElementById('id02').style.display='block'">README</a>
+                            </div>
+                            
+                            <!-- Info section -->
+                            <div style="margin-bottom: 25px;">
+                                <div style="margin-top: 35px;">
+                                    <span style="color: #b3b3b3; font-weight: bold; float: left;">DEVELOPED:</span>
+                                    <span style="color: #b3b3b3; float: right;">05/2018</span>
+                                    <hr class="line-seperator" style="height: 2px; background: #47474700;">
+                                </div>
+                                
+                                <div>
+                                    <span style="color: #b3b3b3; font-weight: bold; float: left;">STATUS:</span>
+                                    <span style="color: #b3b3b3; float: right;">FINISHED</span>
+                                    <hr class="line-seperator" style="height: 2px;background: #47474700;">
+                                </div>
+                                
+                                <div>
+                                    <span style="color: #b3b3b3; font-weight: bold; float: left;">LANGUAGE:</span>
+                                    <span style="color: #b3b3b3; float: right;">C++</span>
+                                    <hr class="line-seperator" style="height: 2px; background: #47474700;">
+                                    <hr class="line-seperator" style="height: 2px; background: #47474700;">
+                                </div>
+                            </div>
+                            <!-- Info section -->
+
+                            <!-- Project Description -->
+                            <div style="padding-bottom: 15px;">
+                                <hr class="line-seperator" style="height: 2px; background: #474747;">
+                                <p style="color: #b3b3b3; text-align: left;">This was a project that I completed in my second-year studies at AIE as a part of our complex systems learning outcome. For this assignment, I developed a project for developing games with scriptable objects (Inspiration being the Love2D engine), taking advantage of Lua C++ Bindings.</p>
+                            </div>
+                        </div>
+                        <!-- TITLE SECTION -->
 
                     </div>
-                    <!-- RIGHT GROUP -->
+                    <!-- RIGHT PANEL -->
 
                 </div>
             </div>
@@ -217,41 +278,55 @@
     </section>
     <!-- Main content background -->
 
-    <!-- IMAGE MODAL -->
-    <!-- The Modal -->
-    <div id="ImageViewer" class="ImgModal">
-        <span class="ImgClose">&times;</span>
-        <img class="ImgModal-content" id="img01">
-        <div id="ImgCaption"></div>
+    <!-- README MODAL -->
+    <div id="id02" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4" style="background-color: #1E1F23;">
+
+            <!-- MODAL HEADER -->
+            <header class="w3-container w3-darker-grey">
+                <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-display-topright" style="position:center; font-size:41px;">&times;</span>
+                <h2 style="color: #b3b3b3; margin-top: 20px; margin-bottom: 20px;">README - BUILDING/RUNNING THE PROJECT</h2>
+            </header>
+            <!-- MODAL HEADER -->
+
+            <!-- MODAL CONTENT -->
+            <div class="row" id="contactmodal-frame" style="vertical-align:middle; text-align:center;">
+                <div class="col-md-12" style="vertical-align:middle;">
+                    <div class="row" style="vertical-align:middle; background-color: transparent; margin-bottom:0px;">
+
+                        <!-- Information -->
+                        <div style="width:100%; height:100%; background-color: transparent; padding-left:20px; padding-right:20px; color:#b3b3b3; text-align:left; line-height:1.75;">
+
+                            <p>UPGRADING THE PROJECT TO LATER VERSIONS OF VISUAL STUDIO SHOULD BE FINE. ORIGINALLY INTENDED FOR 2015 BUT TESTED UP TO 2019 AND WORKS FINE.</p><br />
+
+                            <p style="font-weight:bold;">For building and running the complex application:</p>
+
+                            <ol>
+                                <li>Confirm the "LuaBindingsDLL" and "Project3D" projects are unloaded (Under the solutions right-click menu).</li>
+                                <li>Confirm the "Project2D" project is set to the "StartUp Project" (Under the solutions right-click menu).</li>
+                                <li>Set the build settings at the top of Visual Studio to "Debug" and "x86" and build the "Bootstrap", "LuaBindings" and "Project2D" projects.</li>
+                                <li>Build/Run the "Project2D" project, it should fail with the following message: "The code execution cannot proceed because lua51.dll was not found. Reinstalling the program may fix this problem.".</li>
+                                <li>Close the application and copy "lua51.dll" from the root of the project directory.</li>
+                                <li>Navigate to the "AIE-Assignment-ComplexSystem\temp\Project2D\Win32\Debug" directory and paste the "lua51.dll", copied from the previous step.</li>
+                                <li>Build/Run the "Project2D" project again. The project should run as planned.</li>
+                            </ol>
+
+                            <br/><p style="font-weight:bold;">For access to the Demo.lua file (used for coding the example) follow the below steps:</p>
+
+                            <ol>
+                                <li>Navigate to the projects root directory and open the "bin" folder.</li>
+                                <li>Open the Demo.lua file in Visual Studio.</li>
+                            </ol>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- MODAL CONTENT -->
+
+        </div>
     </div>
-
-    <!-- Modal Script -->
-    <script>
-        // Get the modal
-        var modal = document.getElementById("ImageViewer");
-
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var img = document.getElementById("ImgViewer");
-        var modalImg = document.getElementById("img01");
-        var captionText = document.getElementById("ImgCaption");
-
-        img.onclick = function ()
-        {
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
-        }
-
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("ImgClose")[0];
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function ()
-        { 
-            modal.style.display = "none";
-        }
-    </script>
-    <!-- IMAGE MODAL -->
+    <!-- README MODAL -->
 
     <!-- CONTACT MODAL -->
     <div id="id01" class="w3-modal">
@@ -336,56 +411,6 @@
         </div>
     </div>
     <!-- CONTACT MODAL -->
-
-    <!-- README MODAL -->
-    <div id="id02" class="w3-modal">
-        <div class="w3-modal-content w3-animate-top w3-card-4" style="background-color: #1E1F23;">
-
-            <!-- MODAL HEADER -->
-            <header class="w3-container w3-darker-grey">
-                <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-display-topright" style="position:center; font-size:41px;">&times;</span>
-                <h2 style="color: #b3b3b3; margin-top: 20px; margin-bottom: 20px;">README - BUILDING/RUNNING THE PROJECT</h2>
-            </header>
-            <!-- MODAL HEADER -->
-
-            <!-- MODAL CONTENT -->
-            <div class="row" id="contactmodal-frame" style="vertical-align:middle; text-align:center;">
-                <div class="col-md-12" style="vertical-align:middle;">
-                    <div class="row" style="vertical-align:middle; background-color: transparent; margin-bottom:0px;">
-
-                        <!-- Information -->
-                        <div style="width:100%; height:100%; background-color: transparent; padding-left:20px; padding-right:20px; color:#b3b3b3; text-align:left; line-height:1.75;">
-
-                            <p>UPGRADING THE PROJECT TO LATER VERSIONS OF VISUAL STUDIO SHOULD BE FINE. ORIGINALLY INTENDED FOR 2015 BUT TESTED UP TO 2019 AND WORKS FINE.</p><br />
-
-                            <p style="font-weight:bold;">For building and running the complex application:</p>
-
-                            <ol>
-                                <li>Confirm the "LuaBindingsDLL" and "Project3D" projects are unloaded (Under the solutions right-click menu).</li>
-                                <li>Confirm the "Project2D" project is set to the "StartUp Project" (Under the solutions right-click menu).</li>
-                                <li>Set the build settings at the top of Visual Studio to "Debug" and "x86" and build the "Bootstrap", "LuaBindings" and "Project2D" projects.</li>
-                                <li>Build/Run the "Project2D" project, it should fail with the following message: "The code execution cannot proceed because lua51.dll was not found. Reinstalling the program may fix this problem.".</li>
-                                <li>Close the application and copy "lua51.dll" from the root of the project directory.</li>
-                                <li>Navigate to the "AIE-Assignment-ComplexSystem\temp\Project2D\Win32\Debug" directory and paste the "lua51.dll", copied from the previous step.</li>
-                                <li>Build/Run the "Project2D" project again. The project should run as planned.</li>
-                            </ol>
-
-                            <br/><p style="font-weight:bold;">For access to the Demo.lua file (used for coding the example) follow the below steps:</p>
-
-                            <ol>
-                                <li>Navigate to the projects root directory and open the "bin" folder.</li>
-                                <li>Open the Demo.lua file in Visual Studio.</li>
-                            </ol>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- MODAL CONTENT -->
-
-        </div>
-    </div>
-    <!-- README MODAL -->
 
     <!-- Footer -->
     <footer class="py-5" style="background-color: #2a2a2a;">

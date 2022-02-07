@@ -91,64 +91,291 @@
     <!-- Header -->
 
     <!-- Main content background -->
-    <section class="py-5" style="background-color: #3f3240;">
+    <section class="py-5" style="background-color: #1E1F23;">
 
         <!-- Main content frame -->
-        <div class="row" id="frontpage-frame" style="background-color: #1E1F23; margin-bottom:0px; border-radius: 15px; box-shadow: 2px 5px #1c1c1c;">
+        <div class="row" id="frontpage-frame">
 
             <!-- page content -->
-            <div class="col-md-12" style="vertical-align:middle;">
-                <div class="row" style="vertical-align:middle; background-color: transparent;">
+            <div class="col-md-12" style="vertical-align:middle; padding: 0px;">
+                <div class="row content-inner-frame" style="padding: 0px;">
 
-                    <!-- TOP GROUP -->
-                    <!-- page title -->
-                    <img src="../images/bottitle2.png" class="img-responsive" style="margin-top:85px; margin-bottom:35px; height:50%; width:50%; display: block; margin-left: auto; margin-right: auto;"/>
-                    
-                    <!-- title info -->
-                    <div class="about-text-projects">
-                        <p>Created from boredom and a need for inspiration in games development, The JamJar is a Discord bot designed to help Game developers and Game Jam enthusiasts easily generate game ideas or themes for inspiration or motivation in their development. No need to think or use external sites, generate a random game idea right in discord with your team. Once installed use ?info to get started!</p><br>
-                    </div>
+                    <!------------------------------------------------------------------->
+                    <!-- LEFT PANEL -->
+                    <div id="frontpage-text" style="margin: 0px;">
 
-                    <!-- buttons-->
-                    <div class="download-btn-container" style="margin-top:-30px; margin-bottom:10px;">
-                        <a class="download-btn" style="margin-left:5px; margin-right:5px; color:white;" onclick="document.getElementById('id02').style.display='block'">README</a>
-                        <a class="download-btn" style="margin-left:5px; margin-right:5px;" href="https://discord.com/oauth2/authorize?client_id=878253816531812412&permissions=105226767360&scope=bot%20applications.commands">INSTALL</a>
-                        <a class="download-btn" style="margin-left:5px; margin-right:5px;" href="https://github.com/Jeffrey-W23/JamJar">SOURCE CODE</a>
-                    </div>
+                        <!-- TITLE SECTION MOBILE -->
+                        <div class="mobile-title-section">
 
-                    <!-- Images/Videos -->
-                    <hr class="line-seperator" width="100%" align="middle">
+                            <!-- Project Logo -->
+                            <img src="../images/bottitle2.png" style="height:100%; width:80%; display: block; margin-left: auto; margin-right: auto; margin-bottom: 60px; margin-top: 35px;"/>
 
-                    <div class="col-md-6" style="vertical-align:middle; text-align:center; margin-bottom:15px; margin-top:15px;">
-                        <img src="../images/bot2screenshot.png" id="ImgViewer" class="img-responsive" style="width:100%;" alt="The Jam Jar Bot Screenshot" width="280" height="412" />
-                    </div>
+                            <!-- Description Logo -->
+                            <div style="padding-bottom: 15px; ">
+                                <hr class="line-seperator" style="height: 2px; background: #474747;">
+                                <p style="color: #b3b3b3; font-size: small; text-align: center;">JamJar is a Discord bot developed using Node.Js and written in JavaScript. Created from boredom and a need for inspiration in games development, The JamJar is a Discord bot designed to help Game developers and Game Jam enthusiasts easily generate game ideas or themes for inspiration or motivation in their development. Once installed, use ?info to get started!</p>
+                            </div>
+                        </div>
+                        <!-- TITLE SECTION MOBILE -->
 
-                    <div class="col-md-6" style="vertical-align:middle; text-align:center; margin-bottom:15px; margin-top:15px;">
-                        <video controls loop width="100%" style="">
-					        <source src="../images/bot2video.mp4" type="video/mp4">
-				        </video>
-                    </div>
-                    
-                    <hr class="line-seperator" width="100%" align="right">
-                    <!-- TOP GROUP -->
+                        <!-- IMAGE SLIDER -->
+                        <!-- IMG 1 -->
+                        <div class="container PreviewSlide" style="margin: 0px;">
 
-                    <!-- LEFT GROUP -->
-                    <div id="frontpage-text" style="margin-top:20px; width:100%;">
+                            <!-- Video -->
+                            <video controls loop width="100%" style="width:100%; border-radius: 1%;" class="blogvid">
+                                <source src="../images/bot2video.mp4" type="video/mp4">
+                            </video>
 
-                        <!-- INFORMATION TEXT -->
-                        <div class="about-text">
+                            <!-- Page Number and Cycle Buttons -->
+                            <div style="color: #f2f2f2; font-size: 12px; padding: 8px 12px; position: absolute; top: 0;">1 / 3</div>
+                            <a class="next" style="color: rgba(255, 255, 255, 0.753);" onclick="PlusSlides(1)"><i class="fas fa-chevron-right"></i></a>
+                            <a class="prev" style="color: rgba(255, 255, 255, 0.753);" onclick="PlusSlides(-1)"><i class="fas fa-chevron-left"></i></a>
 
                         </div>
-                        <!-- INFORMATION TEXT -->
+                        <!-- IMG 1 -->
+
+                        <!-- IMG 2 -->
+                        <div class="container PreviewSlide" style="display: none; margin: 0px; margin-bottom: 8px;">
+
+                            <!-- Image -->
+                            <img src="../images/bot2screenshot.png" style="width:100%; border-radius: 1%;">
+
+                            <!-- Page Number and Cycle Buttons -->
+                            <div style="color: #f2f2f2; font-size: 12px; padding: 8px 12px; position: absolute; top: 0;">2 / 3</div>
+                            <a class="next" style="color: rgba(255, 255, 255, 0.753);" onclick="PlusSlides(1)"><i class="fas fa-chevron-right"></i></a>
+                            <a class="prev" style="color: rgba(255, 255, 255, 0.753);" onclick="PlusSlides(-1)"><i class="fas fa-chevron-left"></i></a>
+
+                        </div>
+                        <!-- IMG 2 -->
+
+                        <!-- IMG 3 -->
+                        <div class="container PreviewSlide" style="display: none; margin: 0px; margin-bottom: 8px;">
+
+                            <!-- Image -->
+                            <img src="../images/bot2screen2.PNG" style="width:100%; border-radius: 1%;">
+
+                            <!-- Page Number and Cycle Buttons -->
+                            <div style="color: #f2f2f2; font-size: 12px; padding: 8px 12px; position: absolute; top: 0;">3 / 3</div>
+                            <a class="next" style="color: rgba(255, 255, 255, 0.753);" onclick="PlusSlides(1)"><i class="fas fa-chevron-right"></i></a>
+                            <a class="prev" style="color: rgba(255, 255, 255, 0.753);" onclick="PlusSlides(-1)"><i class="fas fa-chevron-left"></i></a>
+
+                        </div>
+                        <!-- IMG 3 -->
+                        <!-- IMAGE SLIDER -->
+
+                        <!-- SLIDER PREVIEW BUTTONS -->
+                        <div style="text-align: center; display:flex; padding-left: 15px; padding-right: 15px; padding-bottom: 15px;">
+                        
+                            <!-- Img Button 1 -->
+                            <div class="preview w3-opacity w3-hover-opacity-off w3-opacity-off" style="cursor:pointer; display: inline-block; vertical-align: middle; margin: 8px; width: 100%; position: relative;" onclick="CurrentPreviewSlide(1)">
+                                <img class="prev-image" src="../images/bot2screen.PNG" style="width:100%; border-radius: 8px;">
+                                <a style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #ffffff; font-size: x-large;"><i class="fas fa-play"></i></a>
+                            </div>
+
+                            <!-- Img Button 2 -->
+                            <div class="preview w3-opacity w3-hover-opacity-off" style="cursor:pointer; display: inline-block; vertical-align: middle; margin: 8px; width: 100%; position: relative;" onclick="CurrentPreviewSlide(2)">
+                                <img class="prev-image" src="../images/bot2screenshot.png" style="width:100%; border-radius: 8px;">
+                            </div>
+
+                            <!-- Img Button 3 -->
+                            <div class="preview w3-opacity w3-hover-opacity-off" style="cursor:pointer; display: inline-block; vertical-align: middle; margin: 8px; width: 100%; position: relative;" onclick="CurrentPreviewSlide(3)">
+                                <img class="prev-image" src="../images/bot2screen2.PNG" style="width:100%; border-radius: 8px;">
+                            </div>
+
+                        </div>
+                        <!-- SLIDER PREVIEW BUTTONS -->
+
+                        <!-- BUTTON SECTION MOBILE -->
+                        <div class="mobile-title-section">
+
+                            <!-- buttons-->
+                            <div>
+                                <a class="project-download-btn" style="margin-left: auto; margin-right: auto; width: 100%;" href="https://github.com/Jeffrey-W23/JamJar">SOURCE CODE</a>
+                            </div>
+
+                            <!-- buttons-->
+                            <div>
+                                <a class="project-download-btn" style="margin-left: auto; margin-right: auto; width: 100%; background-color:darkslateblue" href="https://discord.com/oauth2/authorize?client_id=878253816531812412&permissions=105226767360&scope=bot%20applications.commands">ADD TO DISCORD</a>
+                            </div>
+
+                        </div>
+                        <!-- BUTTON SECTION MOBILE -->
+
+                        <!-- MAIN CONTENT SECTION -->
+                        <div style="background-color: #1c1c1c; margin: 15px; margin-top: 0px; border-radius: 10px; border: 1px;">
+                            <div style="color: #b3b3b3; text-align: left; padding: 30px;">
+    
+                                <!-- SECTION 1 -->
+                                <!-- Title -->
+                                <h4>INTRODUCTION</h4><br>
+    
+                                <!-- Paragraph 1 -->
+                                <p>JamJar is a Discord bot I developed during the COVID19 lockdown of 2021 and was literally inspired by a lack of inspiration. After creating my first bot ImpostorBot, and it no longer being relevant, I wanted to create something new that people would actually want to use and keep installed. So a combination of wanting to create something and not having any inspiration ended up spawning the creation of a video game idea/theme generator that can live in your development discord, ready for use whenever you need it! Many thanks to the people below who allowed me to use their theme lists. It saved me many hours of painful thought and writing!</p><br>
+                                <!-- SECTION 1 -->
+    
+                                <!-- SECTION 2 -->
+                                <!-- Title -->
+                                <br><h4>INSTALLATION AND USAGE GUIDE</h4><br>
+    
+                                <ol>
+                                    <li>Click the Install button at the top of the page. This install button will take you to the Discord Bot Authorization Webpage (discord account and login required).</li>
+                                    <li>Read over and confirm the bot permissions required as well as selecting a server under the drop-down menu. Click authorize button, allowing the bot to be added to the selected server.</li>
+                                    <li>Navigate to the selected server and type either "?info" or "?help" into a discord text chat to get started with the bot. Enjoy!</li>
+                                </ol>
+                                <br>
+                                <!-- SECTION 2 -->
+    
+                                <!-- SECTION 3 -->
+                                <br><h4>SPECIAL THANKS AND CREDIT TO THE FOLLOWING</h4><br>
+    
+                                <ul>
+                                    <li>Gunnar Clovis: Author of 80% of the bots random themes, these themes being from one of Gunnar's similar game idea projects. <br/>Check it out: <a id="about-links" href="https://gunnar-clovis.itch.io/game-jam-theme-generator">https://gunnar-clovis.itch.io/game-jam-theme-generator</a>.<br/><br/></li>
+                                    <li>Bartek: Author of %15 of the bots random themes, originally used as a list for LudumDare game themes. <br/>Check it out: <a id="about-links" href="https://gist.github.com/bananu7/9252503">https://gist.github.com/bananu7/9252503</a>.<br/><br/></li>
+                                    <li>Marmellata Jam Font: Used for the JamJar logo. <br/>Check it out: <a id="about-links" href="https://www.dafont.com/marmellata-jam-demo.font">https://www.dafont.com/marmellata-jam-demo.font</a>.<br/></li>
+                                </ul>
+                                <!-- SECTION 3 -->
+    
+                            </div>
+
+                        </div>
+                        <!-- MAIN CONTENT SECTION -->
 
                     </div>
-                    <!-- LEFT GROUP -->
+                    <!-- LEFT PANEL -->
 
-                    <!-- RIGHT GROUP -->
-                    <div id='frontpage-images'>
+                    <!-- RIGHT PANEL -->
+                    <div id='frontpage-images' style="padding: 0px; padding-right: 15px; padding-top: 15px; margin: 0px;">
+
+                        <!-- TITLE SECTION -->
+                        <div class="project-title">
+
+                            <!-- Project Logo -->
+                            <img src="../images/bottitle2.png" style="height:100%; width:100%; display: block; margin-left: auto; margin-right: auto; margin-bottom: 60px; margin-top: 35px;"/>
+
+                            <!-- buttons-->
+                            <div>
+                                <a class="project-download-btn" style="margin-left: auto; margin-right: auto; width: 100%;" href="https://github.com/Jeffrey-W23/JamJar">SOURCE CODE</a>
+                            </div>
+
+                            <!-- buttons-->
+                            <div>
+                                <a class="project-download-btn" style="margin-left: auto; margin-right: auto; width: 100%; background-color:darkslateblue" href="https://discord.com/oauth2/authorize?client_id=878253816531812412&permissions=105226767360&scope=bot%20applications.commands">ADD TO DISCORD</a>
+                            </div>
+                            
+                            <!-- Info section -->
+                            <div style="margin-bottom: 25px;">
+                                <div style="margin-top: 35px;">
+                                    <span style="color: #b3b3b3; font-weight: bold; float: left;">DEVELOPED:</span>
+                                    <span style="color: #b3b3b3; float: right;">08/2021</span>
+                                    <hr class="line-seperator" style="height: 2px; background: #47474700;">
+                                </div>
+                                
+                                <div>
+                                    <span style="color: #b3b3b3; font-weight: bold; float: left;">STATUS:</span>
+                                    <span style="color: #b3b3b3; float: right;">FINISHED</span>
+                                    <hr class="line-seperator" style="height: 2px;background: #47474700;">
+                                </div>
+                                
+                                <div>
+                                    <span style="color: #b3b3b3; font-weight: bold; float: left;">FRAMEWORK:</span>
+                                    <span style="color: #b3b3b3; float: right;">NODE.JS</span>
+                                    <hr class="line-seperator" style="height: 2px; background: #47474700;">
+                                </div>
+                                
+                                <div>
+                                    <span style="color: #b3b3b3; font-weight: bold; float: left;">LANGUAGE:</span>
+                                    <span style="color: #b3b3b3; float: right;">JAVASCRIPT</span>
+                                    <hr class="line-seperator" style="height: 2px; background: #47474700;">
+                                    <hr class="line-seperator" style="height: 2px; background: #47474700;">
+                                </div>
+                            </div>
+                            <!-- Info section -->
+
+                            <!-- Project Description -->
+                            <div style="padding-bottom: 15px;">
+                                <hr class="line-seperator" style="height: 2px; background: #474747;">
+                                <p style="color: #b3b3b3; text-align: left;">JamJar is a Discord bot developed using Node.Js and written in JavaScript. Created from boredom and a need for inspiration in games development, The JamJar is a Discord bot designed to help Game developers and Game Jam enthusiasts easily generate game ideas or themes for inspiration or motivation in their development. Once installed, use ?info to get started!</p>
+                            </div>
+                        </div>
+                        <!-- TITLE SECTION -->
+
+                        <!-- BLOG POST SECTIONS -->
+                        <div class="project-posts">
+                            <h5 style="margin-bottom: 30px;">BLOG POSTS</h5>
+                            <p><a id="project-post-links" href="../blog-posts/post1-02-10-2021-1.html">A Quick Progress Update</a><br/><a style="font-size:12px;"> Oct 2, 2021</a></p>
+                            <p><a id="project-post-links" href="../blog-posts/post1-24-08-2021.html">I Couldn't Think Of A Game Idea. A Bot Can Do It For Me, I Guess!</a><br/><a style="font-size:12px;"> Aug 24, 2021</a></p>
+                        </div>
+                        <!-- BLOG POST SECTIONS -->
 
                     </div>
-                    <!-- RIGHT GROUP -->
+                    <!-- RIGHT PANEL -->
+
+                    <!-- SCRIPT FOR PREVIEW SLIDES -->
+                    <script>
+                        
+                        // index for the current active preview slide
+                        var nSlideIndex = 1;
+
+                        // Function for moving to the next slide with arrows
+                        function PlusSlides(nIndex) 
+                        {
+                            // Run the function for changing slides
+                            DisplayDiv(nSlideIndex += nIndex);
+                        }
+                        
+                        // Function for setting the current slide by index
+                        function CurrentPreviewSlide(nIndex)
+                        {
+                            // Run the function for changing slides
+                            DisplayDiv(nSlideIndex = nIndex);
+                        }
+                        
+                        // Main function for changing preview slides
+                        function DisplayDiv(nIndex)
+                        {
+                            // variable for the for loops
+                            var i;
+                            
+                            // Get all the slides and buttons
+                            var slides = document.getElementsByClassName("PreviewSlide");
+                            var btns = document.getElementsByClassName("preview");
+                        
+                            // If the passed in number is greater than the slides amount
+                            if (nIndex > slides.length) 
+                            {
+                                // set the slide index to 1
+                                nSlideIndex = 1
+                            }
+                        
+                            // If the passed in number is less than 1
+                            if (nIndex < 1) 
+                            {
+                                // set the slide index to the number of slides
+                                nSlideIndex = slides.length
+                            }
+                        
+                            // loop through all the preview slides
+                            for (i = 0; i < slides.length; i++) 
+                            {
+                                // set the visual elements of all inactive preview slides
+                                slides[i].style.display = "none";
+                            }
+
+                            // Loop through all the preview buttons
+                            for (i = 0; i < btns.length; i++) 
+                            {
+                                // Set the visual elements of all inactive preview buttons
+                                btns[i].className = btns[i].className.replace(" w3-opacity-off", "");
+                            }
+
+                            // Set the visual elements of the active preview and its button
+                            slides[nSlideIndex-1].style.display = "block";
+                            btns[nSlideIndex-1].className += " w3-opacity-off";
+                        }
+                    </script>
+                    <!-- SCRIPT FOR PREVIEW SLIDES -->
+                    <!------------------------------------------------------------------->
 
                 </div>
             </div>
@@ -159,42 +386,6 @@
 
     </section>
     <!-- Main content background -->
-
-    <!-- IMAGE MODAL -->
-    <!-- The Modal -->
-    <div id="ImageViewer" class="ImgModal">
-        <span class="ImgClose">&times;</span>
-        <img class="ImgModal-content" id="img01">
-        <div id="ImgCaption"></div>
-    </div>
-
-    <!-- Modal Script -->
-    <script>
-        // Get the modal
-        var modal = document.getElementById("ImageViewer");
-
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var img = document.getElementById("ImgViewer");
-        var modalImg = document.getElementById("img01");
-        var captionText = document.getElementById("ImgCaption");
-
-        img.onclick = function ()
-        {
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
-        }
-
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("ImgClose")[0];
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function ()
-        { 
-            modal.style.display = "none";
-        }
-    </script>
-    <!-- IMAGE MODAL -->
 
     <!-- CONTACT MODAL -->
     <div id="id01" class="w3-modal">
@@ -279,51 +470,6 @@
         </div>
     </div>
     <!-- CONTACT MODAL -->
-
-    <!-- README MODAL -->
-    <div id="id02" class="w3-modal">
-        <div class="w3-modal-content w3-animate-top w3-card-4" style="background-color: #1E1F23;">
-
-            <!-- MODAL HEADER -->
-            <header class="w3-container w3-darker-grey">
-                <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-display-topright" style="position:center; font-size:41px;">&times;</span>
-                <h2 style="color: #b3b3b3; margin-top: 20px; margin-bottom: 20px;">README - INSTALLATION AND CREDITS</h2>
-            </header>
-            <!-- MODAL HEADER -->
-
-            <!-- MODAL CONTENT -->
-            <div class="row" id="contactmodal-frame" style="vertical-align:middle; text-align:center;">
-                <div class="col-md-12" style="vertical-align:middle;">
-                    <div class="row" style="vertical-align:middle; background-color: transparent; margin-bottom:0px;">
-
-                        <!-- Information -->
-                        <div style="width:100%; height:100%; background-color: transparent; padding-left:20px; padding-right:20px; color:#b3b3b3; text-align:left; line-height:1.75;">
-
-                            <p style="font-weight:bold;">Installation and Usage Guide:</p>
-
-                            <ol>
-                                <li>Click the Install button at the top of the page. This install button will take you to the Discord Bot Authorization Webpage (discord account and login required).</li>
-                                <li>Read over and confirm the bot permissions required as well as selecting a server under the drop-down menu. Click authorize button, allowing the bot to be added to the selected server.</li>
-                                <li>Navigate to the selected server and type either "?info" or "?help" into a discord text chat to get started with the bot. Enjoy!</li>
-                            </ol>
-
-                            <br/><p style="font-weight:bold;">Special Thanks and Credit to the following:</p>
-
-                            <ul>
-                                <li>Gunnar Clovis: Author of 80% of the bots random themes, these themes being from one of Gunnar's similar game idea projects. <br/>Check it out: <a href="https://gunnar-clovis.itch.io/game-jam-theme-generator">https://gunnar-clovis.itch.io/game-jam-theme-generator</a>.<br/><br/></li>
-                                <li>Bartek: Author of %15 of the bots random themes, originally used as a list for LudumDare game themes. <br/>Check it out: <a href="https://gist.github.com/bananu7/9252503">https://gist.github.com/bananu7/9252503</a>.<br/><br/></li>
-                                <li>Marmellata Jam Font: Used for the JamJar logo. <br/>Check it out: <a href="https://www.dafont.com/marmellata-jam-demo.font">https://www.dafont.com/marmellata-jam-demo.font</a>.<br/><br/></li>
-                            </ul>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- MODAL CONTENT -->
-
-        </div>
-    </div>
-    <!-- README MODAL -->
 
     <!-- Footer -->
     <footer class="py-5" style="background-color: #2a2a2a;">

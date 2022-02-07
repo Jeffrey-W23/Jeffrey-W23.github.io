@@ -91,138 +91,362 @@
     <!-- Header -->
 
     <!-- Main content background -->
-    <section class="py-5" style="background-color: #1E1F23; background-image: url('../images/infbackground.png'); background-position:center; background-size:100%; background-repeat:repeat-y;">
+    <section class="py-5" style="background-color: #1E1F23;">
 
         <!-- Main content frame -->
-        <div class="row" id="frontpage-frame" style="background-color: #1E1F23; margin-bottom:0px; border-radius: 15px; box-shadow: 2px 5px #1c1c1c;">
+        <div class="row" id="frontpage-frame">
 
             <!-- page content -->
-            <div class="col-md-12" style="vertical-align:middle;">
-                <div class="row" style="vertical-align:middle; background-color: transparent;">
+            <div class="col-md-12" style="vertical-align:middle; padding: 0px;">
+                <div class="row content-inner-frame" style="padding: 0px;">
 
-                    <!-- TOP GROUP -->
-                    <!-- page title -->
-                    <img src="../images/inftitle3.png" class="img-responsive" style="margin-top:85px; margin-bottom:35px; height:50%; width:50%; display: block; margin-left: auto; margin-right: auto;"/>
-                    
-                    <!-- title info -->
-                    <div class="about-text-projects">
-                        <p>An Infestation is a work-in-progress top-down horror shooter developed using Unity. Development of An Infestation began as a curiosity/inspiration project of Among Us and how it handled lighting and eventually finding its direction as a horror shooter.</p><br>
-                    </div>
+                    <!------------------------------------------------------------------->
+                    <!-- LEFT PANEL -->
+                    <div id="frontpage-text" style="margin: 0px;">
 
-                    <!-- buttons-->
-                    <div class="download-btn-container" style="margin-top:-30px; margin-bottom:10px;">
-                        <a class="download-btn" style="margin-left:5px; margin-right:5px;" href="../files/An Infestation (Pre-Alpha 0.1.2).zip">DOWNLOAD (0.1.2)</a>
-                        <a class="download-btn" style="margin-left:5px; margin-right:5px;" href="https://github.com/Jeffrey-W23/An-Infestation">SOURCE CODE</a>
-                        <a class="download-btn" style="margin-left:5px; margin-right:5px; background-color:darkslateblue" href="../blog-posts/post1-09-12-2021.html">LATEST UPDATES</a>
-                    </div>
+                        <!-- TITLE SECTION MOBILE -->
+                        <div class="mobile-title-section">
 
-                    <!-- Images/Videos -->
-                    <hr class="line-seperator" width="100%" align="middle">
+                            <!-- Project Logo -->
+                            <img src="../images/inftitle3.png" style="height:100%; width:80%; display: block; margin-left: auto; margin-right: auto; margin-bottom: 60px; margin-top: 35px;"/>
 
-                    <div class="col-md-6" style="vertical-align:middle; text-align:center; margin-bottom:15px; margin-top:15px;">
-                        <img src="../images/infscreenshot.png" id="ImgViewer" class="img-responsive" style="width:100%;" alt="An Infestation Screenshot" width="280" height="412" />
-                    </div>
-
-                    <div class="col-md-6" style="vertical-align:middle; text-align:center; margin-bottom:15px; margin-top:15px;">
-                        <video controls loop width="100%" poster="../blog-images/blog-image4.PNG" style="margin-bottom:30px;" class="blogvid">
-                            <source src="../blog-images/blog-video4.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                    
-                    <hr class="line-seperator" width="100%" align="right">
-
-                    <!-- LATEST TEXT -->
-                    <div id="frontpage-text" style="margin-top:20px; width:100%;">
-                        
-                        <div class="about-text">
-
-                            <!-- Title -->
-                            <h4>LATEST DEVELOPMENTS</h4><br>
-
-                            <!-- Paragraph 1 -->
-                            <p>An Infestation is still in development! For more information on where the project is currently sitting, you can check out the blog. I am making regular updates on its progress, including multiplayer and turning it into an actual game!</p>
-
-                            <!-- Paragraph 2 -->
-                            <p>As for the postmortem/analysis on An Infestations development below, it will stay as-is for the time being as an analysis on the original project. In the future, when development is finished or released, the section will be re-written to fit more closely with its current state.</p>
-                        
+                            <!-- Description Logo -->
+                            <div style="padding-bottom: 15px; ">
+                                <hr class="line-seperator" style="height: 2px; background: #474747;">
+                                <p style="color: #b3b3b3; font-size: small; text-align: center;">An Infestation is a work-in-progress multiplayer top-down horror shooter developed using Unity and written in C#. Development of An Infestation began as a curiosity/inspiration project of Among Us and how it handled lighting and eventually found its direction as a horror shooter.</p>
+                            </div>
                         </div>
-                    </div>
-                    <!-- LATEST TEXT -->
+                        <!-- TITLE SECTION MOBILE -->
 
-                    <hr class="line-seperator" width="100%" align="right">
-                    <!-- TOP GROUP -->
+                        <!-- IMAGE SLIDER -->
+                        <!-- IMG 1 -->
+                        <div class="container PreviewSlide" style="margin: 0px;">
 
-                    <!-- LEFT GROUP -->
-                    <div id="frontpage-text" style="margin-top:20px; width:100%;">
+                            <!-- Video -->
+                            <video controls loop width="100%" style="width:100%; border-radius: 1%;" class="blogvid">
+                                <source src="../blog-images/blog-video4.mp4" type="video/mp4">
+                            </video>
 
-                        <!-- INFORMATION TEXT -->
-                        <div class="about-text">
-
-                            <!-- SECTION 1 -->
-                            <!-- Title -->
-                            <h4>INTRODUCTION</h4><br>
-
-                            <!-- Paragraph 1 -->
-                            <p>During the COVID19 lockdown, I worked on two projects, the first being my Discord Bot called Impostor Bot and the second being another Among Us inspired project called An Infestation. After trying something new with the development of my Discord Bot, I decided to jump back into unity and finally create a spiritual sequel to my Zombie Game project. The result is an early version of an ambitious (Hopefully I finish one day) top-down horror shooter built around a lack of vision and darkness.</p><br>
-                            <!-- SECTION 1 -->
-
-                            <!-- SECTION 2 -->
-                            <!-- Title -->
-                            <br><h4>PROJECT GOALS</h4><br>
-
-                            <!-- Paragraph 1 -->
-                            <p>The first goal of the project was creating a simple top-down shooter, barebone and focusing on function. After the development of these basic functions was complete, I began brainstorming ideas for how to make the project unique.</p>
-                            
-                            <!-- Paragraph 2 -->
-                            <p>Similar to my experience developing Impostor Bot, I was very inspired by Among Us for this project. I spent a lot of time with the game and loved how it handled lighting and vision from a 2D perspective, something I thought would work great in the game I was trying to create. So the next goal of the project was to replicate and merge this vision cone and lighting of Among Us, with a Fog of War effect from games like Age of Empires, to create a sense of realism from a 2D top-down perspective.</p>
-
-                            <!-- Paragraph 3 -->
-                            <p>After achieving the main goals, I was satisfied with the work accomplished thus far and decided that was enough features for the first version. Not long after this, the COVID19 lockdown finished and the project got regrettably shelved, but ideas for future development did not. The overall goal of An Infestation now would be to create a story-driven, survival horror about the exploration of an abandoned colony or town with a fundamental focus on surprise.</p><br>
-                            <!-- SECTION 2 -->
-
-                            <!-- SECTION 3 -->
-                            <br><h4>PERSONAL ACCOMPLISHMENTS</h4><br>
-
-                            <ul>
-                                <!-- Dot point 1 -->
-                                <li>I developed a new Unity project for the first time since University.</li>
-
-                                <!-- Dot point 2 -->
-                                <li>I developed my first 2D Unity game, surprisingly more difficult than I first thought.</li>
-
-                                <!-- Dot point 3 -->
-                                <li>I completed all project goals within the set time constraints.</li>
-
-                                <!-- Dot point 4 -->
-                                <li>Achieved a greater understanding of Unity Systems, including the Camera, Render Textures, Meshes, Materials, Canvases, Scriptable Objects, to name a few.</li>
-
-                                <!-- Dot point 5 -->
-                                <li>I successfully developed a FOV/FOG system and got experience creating 2D meshes within code.</li>
-                            </ul><br>
-                            <!-- SECTION 3 -->
-
-                            <!-- SECTION 4 -->
-                            <!-- Title -->
-                            <br><h4>LESSONS LEARNED</h4><br>
-
-                            <!-- Paragraph 1 -->
-                            <p>One lesson that seems to stand out the most in all projects I complete is confidence. There is a pattern of underconfidence when I start projects and then a pleasant surprise when I achieve what I set out to do. An Infestation was, as far as I can remember, quite the opposite. It was a project I started with legitimate confidence and a project that I ended with even more. Maybe this is more of a personal accomplishment rather than a lesson learned but, regardless, something to remember for the future.</p>
-                            
-                            <!-- Paragraph 2 -->
-                            <p></p><br>
-                            <!-- SECTION 4 -->
+                            <!-- Page Number and Cycle Buttons -->
+                            <div style="color: #f2f2f2; font-size: 12px; padding: 8px 12px; position: absolute; top: 0;">1 / 4</div>
+                            <a class="next" style="color: rgba(255, 255, 255, 0.753);" onclick="PlusSlides(1)"><i class="fas fa-chevron-right"></i></a>
+                            <a class="prev" style="color: rgba(255, 255, 255, 0.753);" onclick="PlusSlides(-1)"><i class="fas fa-chevron-left"></i></a>
 
                         </div>
-                        <!-- INFORMATION TEXT -->
+                        <!-- IMG 1 -->
+
+                        <!-- IMG 2 -->
+                        <div class="container PreviewSlide" style="display: none;  margin: 0px;">
+
+                            <!-- Video -->
+                            <video controls loop width="100%" style="width:100%; border-radius: 1%;" class="blogvid">
+                                <source src="../blog-images/blog-video5.mp4" type="video/mp4">
+                            </video>
+
+                            <!-- Page Number and Cycle Buttons -->
+                            <div style="color: #f2f2f2; font-size: 12px; padding: 8px 12px; position: absolute; top: 0;">2 / 4</div>
+                            <a class="next" style="color: rgba(255, 255, 255, 0.753);" onclick="PlusSlides(1)"><i class="fas fa-chevron-right"></i></a>
+                            <a class="prev" style="color: rgba(255, 255, 255, 0.753);" onclick="PlusSlides(-1)"><i class="fas fa-chevron-left"></i></a>
+
+                        </div>
+                        <!-- IMG 2 -->
+
+                        <!-- IMG 3 -->
+                        <div class="container PreviewSlide" style="display: none; margin: 0px; margin-bottom: 8px;">
+
+                            <!-- Image -->
+                            <img src="../images/infscreenshot.png" style="width:100%; border-radius: 1%;">
+
+                            <!-- Page Number and Cycle Buttons -->
+                            <div style="color: #f2f2f2; font-size: 12px; padding: 8px 12px; position: absolute; top: 0;">3 / 4</div>
+                            <a class="next" style="color: rgba(255, 255, 255, 0.753);" onclick="PlusSlides(1)"><i class="fas fa-chevron-right"></i></a>
+                            <a class="prev" style="color: rgba(255, 255, 255, 0.753);" onclick="PlusSlides(-1)"><i class="fas fa-chevron-left"></i></a>
+
+                        </div>
+                        <!-- IMG 3 -->
+
+                        <!-- IMG 4 -->
+                        <div class="container PreviewSlide" style="display: none; margin: 0px; margin-bottom: 8px;">
+
+                            <!-- Image -->
+                            <img src="../images/aninfestationscreen2.png" style="width:100%; border-radius: 1%;">
+
+                            <!-- Page Number and Cycle Buttons -->
+                            <div style="color: #f2f2f2; font-size: 12px; padding: 8px 12px; position: absolute; top: 0;">4 / 4</div>
+                            <a class="next" style="color: rgba(255, 255, 255, 0.753);" onclick="PlusSlides(1)"><i class="fas fa-chevron-right"></i></a>
+                            <a class="prev" style="color: rgba(255, 255, 255, 0.753);" onclick="PlusSlides(-1)"><i class="fas fa-chevron-left"></i></a>
+
+                        </div>
+                        <!-- IMG 4 -->
+                        <!-- IMAGE SLIDER -->
+
+                        <!-- SLIDER PREVIEW BUTTONS -->
+                        <div style="text-align: center; display:flex; padding-left: 15px; padding-right: 15px; padding-bottom: 15px;">
+                        
+                            <!-- Img Button 1 -->
+                            <div class="preview w3-opacity w3-hover-opacity-off w3-opacity-off" style="cursor:pointer; display: inline-block; vertical-align: middle; margin: 8px; width: 100%; position: relative;" onclick="CurrentPreviewSlide(1)">
+                                <img class="prev-image" src="../blog-images/blog-image4.png" style="width:100%; border-radius: 8px;">
+                                <a style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #ffffff; font-size: x-large;"><i class="fas fa-play"></i></a>
+                            </div>
+
+                            <!-- Img Button 2 -->
+                            <div class="preview w3-opacity w3-hover-opacity-off" style="cursor:pointer; display: inline-block; vertical-align: middle; margin: 8px; width: 100%; position: relative;" onclick="CurrentPreviewSlide(2)">
+                                <img class="prev-image" src="../blog-images/blog-image5.png" style="width:100%; border-radius: 8px;">
+                                <a style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #ffffff; font-size: x-large;"><i class="fas fa-play"></i></a>
+                            </div>
+
+                            <!-- Img Button 3 -->
+                            <div class="preview w3-opacity w3-hover-opacity-off" style="cursor:pointer; display: inline-block; vertical-align: middle; margin: 8px; width: 100%; position: relative;" onclick="CurrentPreviewSlide(3)">
+                                <img class="prev-image" src="../images/infscreenshot.png" style="width:100%; border-radius: 8px;">
+                            </div>
+
+                            <!-- Img Button 4 -->
+                            <div class="preview w3-opacity w3-hover-opacity-off" style="cursor:pointer; display: inline-block; vertical-align: middle; margin: 8px; width: 100%; position: relative;" onclick="CurrentPreviewSlide(4)">
+                                <img class="prev-image" src="../images/aninfestationscreen2.png" style="width:100%; border-radius: 8px;">
+                            </div>
+
+                        </div>
+                        <!-- SLIDER PREVIEW BUTTONS -->
+
+                        <!-- BUTTON SECTION MOBILE -->
+                        <div class="mobile-title-section">
+
+                            <!-- buttons-->
+                            <div>
+                                <a class="download-btn" style="margin-left: auto; margin-right: auto; width: 100%;" href="https://github.com/Jeffrey-W23/An-Infestation">SOURCE CODE</a>
+                            </div>
+
+                            <!-- buttons-->
+                            <div>
+                                <a class="download-btn" style="margin-left: auto; margin-right: auto; width: 100%; background-color:darkslateblue" href="../files/An Infestation (Pre-Alpha 0.1.2).zip">DOWNLOAD (0.1.2)</a>
+                            </div>
+
+                        </div>
+                        <!-- BUTTON SECTION MOBILE -->
+
+                        <!-- MAIN CONTENT SECTION -->
+                        <div style="background-color: #1c1c1c; margin: 15px; margin-top: 0px; border-radius: 10px; border: 1px;">
+                            <div style="color: #b3b3b3; text-align: left; padding: 30px;">
+                                <!-- Title -->
+                                <h4>LATEST DEVELOPMENTS</h4><br>
+    
+                                <!-- Paragraph 1 -->
+                                <p>An Infestation is still in development! For more information on where the project is currently sitting, you can check out the blog. I am making regular updates on its progress, including multiplayer and turning it into an actual game!</p>
+    
+                                <!-- Paragraph 2 -->
+                                <p>As for the postmortem/analysis on An Infestations development below, it will stay as-is for the time being as an analysis on the original project. In the future, when development is finished or released, the section will be re-written to fit more closely with its current state.</p>
+    
+                            </div>
+
+                            <div style="color: #b3b3b3; padding: 12px; padding-left: 30px;">
+                                <hr class="line-seperator" width="100%" align="right">
+                            </div>
+    
+                            <div style="color: #b3b3b3; text-align: left; padding: 30px;">
+    
+                                <!-- SECTION 1 -->
+                                <!-- Title -->
+                                <h4>INTRODUCTION</h4><br>
+    
+                                <!-- Paragraph 1 -->
+                                <p>During the COVID19 lockdown, I worked on two projects, the first being my Discord Bot called Impostor Bot and the second being another Among Us inspired project called An Infestation. After trying something new with the development of my Discord Bot, I decided to jump back into unity and finally create a spiritual sequel to my Zombie Game project. The result is an early version of an ambitious (Hopefully I finish one day) top-down horror shooter built around a lack of vision and darkness.</p><br>
+                                <!-- SECTION 1 -->
+    
+                                <!-- SECTION 2 -->
+                                <!-- Title -->
+                                <br><h4>PROJECT GOALS</h4><br>
+    
+                                <!-- Paragraph 1 -->
+                                <p>The first goal of the project was creating a simple top-down shooter, barebone and focusing on function. After the development of these basic functions was complete, I began brainstorming ideas for how to make the project unique.</p>
+                                
+                                <!-- Paragraph 2 -->
+                                <p>Similar to my experience developing Impostor Bot, I was very inspired by Among Us for this project. I spent a lot of time with the game and loved how it handled lighting and vision from a 2D perspective, something I thought would work great in the game I was trying to create. So the next goal of the project was to replicate and merge this vision cone and lighting of Among Us, with a Fog of War effect from games like Age of Empires, to create a sense of realism from a 2D top-down perspective.</p>
+    
+                                <!-- Paragraph 3 -->
+                                <p>After achieving the main goals, I was satisfied with the work accomplished thus far and decided that was enough features for the first version. Not long after this, the COVID19 lockdown finished and the project got regrettably shelved, but ideas for future development did not. The overall goal of An Infestation now would be to create a story-driven, survival horror about the exploration of an abandoned colony or town with a fundamental focus on surprise.</p><br>
+                                <!-- SECTION 2 -->
+    
+                                <!-- SECTION 3 -->
+                                <br><h4>PERSONAL ACCOMPLISHMENTS</h4><br>
+    
+                                <ul>
+                                    <!-- Dot point 1 -->
+                                    <li>I developed a new Unity project for the first time since University.</li>
+    
+                                    <!-- Dot point 2 -->
+                                    <li>I developed my first 2D Unity game, surprisingly more difficult than I first thought.</li>
+    
+                                    <!-- Dot point 3 -->
+                                    <li>I completed all project goals within the set time constraints.</li>
+    
+                                    <!-- Dot point 4 -->
+                                    <li>Achieved a greater understanding of Unity Systems, including the Camera, Render Textures, Meshes, Materials, Canvases, Scriptable Objects, to name a few.</li>
+    
+                                    <!-- Dot point 5 -->
+                                    <li>I successfully developed a FOV/FOG system and got experience creating 2D meshes within code.</li>
+                                </ul><br>
+                                <!-- SECTION 3 -->
+    
+                                <!-- SECTION 4 -->
+                                <!-- Title -->
+                                <br><h4>LESSONS LEARNED</h4><br>
+    
+                                <!-- Paragraph 1 -->
+                                <p>One lesson that seems to stand out the most in all projects I complete is confidence. There is a pattern of underconfidence when I start projects and then a pleasant surprise when I achieve what I set out to do. An Infestation was, as far as I can remember, quite the opposite. It was a project I started with legitimate confidence and a project that I ended with even more. Maybe this is more of a personal accomplishment rather than a lesson learned but, regardless, something to remember for the future.</p>
+    
+                            </div>
+
+                        </div>
+                        <!-- MAIN CONTENT SECTION -->
 
                     </div>
-                    <!-- LEFT GROUP -->
+                    <!-- LEFT PANEL -->
 
-                    <!-- RIGHT GROUP -->
-                    <div id='frontpage-images'>
+                    <!-- RIGHT PANEL -->
+                    <div id='frontpage-images' style="padding: 0px; padding-right: 15px; padding-top: 15px; margin: 0px;">
+
+                        <!-- TITLE SECTION -->
+                        <div class="project-title">
+
+                            <!-- Project Logo -->
+                            <img src="../images/inftitle3.png" style="height:100%; width:100%; display: block; margin-left: auto; margin-right: auto; margin-bottom: 60px; margin-top: 35px;"/>
+
+                            <!-- buttons-->
+                            <div>
+                                <a class="project-download-btn" style="margin-left: auto; margin-right: auto; width: 100%;" href="https://github.com/Jeffrey-W23/An-Infestation">SOURCE CODE</a>
+                            </div>
+
+                            <!-- buttons-->
+                            <div>
+                                <a class="project-download-btn" style="margin-left: auto; margin-right: auto; width: 100%; background-color:darkslateblue" href="../files/An Infestation (Pre-Alpha 0.1.2).zip">DOWNLOAD (0.1.2)</a>
+                            </div>
+                            
+                            <!-- Info section -->
+                            <div style="margin-bottom: 25px;">
+                                <div style="margin-top: 35px;">
+                                    <span style="color: #b3b3b3; font-weight: bold; float: left;">DEVELOPED:</span>
+                                    <span style="color: #b3b3b3; float: right;">09/2020</span>
+                                    <hr class="line-seperator" style="height: 2px; background: #47474700;">
+                                </div>
+                                
+                                <div>
+                                    <span style="color: #b3b3b3; font-weight: bold; float: left;">STATUS:</span>
+                                    <span style="color: #b3b3b3; float: right;">ACTIVE</span>
+                                    <hr class="line-seperator" style="height: 2px;background: #47474700;">
+                                </div>
+                                
+                                <div>
+                                    <span style="color: #b3b3b3; font-weight: bold; float: left;">ENGINE:</span>
+                                    <span style="color: #b3b3b3; float: right;">UNITY</span>
+                                    <hr class="line-seperator" style="height: 2px; background: #47474700;">
+                                </div>
+                                
+                                <div>
+                                    <span style="color: #b3b3b3; font-weight: bold; float: left;">LANGUAGE:</span>
+                                    <span style="color: #b3b3b3; float: right;">C#</span>
+                                    <hr class="line-seperator" style="height: 2px; background: #47474700;">
+                                    <hr class="line-seperator" style="height: 2px; background: #47474700;">
+                                </div>
+                            </div>
+                            <!-- Info section -->
+
+                            <!-- Project Description -->
+                            <div style="padding-bottom: 15px;">
+                                <hr class="line-seperator" style="height: 2px; background: #474747;">
+                                <p style="color: #b3b3b3; text-align: left;">An Infestation is a work-in-progress multiplayer top-down horror shooter developed using Unity and written in C#. Development of An Infestation began as a curiosity/inspiration project of Among Us and how it handled lighting and eventually found its direction as a horror shooter.</p>
+                            </div>
+                        </div>
+                        <!-- TITLE SECTION -->
+
+                        <!-- BLOG POST SECTIONS -->
+                        <div class="project-posts">
+                            <h5 style="margin-bottom: 30px;">BLOG POSTS</h5>
+                            <p><a id="project-post-links" href="../blog-posts/post1-09-12-2021.html">Six Simple Words. Sync The Action, Not The Result!</a><br/><a style="font-size:12px;"> Dec 9, 2021</a></p>
+                            <p><a id="project-post-links" href="../blog-posts/post1-22-10-2021.html">No Longer Is Your Fog Stolen By Others, And Interactable Objects Are, Get This.. Interactable!</a><br/><a style="font-size:12px;"> Oct 22, 2021</a></p>
+                            <p><a id="project-post-links" href="../blog-posts/post1-12-10-2021-2.html">Fresh New Unity And Pretty New Colours!</a><br/><a style="font-size:12px;"> Oct 12, 2021</a></p>
+                            <p><a id="project-post-links" href="../blog-posts/post1-12-10-2021-1.html">An Annoying Long Story, Not About RPCs.</a><br/><a style="font-size:12px;"> Oct 12, 2021</a></p>
+                            <p><a id="project-post-links" href="../blog-posts/post1-06-10-2021.html">An Update On An Infestation's Multiplayer Progress</a><br/><a style="font-size:12px;"> Oct 6, 2021</a></p>
+                            <p><a id="project-post-links" href="../blog-posts/post1-02-10-2021-2.html">In Just One Day, An Infestation Now Has Multiplayer!</a><br/><a style="font-size:12px;"> Oct 2, 2021</a></p>
+                        </div>
+                        <!-- BLOG POST SECTIONS -->
+
+                        <!-- DOWLOADS SECTIONS -->
+                        <div class="project-downloads">
+                            <h5 style="margin-bottom: 30px;">DOWNLOADS</h5>
+                            <a class="project-download-btn" style="background-color:#2a2a2a; color: #b3b3b3; margin-bottom: 10px;" href="../files/An Infestation (Pre-Alpha 0.1.2).zip"><i style="font-size:16px; color: #b3b3b3;" class="fa">&#xf15b;</i>&nbsp;&nbsp;&nbsp;Pre-Alpha (0.1.2).zip</a>
+                            <a class="project-download-btn" style="background-color:#2a2a2a; color: #b3b3b3; margin-bottom: 10px;" href="../files/An Infestation (Pre-Alpha 0.1.1).zip"><i style="font-size:16px; color: #b3b3b3;" class="fa">&#xf15b;</i>&nbsp;&nbsp;&nbsp;Pre-Alpha (0.1.1).zip</a>
+                            <a class="project-download-btn" style="background-color:#2a2a2a; color: #b3b3b3;" href="../files/An Infestation (Pre-Alpha 0.1.0).zip"><i style="font-size:16px; color: #b3b3b3;" class="fa">&#xf15b;</i>&nbsp;&nbsp;&nbsp;Pre-Alpha (0.1.0).zip</a>
+                        </div>
+                        <!-- DOWLOADS SECTIONS -->
 
                     </div>
-                    <!-- RIGHT GROUP -->
+                    <!-- RIGHT PANEL -->
+
+                    <!-- SCRIPT FOR PREVIEW SLIDES -->
+                    <script>
+                        
+                        // index for the current active preview slide
+                        var nSlideIndex = 1;
+
+                        // Function for moving to the next slide with arrows
+                        function PlusSlides(nIndex) 
+                        {
+                            // Run the function for changing slides
+                            DisplayDiv(nSlideIndex += nIndex);
+                        }
+                        
+                        // Function for setting the current slide by index
+                        function CurrentPreviewSlide(nIndex)
+                        {
+                            // Run the function for changing slides
+                            DisplayDiv(nSlideIndex = nIndex);
+                        }
+                        
+                        // Main function for changing preview slides
+                        function DisplayDiv(nIndex)
+                        {
+                            // variable for the for loops
+                            var i;
+                            
+                            // Get all the slides and buttons
+                            var slides = document.getElementsByClassName("PreviewSlide");
+                            var btns = document.getElementsByClassName("preview");
+                        
+                            // If the passed in number is greater than the slides amount
+                            if (nIndex > slides.length) 
+                            {
+                                // set the slide index to 1
+                                nSlideIndex = 1
+                            }
+                        
+                            // If the passed in number is less than 1
+                            if (nIndex < 1) 
+                            {
+                                // set the slide index to the number of slides
+                                nSlideIndex = slides.length
+                            }
+                        
+                            // loop through all the preview slides
+                            for (i = 0; i < slides.length; i++) 
+                            {
+                                // set the visual elements of all inactive preview slides
+                                slides[i].style.display = "none";
+                            }
+
+                            // Loop through all the preview buttons
+                            for (i = 0; i < btns.length; i++) 
+                            {
+                                // Set the visual elements of all inactive preview buttons
+                                btns[i].className = btns[i].className.replace(" w3-opacity-off", "");
+                            }
+
+                            // Set the visual elements of the active preview and its button
+                            slides[nSlideIndex-1].style.display = "block";
+                            btns[nSlideIndex-1].className += " w3-opacity-off";
+                        }
+                    </script>
+                    <!-- SCRIPT FOR PREVIEW SLIDES -->
+                    <!------------------------------------------------------------------->
 
                 </div>
             </div>
@@ -233,42 +457,6 @@
 
     </section>
     <!-- Main content background -->
-
-    <!-- IMAGE MODAL -->
-    <!-- The Modal -->
-    <div id="ImageViewer" class="ImgModal">
-        <span class="ImgClose">&times;</span>
-        <img class="ImgModal-content" id="img01">
-        <div id="ImgCaption"></div>
-    </div>
-
-    <!-- Modal Script -->
-    <script>
-        // Get the modal
-        var modal = document.getElementById("ImageViewer");
-
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var img = document.getElementById("ImgViewer");
-        var modalImg = document.getElementById("img01");
-        var captionText = document.getElementById("ImgCaption");
-
-        img.onclick = function ()
-        {
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
-        }
-
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("ImgClose")[0];
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function ()
-        { 
-            modal.style.display = "none";
-        }
-    </script>
-    <!-- IMAGE MODAL -->
 
     <!-- CONTACT MODAL -->
     <div id="id01" class="w3-modal">

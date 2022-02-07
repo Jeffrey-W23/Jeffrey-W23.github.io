@@ -91,124 +91,313 @@
     <!-- Header -->
 
     <!-- Main content background -->
-    <section class="py-5" style="background-color: #d8c3a4; background-image: url('../images/toywarsbackground.jpg'); background-position:center; background-size:100%; background-repeat:repeat-y;">
+    <section class="py-5" style="background-color: #1E1F23;">
 
         <!-- Main content frame -->
-        <div class="row" id="frontpage-frame" style="background-color: #1E1F23; margin-bottom:0px; border-radius: 15px; box-shadow: 2px 5px #1c1c1c;">
+        <div class="row" id="frontpage-frame">
 
             <!-- page content -->
-            <div class="col-md-12" style="vertical-align:middle;">
-                <div class="row" style="vertical-align:middle; background-color: transparent;">
+            <div class="col-md-12" style="vertical-align:middle; padding: 0px;">
+                <div class="row content-inner-frame" style="padding: 0px;">
 
-                    <!-- TOP GROUP -->
-                    <!-- page title -->
-                    <img src="../images/toytitle.png" class="img-responsive" style="margin-top:85px; margin-bottom:35px; height:50%; width:50%; display: block; margin-left: auto; margin-right: auto;"/>
-                    
-                    <!-- title info -->
-                    <div class="about-text-projects">
-                        <p>Toy Wars pits two hot-seated players against each other in a turn-based PvP combat environment. Both players have their own set of toy soldiers and must use them to destroy either their opponent's soldiers or their teddy bear.</p><br>
-                    </div>
+                    <!------------------------------------------------------------------->
+                    <!-- LEFT PANEL -->
+                    <div id="frontpage-text" style="margin: 0px;">
 
-                    <!-- buttons-->
-                    <div class="download-btn-container" style="margin-top:-30px; margin-bottom:10px;">
-                        <a class="download-btn" style="margin-left:5px; margin-right:5px;" href="https://pickled-roadrage.itch.io/toy-wars">DOWNLOAD</a>
-                        <a class="download-btn" style="margin-left:5px; margin-right:5px;" href="https://github.com/Pickled-Roadrage2017/Final-Project-Repository">SOURCE CODE  </a>
-                    </div>
+                        <!-- TITLE SECTION MOBILE -->
+                        <div class="mobile-title-section">
 
-                    <hr class="line-seperator" width="100%" align="middle">
+                            <!-- Project Logo -->
+                            <img src="../images/toytitle.png" style="height:100%; width:80%; display: block; margin-left: auto; margin-right: auto; margin-bottom: 60px; margin-top: 35px;"/>
 
-                    <!-- Images/Videos -->
-                    <div class="col-md-6" style="vertical-align:middle; text-align:center; margin-bottom:15px; margin-top:15px;">
-                        <img src="../images/toywarsscreenshot.png" id="ImgViewer" class="img-responsive" style="width:100%;" alt="Toy Wars Screenshot" width="280" height="412" />
-                    </div>
+                            <!-- Description Logo -->
+                            <div style="padding-bottom: 15px; ">
+                                <hr class="line-seperator" style="height: 2px; background: #474747;">
+                                <p style="color: #b3b3b3; font-size: small; text-align: center;">Toy Wars is a turn-based two-player hot-seat game inspired by Worms, developed using Unity and written in C#. Both players have their own set of toy soldiers and must use them to destroy either their opponent's soldiers or their teddy bear base.</p>
+                            </div>
+                        </div>
+                        <!-- TITLE SECTION MOBILE -->
 
-                    <div class="col-md-6" style="vertical-align:middle; text-align:center; margin-bottom:15px; margin-top:15px;">
-                        <video controls loop width="100%" style="">
-					        <source src="../images/toywarsvideo.mp4" type="video/mp4">
-				        </video>
-                    </div>
-                    
-                    <hr class="line-seperator" width="100%" align="right">
-                    <!-- TOP GROUP -->
+                        <!-- IMAGE SLIDER -->
+                        <!-- IMG 1 -->
+                        <div class="container PreviewSlide" style="margin: 0px;">
 
-                    <!-- LEFT GROUP -->
-                    <div id="frontpage-text" style="margin-top:20px; width:100%;">
+                            <!-- Video -->
+                            <video controls loop width="100%" poster="../images/toyscreen2.PNG" style="width:100%; border-radius: 1%;" class="blogvid">
+                                <source src="../images/toywarsvideo.mp4" type="video/mp4">
+                            </video>
 
-                        <!-- INFORMATION TEXT -->
-                        <div class="about-text">
-
-                            <!-- SECTION 1 -->
-                            <!-- Title -->
-                            <h4>INTRODUCTION</h4><br>
-
-                            <!-- Paragraph 1 -->
-                            <p>Toy Wars was a 3-month long project developed using Unity and C# as a part of my studies at the Academy of Interactive Entertainment (AIE). The project was developed by 5 games development students and was the final assessment task of the first year of studies. My role, along with one other student, was programming.</p>
-
-                            <!-- Paragraph 2 -->
-                            <p>My role in programming consisted of several main tasks including the turn manager, teddy bear bases, gameplay UI and menus, as well as other various scripts required throughout development. The other programmer mainly focused on soldiers, working on the shooting mechanics and movement.</p><br>
-                            <!-- SECTION 1 -->
-
-                            <!-- SECTION 2 -->
-                            <!-- Title -->
-                            <br><h4>PROJECT GOALS</h4><br>
-
-                            <!-- Paragraph 1 -->
-                            <p>The overall goal of the Toy Wars project, other than an assignment requirement, was to create a simple, turn-based, player versus player game inspired by other games like worms and army men. </p>
-
-                            <!-- Paragraph 2 -->
-                            <p>The game was intended to be a two-player hot-seat with army soldiers and teddy bears acting as units for each player. The end goal was to kill all of the enemy units or destroy the enemy Teddy Bear before the other player did the same. The project had a few hiccups along the way but mostly turned out how we intended minus a few different weapons and unit types.</p><br/>
-                            <!-- SECTION 2 -->
-
-                            <!-- SECTION 3 -->
-                            <br><h4>PERSONAL ACCOMPLISHMENTS</h4><br>
-
-                            <ul>
-                                <!-- Dot point 1 -->
-                                <li>First turn managment system.</li>
-
-                                <!-- Dot point 2 -->
-                                <li>Unity UI usage.</li>
-
-                                <!-- Dot point 3 -->
-                                <li>First unit spawning system.</li>
-
-                                <!-- Dot point 4 -->
-                                <li>First three-dimensional development project.</li>
-
-                                <!-- Dot point 5 -->
-                                <li>First time developing a game with a full team.</li>
-
-                                <!-- Dot point 6 -->
-                                <li>Finding, solving and fixing complicated bugs.</li>
-                            </ul><br>
-                            <!-- SECTION 3 -->
-
-                            <!-- SECTION 4 -->
-                            <!-- Title -->
-                            <br><h4>LESSONS LEARNED</h4><br>
-
-                            <!-- Paragraph 1 -->
-                            <p>During the development of the Toy Wars project, I learnt many things about teamwork and scope. Toy Wars was one of the first group video game projects most of the students had ever worked on, and as a result, everyone was very excited. We were all overconfident, thinking we could do anything, quickly realizing and falling felt to the pressure of how much work we had given ourselves. As a result, we had to scope down a lot of great original ideas we had envisioned as staples of the projects. It was a hard reality.</p>
-
-                            <!-- Paragraph 2 -->
-                            <p>As a programmer on the project, there were many things I learnt. Things I thought were simple programming tasks didn't turn out to be so simple. An example of this was the turn management system, in which I implemented quickly at the start of development, moving on to other tasks thinking it was more or less complete. Quickly issues started to arise and I had to rethink my strategies, the turn management system was not simple, it was kind of complicated.</p>
-                            
-                            <!-- Paragrpah 3 -->
-                            <p>Other things I learnt during my time working on this project was the importance of planning and research, especially when it came to things like a turn management system, for example. My take away from this is I shouldn't assume something might be simple without confirming it first, as well as a better understanding of how to scope a project.</p><br/>
-                            <!-- SECTION 4 -->
+                            <!-- Page Number and Cycle Buttons -->
+                            <div style="color: #f2f2f2; font-size: 12px; padding: 8px 12px; position: absolute; top: 0;">1 / 3</div>
+                            <a class="next" style="color: rgba(255, 255, 255, 0.753);" onclick="PlusSlides(1)"><i class="fas fa-chevron-right"></i></a>
+                            <a class="prev" style="color: rgba(255, 255, 255, 0.753);" onclick="PlusSlides(-1)"><i class="fas fa-chevron-left"></i></a>
 
                         </div>
-                        <!-- INFORMATION TEXT -->
+                        <!-- IMG 1 -->
+
+                        <!-- IMG 3 -->
+                        <div class="container PreviewSlide" style="display: none; margin: 0px; margin-bottom: 8px;">
+
+                            <!-- Image -->
+                            <img src="../images/toywarsscreenshot.png" style="width:100%; border-radius: 1%;">
+
+                            <!-- Page Number and Cycle Buttons -->
+                            <div style="color: #f2f2f2; font-size: 12px; padding: 8px 12px; position: absolute; top: 0;">2 / 3</div>
+                            <a class="next" style="color: rgba(255, 255, 255, 0.753);" onclick="PlusSlides(1)"><i class="fas fa-chevron-right"></i></a>
+                            <a class="prev" style="color: rgba(255, 255, 255, 0.753);" onclick="PlusSlides(-1)"><i class="fas fa-chevron-left"></i></a>
+
+                        </div>
+                        <!-- IMG 3 -->
+
+                        <!-- IMG 4 -->
+                        <div class="container PreviewSlide" style="display: none; margin: 0px; margin-bottom: 8px;">
+
+                            <!-- Image -->
+                            <img src="../images/toyscreen3.png" style="width:100%; border-radius: 1%;">
+
+                            <!-- Page Number and Cycle Buttons -->
+                            <div style="color: #f2f2f2; font-size: 12px; padding: 8px 12px; position: absolute; top: 0;">3 / 3</div>
+                            <a class="next" style="color: rgba(255, 255, 255, 0.753);" onclick="PlusSlides(1)"><i class="fas fa-chevron-right"></i></a>
+                            <a class="prev" style="color: rgba(255, 255, 255, 0.753);" onclick="PlusSlides(-1)"><i class="fas fa-chevron-left"></i></a>
+
+                        </div>
+                        <!-- IMG 4 -->
+                        <!-- IMAGE SLIDER -->
+
+                        <!-- SLIDER PREVIEW BUTTONS -->
+                        <div style="text-align: center; display:flex; padding-left: 15px; padding-right: 15px; padding-bottom: 15px;">
+                        
+                            <!-- Img Button 1 -->
+                            <div class="preview w3-opacity w3-hover-opacity-off w3-opacity-off" style="cursor:pointer; display: inline-block; vertical-align: middle; margin: 8px; width: 100%; position: relative;" onclick="CurrentPreviewSlide(1)">
+                                <img class="prev-image" src="../images/toyscreen2.PNG" style="width:100%; border-radius: 8px;">
+                                <a style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #ffffff; font-size: x-large;"><i class="fas fa-play"></i></a>
+                            </div>
+
+                            <!-- Img Button 2 -->
+                            <div class="preview w3-opacity w3-hover-opacity-off" style="cursor:pointer; display: inline-block; vertical-align: middle; margin: 8px; width: 100%; position: relative;" onclick="CurrentPreviewSlide(2)">
+                                <img class="prev-image" src="../images/toywarsscreenshot.png" style="width:100%; border-radius: 8px;">
+                            </div>
+
+                            <!-- Img Button 3 -->
+                            <div class="preview w3-opacity w3-hover-opacity-off" style="cursor:pointer; display: inline-block; vertical-align: middle; margin: 8px; width: 100%; position: relative;" onclick="CurrentPreviewSlide(3)">
+                                <img class="prev-image" src="../images/toyscreen3.png" style="width:100%; border-radius: 8px;">
+                            </div>
+
+                        </div>
+                        <!-- SLIDER PREVIEW BUTTONS -->
+
+                        <!-- BUTTON SECTION MOBILE -->
+                        <div class="mobile-title-section">
+
+                            <!-- buttons-->
+                            <div>
+                                <a class="project-download-btn" style="margin-left: auto; margin-right: auto; width: 100%;" href="https://github.com/Pickled-Roadrage2017/Final-Project-Repository">SOURCE CODE</a>
+                            </div>
+
+                            <!-- buttons-->
+                            <div>
+                                <a class="project-download-btn" style="margin-left: auto; margin-right: auto; width: 100%; background-color:darkslateblue" href="https://pickled-roadrage.itch.io/toy-wars">DOWNLOAD (ITCH.IO)</a>
+                            </div>
+
+                        </div>
+                        <!-- BUTTON SECTION MOBILE -->
+
+                        <!-- MAIN CONTENT SECTION -->
+                        <div style="background-color: #1c1c1c; margin: 15px; margin-top: 0px; border-radius: 10px; border: 1px;">
+                            <div style="color: #b3b3b3; text-align: left; padding: 30px;">
+                                
+                                <!-- SECTION 1 -->
+                                <!-- Title -->
+                                <h4>INTRODUCTION</h4><br>
+
+                                <!-- Paragraph 1 -->
+                                <p>Toy Wars was a 3-month long project developed using Unity and C# as a part of my studies at the Academy of Interactive Entertainment (AIE). The project was developed by 5 games development students and was the final assessment task of the first year of studies. My role, along with one other student, was programming.</p>
+
+                                <!-- Paragraph 2 -->
+                                <p>My role in programming consisted of several main tasks including the turn manager, teddy bear bases, gameplay UI and menus, as well as other various scripts required throughout development. The other programmer mainly focused on soldiers, working on the shooting mechanics and movement.</p><br>
+                                <!-- SECTION 1 -->
+
+                                <!-- SECTION 2 -->
+                                <!-- Title -->
+                                <br><h4>PROJECT GOALS</h4><br>
+
+                                <!-- Paragraph 1 -->
+                                <p>The overall goal of the Toy Wars project, other than an assignment requirement, was to create a simple, turn-based, player versus player game inspired by other games like worms and army men. </p>
+
+                                <!-- Paragraph 2 -->
+                                <p>The game was intended to be a two-player hot-seat with army soldiers and teddy bears acting as units for each player. The end goal was to kill all of the enemy units or destroy the enemy Teddy Bear before the other player did the same. The project had a few hiccups along the way but mostly turned out how we intended minus a few different weapons and unit types.</p><br/>
+                                <!-- SECTION 2 -->
+
+                                <!-- SECTION 3 -->
+                                <br><h4>PERSONAL ACCOMPLISHMENTS</h4><br>
+
+                                <ul>
+                                    <!-- Dot point 1 -->
+                                    <li>First turn managment system.</li>
+
+                                    <!-- Dot point 2 -->
+                                    <li>Unity UI usage.</li>
+
+                                    <!-- Dot point 3 -->
+                                    <li>First unit spawning system.</li>
+
+                                    <!-- Dot point 4 -->
+                                    <li>First three-dimensional development project.</li>
+
+                                    <!-- Dot point 5 -->
+                                    <li>First time developing a game with a full team.</li>
+
+                                    <!-- Dot point 6 -->
+                                    <li>Finding, solving and fixing complicated bugs.</li>
+                                </ul><br>
+                                <!-- SECTION 3 -->
+
+                                <!-- SECTION 4 -->
+                                <!-- Title -->
+                                <br><h4>LESSONS LEARNED</h4><br>
+
+                                <!-- Paragraph 1 -->
+                                <p>During the development of the Toy Wars project, I learnt many things about teamwork and scope. Toy Wars was one of the first group video game projects most of the students had ever worked on, and as a result, everyone was very excited. We were all overconfident, thinking we could do anything, quickly realizing and falling felt to the pressure of how much work we had given ourselves. As a result, we had to scope down a lot of great original ideas we had envisioned as staples of the projects. It was a hard reality.</p>
+
+                                <!-- Paragraph 2 -->
+                                <p>As a programmer on the project, there were many things I learnt. Things I thought were simple programming tasks didn't turn out to be so simple. An example of this was the turn management system, in which I implemented quickly at the start of development, moving on to other tasks thinking it was more or less complete. Quickly issues started to arise and I had to rethink my strategies, the turn management system was not simple, it was kind of complicated.</p>
+                                
+                                <!-- Paragrpah 3 -->
+                                <p>Other things I learnt during my time working on this project was the importance of planning and research, especially when it came to things like a turn management system, for example. My take away from this is I shouldn't assume something might be simple without confirming it first, as well as a better understanding of how to scope a project.</p>
+                                <!-- SECTION 4 -->
+    
+                            </div>
+
+                        </div>
+                        <!-- MAIN CONTENT SECTION -->
 
                     </div>
-                    <!-- LEFT GROUP -->
+                    <!-- LEFT PANEL -->
 
-                    <!-- RIGHT GROUP -->
-                    <div id='frontpage-images'>
+                    <!-- RIGHT PANEL -->
+                    <div id='frontpage-images' style="padding: 0px; padding-right: 15px; padding-top: 15px; margin: 0px;">
 
+                        <!-- TITLE SECTION -->
+                        <div class="project-title">
+
+                            <!-- Project Logo -->
+                            <img src="../images/toytitle.png" style="height:100%; width:100%; display: block; margin-left: auto; margin-right: auto; margin-bottom: 60px; margin-top: 35px;"/>
+
+                            <!-- buttons-->
+                            <div>
+                                <a class="project-download-btn" style="margin-left: auto; margin-right: auto; width: 100%;" href="https://github.com/Pickled-Roadrage2017/Final-Project-Repository">SOURCE CODE</a>
+                            </div>
+
+                            <!-- buttons-->
+                            <div>
+                                <a class="project-download-btn" style="margin-left: auto; margin-right: auto; width: 100%; background-color:darkslateblue" href="https://pickled-roadrage.itch.io/toy-wars">DOWNLOAD (ITCH.IO)</a>
+                            </div>
+                            
+                            <!-- Info section -->
+                            <div style="margin-bottom: 25px;">
+                                <div style="margin-top: 35px;">
+                                    <span style="color: #b3b3b3; font-weight: bold; float: left;">DEVELOPED:</span>
+                                    <span style="color: #b3b3b3; float: right;">09/2017</span>
+                                    <hr class="line-seperator" style="height: 2px; background: #47474700;">
+                                </div>
+                                
+                                <div>
+                                    <span style="color: #b3b3b3; font-weight: bold; float: left;">STATUS:</span>
+                                    <span style="color: #b3b3b3; float: right;">FINISHED</span>
+                                    <hr class="line-seperator" style="height: 2px;background: #47474700;">
+                                </div>
+                                
+                                <div>
+                                    <span style="color: #b3b3b3; font-weight: bold; float: left;">ENGINE:</span>
+                                    <span style="color: #b3b3b3; float: right;">UNITY</span>
+                                    <hr class="line-seperator" style="height: 2px; background: #47474700;">
+                                </div>
+                                
+                                <div>
+                                    <span style="color: #b3b3b3; font-weight: bold; float: left;">LANGUAGE:</span>
+                                    <span style="color: #b3b3b3; float: right;">C#</span>
+                                    <hr class="line-seperator" style="height: 2px; background: #47474700;">
+                                    <hr class="line-seperator" style="height: 2px; background: #47474700;">
+                                </div>
+                            </div>
+                            <!-- Info section -->
+
+                            <!-- Project Description -->
+                            <div style="padding-bottom: 15px;">
+                                <hr class="line-seperator" style="height: 2px; background: #474747;">
+                                <p style="color: #b3b3b3; text-align: left;">Toy Wars is a turn-based two-player hot-seat game inspired by Worms, developed using Unity and written in C#. Both players have their own set of toy soldiers and must use them to destroy either their opponent's soldiers or their teddy bear base.</p>
+                            </div>
+                        </div>
+                        <!-- TITLE SECTION -->
 
                     </div>
-                    <!-- RIGHT GROUP -->
+                    <!-- RIGHT PANEL -->
+
+                    <!-- SCRIPT FOR PREVIEW SLIDES -->
+                    <script>
+                        
+                        // index for the current active preview slide
+                        var nSlideIndex = 1;
+
+                        // Function for moving to the next slide with arrows
+                        function PlusSlides(nIndex) 
+                        {
+                            // Run the function for changing slides
+                            DisplayDiv(nSlideIndex += nIndex);
+                        }
+                        
+                        // Function for setting the current slide by index
+                        function CurrentPreviewSlide(nIndex)
+                        {
+                            // Run the function for changing slides
+                            DisplayDiv(nSlideIndex = nIndex);
+                        }
+                        
+                        // Main function for changing preview slides
+                        function DisplayDiv(nIndex)
+                        {
+                            // variable for the for loops
+                            var i;
+                            
+                            // Get all the slides and buttons
+                            var slides = document.getElementsByClassName("PreviewSlide");
+                            var btns = document.getElementsByClassName("preview");
+                        
+                            // If the passed in number is greater than the slides amount
+                            if (nIndex > slides.length) 
+                            {
+                                // set the slide index to 1
+                                nSlideIndex = 1
+                            }
+                        
+                            // If the passed in number is less than 1
+                            if (nIndex < 1) 
+                            {
+                                // set the slide index to the number of slides
+                                nSlideIndex = slides.length
+                            }
+                        
+                            // loop through all the preview slides
+                            for (i = 0; i < slides.length; i++) 
+                            {
+                                // set the visual elements of all inactive preview slides
+                                slides[i].style.display = "none";
+                            }
+
+                            // Loop through all the preview buttons
+                            for (i = 0; i < btns.length; i++) 
+                            {
+                                // Set the visual elements of all inactive preview buttons
+                                btns[i].className = btns[i].className.replace(" w3-opacity-off", "");
+                            }
+
+                            // Set the visual elements of the active preview and its button
+                            slides[nSlideIndex-1].style.display = "block";
+                            btns[nSlideIndex-1].className += " w3-opacity-off";
+                        }
+                    </script>
+                    <!-- SCRIPT FOR PREVIEW SLIDES -->
+                    <!------------------------------------------------------------------->
 
                 </div>
             </div>
@@ -219,42 +408,6 @@
 
     </section>
     <!-- Main content background -->
-
-    <!-- IMAGE MODAL -->
-    <!-- The Modal -->
-    <div id="ImageViewer" class="ImgModal">
-        <span class="ImgClose">&times;</span>
-        <img class="ImgModal-content" id="img01">
-        <div id="ImgCaption"></div>
-    </div>
-
-    <!-- Modal Script -->
-    <script>
-        // Get the modal
-        var modal = document.getElementById("ImageViewer");
-
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var img = document.getElementById("ImgViewer");
-        var modalImg = document.getElementById("img01");
-        var captionText = document.getElementById("ImgCaption");
-
-        img.onclick = function ()
-        {
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
-        }
-
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("ImgClose")[0];
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function ()
-        { 
-            modal.style.display = "none";
-        }
-    </script>
-    <!-- IMAGE MODAL -->
 
     <!-- CONTACT MODAL -->
     <div id="id01" class="w3-modal">
