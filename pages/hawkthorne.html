@@ -1,0 +1,561 @@
+<!-- Setup -->
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
+
+<!-- Head -->
+<head>
+    <!-- Website Info -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Hello, my name is Thomas Wiltshire and I welcome you to my portfolio! Here you can view my resume, a few projects I have worked on as a part of my studies, and some fun code or game stuff I have done in my free time.">
+    <meta name="author" content="Thomas Wiltshire">
+    <meta property="og:url" content="https://thomaswiltshire.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Thomas Wiltshire - Portfolio" />
+    <meta property="og:description" content="Hello, my name is Thomas Wiltshire and I welcome you to my portfolio! Here you can view my resume, a few projects I have worked on as a part of my studies, and some fun code or game stuff I have done in my free time." />
+    <meta property="og:image" content="https://thomaswiltshire.com/images/previewimage.png" />
+
+    <!-- Website Title -->
+    <title>Thomas Wiltshire - Portfolio</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../images/favicon.PNG" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+    <!-- The main stylesheet for the website -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/half-slider.css" rel="stylesheet">
+
+    <!--  -->
+    <link href="../css/w3.css" rel="stylesheet">
+</head>
+<!-- Head -->
+
+<!-- Body -->
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #2a2a2a;">
+            <div class="container">
+
+                <a class="navbar-brand" href="https://thomaswiltshire.com/" style="color: #b3b3b3;">THOMAS WILTSHIRE</a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Home -->
+                        <li class="nav-item">
+                            <a class="nav-link active" href="https://thomaswiltshire.com/">PROJECTS</a>
+                        </li>
+
+                        <!-- Blog -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/blog.html">BLOG</a>
+                        </li>
+
+                        <!-- About -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/about.html">ABOUT</a>
+                        </li>
+
+                        <!-- Resume -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/resume.html">RESUME</a>
+                        </li>
+
+                        <!-- Contact -->
+                        <li class="nav-item">
+                            <button class="contact-btn" onclick="document.getElementById('id01').style.display='block'">CONTACT</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Navigation -->
+
+    </header>
+    <!-- Header -->
+
+    <!-- Main content background -->
+    <section class="py-5" style="background-color: #1E1F23;">
+
+        <!-- Main content frame -->
+        <div class="row" id="frontpage-frame">
+
+            <!-- page content -->
+            <div class="col-md-12" style="vertical-align:middle; padding: 0px;">
+                <div class="row content-inner-frame" style="padding: 0px;">
+
+                    <!------------------------------------------------------------------->
+                    <!-- LEFT PANEL -->
+                    <div id="frontpage-text" style="margin: 0px;">
+
+                        <!-- TITLE SECTION MOBILE -->
+                        <div class="mobile-title-section">
+
+                            <!-- Project Logo -->
+                            <img src="../images/hawklogo.png" style="height:100%; width:80%; display: block; margin-left: auto; margin-right: auto; margin-bottom: 60px; margin-top: 35px;"/>
+
+                            <!-- Description Logo -->
+                            <div style="padding-bottom: 15px; ">
+                                <hr class="line-seperator" style="height: 2px; background: #474747;">
+                                <p style="color: #b3b3b3; font-size: small; text-align: center;">Journey to the center of Hawkthorne is a community-developed recreation of a video game shown in episode 3.20 of NBC's Community. It was an open-source development using Love2D and written in Lua.</p>
+                            </div>
+                        </div>
+                        <!-- TITLE SECTION MOBILE -->
+
+                        <!-- IMAGE SLIDER -->
+                        <!-- IMG 1 -->
+                        <div class="container PreviewSlide" style="margin: 0px;">
+
+                            <!-- Video -->
+                            <video controls loop width="100%" style="width:100%; border-radius: 1%;" class="blogvid">
+                                <source src="../images/hawkvideo1.mp4" type="video/mp4">
+                            </video>
+
+                            <!-- Page Number and Cycle Buttons -->
+                            <div style="color: #f2f2f2; font-size: 12px; padding: 8px 12px; position: absolute; top: 0;">1 / 4</div>
+                            <a class="next" style="color: rgba(255, 255, 255, 0.753);" onclick="PlusSlides(1)"><i class="fas fa-chevron-right"></i></a>
+                            <a class="prev" style="color: rgba(255, 255, 255, 0.753);" onclick="PlusSlides(-1)"><i class="fas fa-chevron-left"></i></a>
+
+                        </div>
+                        <!-- IMG 1 -->
+
+                        <!-- IMG 2 -->
+                        <div class="container PreviewSlide" style="display: none;  margin: 0px;">
+
+                            <!-- Video -->
+                            <video controls loop width="100%" style="width:100%; border-radius: 1%;" class="blogvid">
+                                <source src="../images/hawkvideo2.mp4" type="video/mp4">
+                            </video>
+
+                            <!-- Page Number and Cycle Buttons -->
+                            <div style="color: #f2f2f2; font-size: 12px; padding: 8px 12px; position: absolute; top: 0;">2 / 4</div>
+                            <a class="next" style="color: rgba(255, 255, 255, 0.753);" onclick="PlusSlides(1)"><i class="fas fa-chevron-right"></i></a>
+                            <a class="prev" style="color: rgba(255, 255, 255, 0.753);" onclick="PlusSlides(-1)"><i class="fas fa-chevron-left"></i></a>
+
+                        </div>
+                        <!-- IMG 2 -->
+
+                        <!-- IMG 3 -->
+                        <div class="container PreviewSlide" style="display: none; margin: 0px;">
+
+                            <!-- Video -->
+                            <video controls loop width="100%" style="width:100%; border-radius: 1%;" class="blogvid">
+                                <source src="../images/hawkvideo3.mp4" type="video/mp4">
+                            </video>
+
+                            <!-- Page Number and Cycle Buttons -->
+                            <div style="color: #f2f2f2; font-size: 12px; padding: 8px 12px; position: absolute; top: 0;">3 / 4</div>
+                            <a class="next" style="color: rgba(255, 255, 255, 0.753);" onclick="PlusSlides(1)"><i class="fas fa-chevron-right"></i></a>
+                            <a class="prev" style="color: rgba(255, 255, 255, 0.753);" onclick="PlusSlides(-1)"><i class="fas fa-chevron-left"></i></a>
+
+                        </div>
+                        <!-- IMG 3 -->
+
+                        <!-- IMG 4 -->
+                        <div class="container PreviewSlide" style="display: none; margin: 0px; margin-bottom: 8px;">
+
+                            <!-- Image -->
+                            <img src="../images/hawkscreen1.PNG" style="width:100%; border-radius: 1%;">
+
+                            <!-- Page Number and Cycle Buttons -->
+                            <div style="color: #f2f2f2; font-size: 12px; padding: 8px 12px; position: absolute; top: 0;">4 / 4</div>
+                            <a class="next" style="color: rgba(255, 255, 255, 0.753);" onclick="PlusSlides(1)"><i class="fas fa-chevron-right"></i></a>
+                            <a class="prev" style="color: rgba(255, 255, 255, 0.753);" onclick="PlusSlides(-1)"><i class="fas fa-chevron-left"></i></a>
+
+                        </div>
+                        <!-- IMG 4 -->
+                        <!-- IMAGE SLIDER -->
+
+                        <!-- SLIDER PREVIEW BUTTONS -->
+                        <div style="text-align: center; display:flex; padding-left: 15px; padding-right: 15px; padding-bottom: 15px;">
+                        
+                            <!-- Img Button 1 -->
+                            <div class="preview w3-opacity w3-hover-opacity-off w3-opacity-off" style="cursor:pointer; display: inline-block; vertical-align: middle; margin: 8px; width: 100%; position: relative;" onclick="CurrentPreviewSlide(1)">
+                                <img class="prev-image" src="../images/hawkscreen2.PNG" style="width:100%; border-radius: 8px;">
+                                <a style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #ffffff; font-size: x-large;"><i class="fas fa-play"></i></a>
+                            </div>
+
+                            <!-- Img Button 2 -->
+                            <div class="preview w3-opacity w3-hover-opacity-off" style="cursor:pointer; display: inline-block; vertical-align: middle; margin: 8px; width: 100%; position: relative;" onclick="CurrentPreviewSlide(2)">
+                                <img class="prev-image" src="../images/hawkscreen3.PNG" style="width:100%; border-radius: 8px;">
+                                <a style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #ffffff; font-size: x-large;"><i class="fas fa-play"></i></a>
+                            </div>
+
+                            <!-- Img Button 2 -->
+                            <div class="preview w3-opacity w3-hover-opacity-off" style="cursor:pointer; display: inline-block; vertical-align: middle; margin: 8px; width: 100%; position: relative;" onclick="CurrentPreviewSlide(3)">
+                                <img class="prev-image" src="../images/hawkscreen4.PNG" style="width:100%; border-radius: 8px;">
+                                <a style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #ffffff; font-size: x-large;"><i class="fas fa-play"></i></a>
+                            </div>
+
+                            <!-- Img Button 4 -->
+                            <div class="preview w3-opacity w3-hover-opacity-off" style="cursor:pointer; display: inline-block; vertical-align: middle; margin: 8px; width: 100%; position: relative;" onclick="CurrentPreviewSlide(4)">
+                                <img class="prev-image" src="../images/hawkscreen1.PNG" style="width:100%; border-radius: 8px;">
+                            </div>
+
+                        </div>
+                        <!-- SLIDER PREVIEW BUTTONS -->
+
+                        <!-- BUTTON SECTION MOBILE -->
+                        <div class="mobile-title-section">
+
+                            <!-- buttons-->
+                            <div>
+                                <a class="project-download-btn" style="margin-left: auto; margin-right: auto; width: 100%; background-color:darkslateblue" href="https://projecthawkthorne.com/">WEBSITE</a>
+                            </div>
+
+                        </div>
+                        <!-- BUTTON SECTION MOBILE -->
+
+                        <!-- MAIN CONTENT SECTION -->
+                        <div style="background-color: #1c1c1c; margin: 15px; margin-top: 0px; border-radius: 10px; border: 1px;">
+                            <div style="color: #b3b3b3; text-align: left; padding: 30px;">
+
+                                <!-- SECTION 1 -->
+                                <!-- Title -->
+                                <h4>INTRODUCTION</h4><br>
+    
+                                <!-- Paragraph 1 -->
+                                <p>One of my first tastes in video game development was with the discovery of Journey to the Center of Hawthrone, a fan-made game based on an episode of NBC's Community where the show is shown from the perspective of a video game. My love of the show and equal love of video games kept me intrigued during the games earlier development, until one day, they started a spreadsheet of character sprites they wanted to add to the game, and it was up to the community to jump in and help out. When I saw this spreadsheet, I realized I could be a part of the development process, and it made me incredibly excited! To this day, that excitement still keeps me going in my other development projects, and I am so proud of the sprites I created that made it into the final game.</p><br>
+                                <!-- SECTION 1 -->
+
+                                <!-- SECTION 2 -->
+                                <!-- Title -->
+                                <br><h4>CREATING SPRITE SHEETS</h4><br>
+    
+                                <!-- Paragraph 1 -->
+                                <p>One of the first character skins I created was Cowboy Abed (From Episode 21 of Season 2), seen in video 1 in the preview section above. The Cowboy costume was a perfect sprite to start with as the most complicated feature to create was the hat, so it was both an introduction and a little challenge.</p>
+                                
+                                <!-- Paragraph 2 -->
+                                <p>For the second character skin, I decided to create something a little more casual, just to get more practice in for sprite creation. Sprite two was the Heather Popandlocklear Jeff costume (From Episode 2 of Season 2), seen in video 2 in the preview section above.</p>
+    
+                                <!-- Paragraph 3 -->
+                                <p>The third character skin I wanted to get a little more creative, so I chose one of the most complicated options on the list, Mercury Poisoning Jeff (Also from Episode 21 of Season 2), seen in video 3 in the preview section above. This skin was a fun challenge as the character is in a straight jacket, meaning I had the chance to be creative and figure out a way for him to interact with the world with the restricted movement.</p>
+
+                                <!-- Paragraph 4 -->
+                                <p>Finally, the last skin I created was the Bullet Wound Troy costume (Again from Episode 21 of Season 2), seen in the screenshot at position 4 in the preview section above. Sadly I never finished this sprite, and in the end, I submitted the few tiles that I created and asked someone else to complete the remaining tiles. Sadly for some reason, Wounded Troy didn't make it into the final game, though still an amazing looking skin!</p>
+                                <!-- SECTION 2 -->
+
+                            </div>
+
+                        </div>
+                        <!-- MAIN CONTENT SECTION -->
+
+                    </div>
+                    <!-- LEFT PANEL -->
+
+                    <!-- RIGHT PANEL -->
+                    <div id='frontpage-images' style="padding: 0px; padding-right: 15px; padding-top: 15px; margin: 0px;">
+
+                        <!-- TITLE SECTION -->
+                        <div class="project-title">
+
+                            <!-- Project Logo -->
+                            <img src="../images/hawklogo.png" style="height:100%; width:100%; display: block; margin-left: auto; margin-right: auto; margin-bottom: 60px; margin-top: 35px;"/>
+
+                            <!-- buttons-->
+                            <div>
+                                <a class="project-download-btn" style="margin-left: auto; margin-right: auto; width: 100%; background-color:darkslateblue" href="https://projecthawkthorne.com/">WEBSITE</a>
+                            </div>
+                            
+                            <!-- Info section -->
+                            <div style="margin-bottom: 25px;">
+                                <div style="margin-top: 35px;">
+                                    <span style="color: #b3b3b3; font-weight: bold; float: left;">WHEN:</span>
+                                    <span style="color: #b3b3b3; float: right;">07/2012</span>
+                                    <hr class="line-seperator" style="height: 2px; background: #47474700;">
+                                </div>
+                                
+                                <div>
+                                    <span style="color: #b3b3b3; font-weight: bold; float: left;">STATUS:</span>
+                                    <span style="color: #b3b3b3; float: right;">FINISHED</span>
+                                    <hr class="line-seperator" style="height: 2px;background: #47474700;">
+                                </div>
+                                
+                                <div>
+                                    <span style="color: #b3b3b3; font-weight: bold; float: left;">WORK:</span>
+                                    <span style="color: #b3b3b3; float: right;"> PIXEL ART</span>
+                                    <hr class="line-seperator" style="height: 2px; background: #47474700;">
+                                </div>
+                                
+                                <div>
+                                    <span style="color: #b3b3b3; font-weight: bold; float: left;">TYPE:</span>
+                                    <span style="color: #b3b3b3; float: right;">VOLUNTEER</span>
+                                    <hr class="line-seperator" style="height: 2px; background: #47474700;">
+                                    <hr class="line-seperator" style="height: 2px; background: #47474700;">
+                                </div>
+                            </div>
+                            <!-- Info section -->
+
+                            <!-- Project Description -->
+                            <div style="padding-bottom: 15px;">
+                                <hr class="line-seperator" style="height: 2px; background: #474747;">
+                                <p style="color: #b3b3b3; text-align: left;">Journey to the center of Hawkthorne is a community-developed recreation of a video game shown in episode 3.20 of NBC's Community. It was an open-source development using Love2D and written in Lua.</p>
+                            </div>
+                        </div>
+                        <!-- TITLE SECTION -->
+
+                        <!-- DOWLOADS SECTIONS -->
+                        <div class="project-downloads">
+                            <h5 style="margin-bottom: 30px;">DOWNLOADS</h5>
+                            <a class="project-download-btn" style="background-color:#2a2a2a; color: #b3b3b3; margin-bottom: 10px;" href="../files/Abed-Cowboy.png"><i style="font-size:16px; color: #b3b3b3;" class="fa">&#xf15b;</i>&nbsp;&nbsp;&nbsp;Abed-Cowboy.png</a>
+                            <a class="project-download-btn" style="background-color:#2a2a2a; color: #b3b3b3; margin-bottom: 10px;" href="../files/Jeff-Popandlock.png"><i style="font-size:16px; color: #b3b3b3;" class="fa">&#xf15b;</i>&nbsp;&nbsp;&nbsp;Jeff-Popandlock.png</a>
+                            <a class="project-download-btn" style="background-color:#2a2a2a; color: #b3b3b3; margin-bottom: 10px;" href="../files/Jeff-Insane.png"><i style="font-size:16px; color: #b3b3b3;" class="fa">&#xf15b;</i>&nbsp;&nbsp;&nbsp;Jeff-Insane.png</a>
+                            <a class="project-download-btn" style="background-color:#2a2a2a; color: #b3b3b3;" href="../files/Troy-Wounded.png"><i style="font-size:16px; color: #b3b3b3;" class="fa">&#xf15b;</i>&nbsp;&nbsp;&nbsp;Troy-Wounded.png</a>
+                        </div>
+                        <!-- DOWLOADS SECTIONS -->
+
+                    </div>
+                    <!-- RIGHT PANEL -->
+
+                    <!-- SCRIPT FOR PREVIEW SLIDES -->
+                    <script>
+                        
+                        // index for the current active preview slide
+                        var nSlideIndex = 1;
+
+                        // Function for moving to the next slide with arrows
+                        function PlusSlides(nIndex) 
+                        {
+                            // Run the function for changing slides
+                            DisplayDiv(nSlideIndex += nIndex);
+                        }
+                        
+                        // Function for setting the current slide by index
+                        function CurrentPreviewSlide(nIndex)
+                        {
+                            // Run the function for changing slides
+                            DisplayDiv(nSlideIndex = nIndex);
+                        }
+                        
+                        // Main function for changing preview slides
+                        function DisplayDiv(nIndex)
+                        {
+                            // variable for the for loops
+                            var i;
+                            
+                            // Get all the slides and buttons
+                            var slides = document.getElementsByClassName("PreviewSlide");
+                            var btns = document.getElementsByClassName("preview");
+                        
+                            // If the passed in number is greater than the slides amount
+                            if (nIndex > slides.length) 
+                            {
+                                // set the slide index to 1
+                                nSlideIndex = 1
+                            }
+                        
+                            // If the passed in number is less than 1
+                            if (nIndex < 1) 
+                            {
+                                // set the slide index to the number of slides
+                                nSlideIndex = slides.length
+                            }
+                        
+                            // loop through all the preview slides
+                            for (i = 0; i < slides.length; i++) 
+                            {
+                                // set the visual elements of all inactive preview slides
+                                slides[i].style.display = "none";
+                            }
+
+                            // Loop through all the preview buttons
+                            for (i = 0; i < btns.length; i++) 
+                            {
+                                // Set the visual elements of all inactive preview buttons
+                                btns[i].className = btns[i].className.replace(" w3-opacity-off", "");
+                            }
+
+                            // Set the visual elements of the active preview and its button
+                            slides[nSlideIndex-1].style.display = "block";
+                            btns[nSlideIndex-1].className += " w3-opacity-off";
+                        }
+                    </script>
+                    <!-- SCRIPT FOR PREVIEW SLIDES -->
+                    <!------------------------------------------------------------------->
+
+                </div>
+            </div>
+            <!-- page content -->
+
+        </div>
+        <!-- Main content frame -->
+
+    </section>
+    <!-- Main content background -->
+
+    <!-- CONTACT MODAL -->
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4" style="background-color: #1E1F23;">
+
+            <!-- MODAL HEADER -->
+            <header class="w3-container w3-darker-grey">
+                <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright" style="position:center; font-size:41px;">&times;</span>
+                <h2 style="color: #b3b3b3; margin-top: 20px; margin-bottom: 20px;">CONTACT ME</h2>
+            </header>
+            <!-- MODAL HEADER -->
+
+            <!-- MODAL CONTENT -->
+            <div class="row" id="contactmodal-frame" style="vertical-align:middle; text-align:center;">
+                <div class="col-md-12" style="vertical-align:middle;">
+                    <div class="row" style="vertical-align:middle; background-color: transparent; margin-bottom:0px;">
+
+                        <!-- Contact Image -->
+                        <div id='contactmodal-images'>
+                            <img src="../images/profilepic.png" id="contactimage" style="width:100%; height:100%; width:100%;" alt="Thomas" />
+                        </div>
+
+                        <!-- Contact Information -->
+                        <div id="contactmodal-text">
+                            <div style="width:100%; height:100%; background-color: transparent; padding-left:20px; padding-right:20px;">
+                                <h1 style="color: #b3b3b3; text-align: left;">I'M THOMAS WILTSHIRE</h1>
+                                <hr class="line-seperator" width="100%" align="right">
+                                <div style="text-align: left;"><h6 style="color: #b3b3b3; text-align: left; display: inline; margin-right:10px;">LOCATION:</h6><a style="color: #b3b3b3; text-align: left; display: inline; font-size:15px;" href="https://www.google.com/maps/@-37.8861393,145.2645268,14z?hl=en">FERNTREE GULLY, VICTORIA AUSTRALIA</a></div>
+                                <div style="text-align: left;"><h6 style="color: #b3b3b3; text-align: left; display: inline; margin-right:10px;">EMAIL:</h6><a style="color: #b3b3b3; text-align: left; display: inline; font-size:15px;" href="mailto:thomas.wiltshire14@icloud.com">THOMAS.WILTSHIRE14@ICLOUD.COM</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- MODAL CONTENT -->
+
+            <!-- MODAL FOOTER -->
+            <footer class="w3-container w3-darker-grey" style="padding: 10px; padding-bottom:0px;">
+                <div class="container">
+                    <div class="row" style="margin-bottom:5px;">
+                        <div class="col-md-6 mb-0 mb-lg-0" style="margin: auto;">
+                            <ul class="list-inline mb-0" style="text-align:center;">
+
+                                <!-- Twitter -->
+                                <li class="list-inline-item">
+                                    <a class="btn btn-social text-center rounded-circle" style="color: #b3b3b3;" href="https://twitter.com/Jeffrey_W23">
+                                        <i class="fab fa-fw fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <!-- Twitter -->
+
+                                <!-- Instagram -->
+                                <li class="list-inline-item">
+                                    <a class="btn btn-social text-center rounded-circle" style="color: #b3b3b3;" href="https://www.instagram.com/thomaswiltshire/">
+                                        <i class="fab fa-fw fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <!-- Instagram -->
+
+                                <!-- Github -->
+                                <li class="list-inline-item">
+                                    <a class="btn btn-social text-center rounded-circle" style="color: #b3b3b3;" href="https://github.com/Jeffrey-W23">
+                                        <i class="fab fa-fw fa-github"></i>
+                                    </a>
+                                </li>
+                                <!-- Github -->
+
+                                <!-- LinkedIn -->
+                                <li class="list-inline-item">
+                                    <a class="btn btn-social text-center rounded-circle" style="color: #b3b3b3;" href="https://www.linkedin.com/in/thomaswiltshire14/">
+                                        <i class="fab fa-fw fa-linkedin-in"></i>
+                                    </a>
+                                </li>
+                                <!-- LinkedIn -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- MODAL FOOTER -->
+
+        </div>
+    </div>
+    <!-- CONTACT MODAL -->
+
+    <!-- Footer -->
+    <footer class="py-5" style="background-color: #2a2a2a;">
+
+        <!-- Social Icons -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-5 mb-lg-0" style="margin: auto;">
+                    <ul class="list-inline mb-0" style="text-align:center;">
+
+                        <!-- Twitter -->
+                        <li class="list-inline-item">
+                            <a class="btn btn-social text-center rounded-circle" style="color: #b3b3b3;" href="https://twitter.com/Jeffrey_W23">
+                                <i class="fab fa-fw fa-twitter"></i>
+                            </a>
+                        </li>
+                        <!-- Twitter -->
+
+                        <!-- Instagram -->
+                        <li class="list-inline-item">
+                            <a class="btn btn-social text-center rounded-circle" style="color: #b3b3b3;" href="https://www.instagram.com/thomaswiltshire/">
+                                <i class="fab fa-fw fa-instagram"></i>
+                            </a>
+                        </li>
+                        <!-- Instagram -->
+
+                        <!-- Github -->
+                        <li class="list-inline-item">
+                            <a class="btn btn-social text-center rounded-circle" style="color: #b3b3b3;" href="https://github.com/Jeffrey-W23">
+                                <i class="fab fa-fw fa-github"></i>
+                            </a>
+                        </li>
+                        <!-- Github -->
+
+                        <!-- LinkedIn -->
+                        <li class="list-inline-item">
+                            <a class="btn btn-social text-center rounded-circle" style="color: #b3b3b3;" href="https://www.linkedin.com/in/thomaswiltshire14/">
+                                <i class="fab fa-fw fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <!-- LinkedIn -->
+
+                        <!-- Email -->
+                        <li class="list-inline-item">
+                            <a class="btn btn-social text-center rounded-circle" style="color: #b3b3b3;" href="mailto:thomas.wiltshire14@icloud.com">
+                                <i class="fab fas fa-envelope"></i>
+                            </a>
+                        </li>
+                        <!-- Email -->
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Social Icons -->
+
+        <!-- Copyright -->
+        <div class="container" style="margin-top: 30px;">
+            <p class="m-0 text-center" style="color: #b3b3b3;">COPYRIGHT &copy; THOMAS WILTSHIRE 2022</p>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+
+</body>
+<!-- Body -->
+
+</html>
+
+<!-- Template Used -->
+<!-- https://startbootstrap.com/template-overviews/freelancer/ -->
