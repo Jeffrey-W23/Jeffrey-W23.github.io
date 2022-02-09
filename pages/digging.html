@@ -1,0 +1,588 @@
+<!-- Setup -->
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
+
+<!-- Head -->
+<head>
+    <!-- Website Info -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Hello, my name is Thomas Wiltshire and I welcome you to my portfolio! Here you can view my resume, a few projects I have worked on as a part of my studies, and some fun code or game stuff I have done in my free time.">
+    <meta name="author" content="Thomas Wiltshire">
+    <meta property="og:url" content="https://thomaswiltshire.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Thomas Wiltshire - Portfolio" />
+    <meta property="og:description" content="Hello, my name is Thomas Wiltshire and I welcome you to my portfolio! Here you can view my resume, a few projects I have worked on as a part of my studies, and some fun code or game stuff I have done in my free time." />
+    <meta property="og:image" content="https://thomaswiltshire.com/images/previewimage.png" />
+
+    <!-- Website Title -->
+    <title>Thomas Wiltshire - Portfolio</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../images/favicon.PNG" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+    <!-- The main stylesheet for the website -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/half-slider.css" rel="stylesheet">
+
+    <!--  -->
+    <link href="../css/w3.css" rel="stylesheet">
+</head>
+<!-- Head -->
+
+<!-- Body -->
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #2a2a2a;">
+            <div class="container">
+
+                <a class="navbar-brand" href="https://thomaswiltshire.com/" style="color: #b3b3b3;">THOMAS WILTSHIRE</a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Home -->
+                        <li class="nav-item">
+                            <a class="nav-link active" href="https://thomaswiltshire.com/">PROJECTS</a>
+                        </li>
+
+                        <!-- Blog -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/blog.html">BLOG</a>
+                        </li>
+
+                        <!-- About -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/about.html">ABOUT</a>
+                        </li>
+
+                        <!-- Resume -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/resume.html">RESUME</a>
+                        </li>
+
+                        <!-- Contact -->
+                        <li class="nav-item">
+                            <button class="contact-btn" onclick="document.getElementById('id01').style.display='block'">CONTACT</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Navigation -->
+
+    </header>
+    <!-- Header -->
+
+    <!-- Main content background -->
+    <section class="py-5" style="background-color: #1E1F23;">
+
+        <!-- Main content frame -->
+        <div class="row" id="frontpage-frame">
+
+            <!-- page content -->
+            <div class="col-md-12" style="vertical-align:middle; padding: 0px;">
+                <div class="row content-inner-frame" style="padding: 0px;">
+
+                    <!------------------------------------------------------------------->
+                    <!-- LEFT PANEL -->
+                    <div id="frontpage-text" style="margin: 0px;">
+
+                        <!-- TITLE SECTION MOBILE -->
+                        <div class="mobile-title-section">
+
+                            <!-- Project Logo -->
+                            <img src="../images/digging-1989-title.png" style="height:100%; width:80%; display: block; margin-left: auto; margin-right: auto; margin-bottom: 60px; margin-top: 35px;"/>
+
+                            <!-- Description Logo -->
+                            <div style="padding-bottom: 15px; ">
+                                <hr class="line-seperator" style="height: 2px; background: #474747;">
+                                <p style="color: #b3b3b3; font-size: small; text-align: center;">Digging Simulator 1989 is a basic recreation/prequel of my classic, boring and practical joke game Digging Simulator 2015 for the original Nintendo GameBoy using the GBDK library and written in C.</p>
+                                <p style="color: #b3b3b3; font-size: small; text-align: center;">Digging Sim is an actual GameBoy game, meaning it can run on a real system using either an Everdrive or other similar cartridge solutions, as well as other third-party systems and emulators.</p>
+                            </div>
+                        </div>
+                        <!-- TITLE SECTION MOBILE -->
+
+                        <!-- IMAGE SLIDER -->
+                        <!-- IMG 1 -->
+                        <div class="container PreviewSlide" style="margin: 0px;">
+
+                            <!-- Video -->
+                            <video controls loop width="100%" style="width:100%; border-radius: 1%;" class="blogvid">
+                                <source src="../images/diggingvideo.mp4" type="video/mp4">
+                            </video>
+
+                            <!-- Page Number and Cycle Buttons -->
+                            <div style="color: #f2f2f2; font-size: 12px; padding: 8px 12px; position: absolute; top: 0;">1 / 4</div>
+                            <a class="next" style="color: rgba(255, 255, 255, 0.753);" onclick="PlusSlides(1)"><i class="fas fa-chevron-right"></i></a>
+                            <a class="prev" style="color: rgba(255, 255, 255, 0.753);" onclick="PlusSlides(-1)"><i class="fas fa-chevron-left"></i></a>
+
+                        </div>
+                        <!-- IMG 1 -->
+
+                        <!-- IMG 2 -->
+                        <div class="container PreviewSlide" style="display: none;  margin: 0px; margin-bottom: 8px;">
+
+                            <!-- Image -->
+                            <img src="../images/diggingscreen2.png" style="width:100%; border-radius: 1%;">
+
+                            <!-- Page Number and Cycle Buttons -->
+                            <div style="color: #f2f2f2; font-size: 12px; padding: 8px 12px; position: absolute; top: 0;">2 / 4</div>
+                            <a class="next" style="color: rgba(255, 255, 255, 0.753);" onclick="PlusSlides(1)"><i class="fas fa-chevron-right"></i></a>
+                            <a class="prev" style="color: rgba(255, 255, 255, 0.753);" onclick="PlusSlides(-1)"><i class="fas fa-chevron-left"></i></a>
+
+                        </div>
+                        <!-- IMG 2 -->
+
+                        <!-- IMG 3 -->
+                        <div class="container PreviewSlide" style="display: none; margin: 0px; margin-bottom: 8px;">
+
+                            <!-- Image -->
+                            <img src="../images/diggingscreen3.png" style="width:100%; border-radius: 1%;">
+
+                            <!-- Page Number and Cycle Buttons -->
+                            <div style="color: #f2f2f2; font-size: 12px; padding: 8px 12px; position: absolute; top: 0;">3 / 4</div>
+                            <a class="next" style="color: rgba(255, 255, 255, 0.753);" onclick="PlusSlides(1)"><i class="fas fa-chevron-right"></i></a>
+                            <a class="prev" style="color: rgba(255, 255, 255, 0.753);" onclick="PlusSlides(-1)"><i class="fas fa-chevron-left"></i></a>
+
+                        </div>
+                        <!-- IMG 3 -->
+
+                        <!-- IMG 4 -->
+                        <div class="container PreviewSlide" style="display: none; margin: 0px; margin-bottom: 12px;">
+
+                            <!-- Image -->
+                            <img src="../images/diggingscreen1.png" style="width:100%; border-radius: 1%;">
+
+                            <!-- Page Number and Cycle Buttons -->
+                            <div style="color: #f2f2f2; font-size: 12px; padding: 8px 12px; position: absolute; top: 0;">4 / 4</div>
+                            <a class="next" style="color: rgba(255, 255, 255, 0.753);" onclick="PlusSlides(1)"><i class="fas fa-chevron-right"></i></a>
+                            <a class="prev" style="color: rgba(255, 255, 255, 0.753);" onclick="PlusSlides(-1)"><i class="fas fa-chevron-left"></i></a>
+
+                        </div>
+                        <!-- IMG 4 -->
+                        <!-- IMAGE SLIDER -->
+
+                        <!-- SLIDER PREVIEW BUTTONS -->
+                        <div style="text-align: center; display:flex; padding-left: 15px; padding-right: 15px; padding-bottom: 15px;">
+                        
+                            <!-- Img Button 1 -->
+                            <div class="preview w3-opacity w3-hover-opacity-off w3-opacity-off" style="cursor:pointer; display: inline-block; vertical-align: middle; margin: 8px; width: 100%; position: relative;" onclick="CurrentPreviewSlide(1)">
+                                <img class="prev-image" src="../images/diggingscreen4.PNG" style="width:100%; border-radius: 8px;">
+                                <a style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #ffffff; font-size: x-large;"><i class="fas fa-play"></i></a>
+                            </div>
+
+                            <!-- Img Button 2 -->
+                            <div class="preview w3-opacity w3-hover-opacity-off" style="cursor:pointer; display: inline-block; vertical-align: middle; margin: 8px; width: 100%; position: relative;" onclick="CurrentPreviewSlide(2)">
+                                <img class="prev-image" src="../images/diggingscreen2.png" style="width:100%; border-radius: 8px;">
+                            </div>
+
+                            <!-- Img Button 3 -->
+                            <div class="preview w3-opacity w3-hover-opacity-off" style="cursor:pointer; display: inline-block; vertical-align: middle; margin: 8px; width: 100%; position: relative;" onclick="CurrentPreviewSlide(3)">
+                                <img class="prev-image" src="../images/diggingscreen3.png" style="width:100%; border-radius: 8px;">
+                            </div>
+
+                            <!-- Img Button 4 -->
+                            <div class="preview w3-opacity w3-hover-opacity-off" style="cursor:pointer; display: inline-block; vertical-align: middle; margin: 8px; width: 100%; position: relative;" onclick="CurrentPreviewSlide(4)">
+                                <img class="prev-image" src="../images/diggingscreen1.png" style="width:100%; border-radius: 8px;">
+                            </div>
+
+                        </div>
+                        <!-- SLIDER PREVIEW BUTTONS -->
+
+                        <!-- BUTTON SECTION MOBILE -->
+                        <div class="mobile-title-section">
+
+                            <!-- buttons-->
+                            <div>
+                                <a class="project-download-btn" style="margin-left: auto; margin-right: auto; width: 100%;" href="https://github.com/Jeffrey-W23/DiggingSimulator1989">SOURCE CODE</a>
+                            </div>
+
+                            <!-- buttons-->
+                            <div>
+                                <a class="project-download-btn" style="margin-left: auto; margin-right: auto; width: 100%; background-color:darkslateblue" href="https://piquantinteractive.itch.io/digging-simulator-1989">PLAY ONLINE (ITCH.IO)</a>
+                            </div>
+
+                        </div>
+                        <!-- BUTTON SECTION MOBILE -->
+
+                        <!-- MAIN CONTENT SECTION -->
+                        <div style="background-color: #1c1c1c; margin: 15px; margin-top: 0px; border-radius: 10px; border: 1px;">
+                            <div style="color: #b3b3b3; text-align: left; padding: 30px;">
+                                
+                                <!-- SECTION 1 -->
+                                <!-- Title -->
+                                <h4>INTRODUCTION</h4><br>
+    
+                                <!-- Paragraph 1 -->
+                                <p>A dream of mine since becoming a programmer has been to create my own GameBoy game, and in January 2022, that dream became a reality with the creation of Digging Simulator 1989. </p>
+                                
+                                <!-- Paragrpah 2 -->
+                                <p>The development of Digging Sim started with the discovery of GBDK and an introduction from a Modern Vintage Gamer YouTube video (More on that in my blog). He showed me how much easier the development process for GameBoy can be using the GBDK framework, so I decided what better "Hello World" learning project than a remake of my classic boring and practical joke game Digging Simulator 2015!</p><br>
+                                <!-- SECTION 1 -->
+    
+                                <!-- SECTION 2 -->
+                                <!-- Title -->
+                                <br><h4>PROJECT GOALS</h4><br>
+    
+                                <!-- Paragraph 1 -->
+                                <p>There were several goals for Digging Sim, starting with the desire to expand my programming knowledge and develop something outside the scope of Unity once again. A bonus to changing the programming scope was the opportunity to use the C language, something I hadn't found a  reason to develop in yet. So a good time as ever to try something I always wanted to experience, especially the discovery of differences between C and more modern languages like C++ and C#. But the main goal of this project was, of course, creating my first GameBoy title, though the problem with this being the desire was I had no actual idea or direction for what kind of game I wanted to develop. So that brings me to goal 4, the recreation of Digging Simulator 2015.</p>
+                                
+                                <!-- Paragraph 2 -->
+                                <p>The reason I chose to recreate Digging Sim for my introduction into GameBoy development and GBDK was that the idea of this game was relatively straightforward, pixel graphics and very simple logic. It was the perfect "Hello World" experience, allowing me to learn the framework and limitations of the GameBoy hardware with the added bonus of something more to show off on this website than just a small blog post!</p><br>
+                                <!-- SECTION 2 -->
+    
+                                <!-- SECTION 3 -->
+                                <br><h4>PERSONAL ACCOMPLISHMENTS</h4><br>
+    
+                                <ul>
+                                    <!-- Dot point 1 -->
+                                    <li>I Developed my first GameBoy game.</li>
+    
+                                    <!-- Dot point 2 -->
+                                    <li>I Developed something in C for the first time.</li>
+    
+                                    <!-- Dot point 3 -->
+                                    <li>I learnt to develop within strict limitations of the hardware.</li>
+    
+                                    <!-- Dot point 4 -->
+                                    <li>Develop a game outside of Unity once again.</li>
+                                </ul><br>
+                                <!-- SECTION 3 -->
+    
+                                <!-- SECTION 4 -->
+                                <!-- Title -->
+                                <br><h4>LESSONS LEARNED</h4><br>
+    
+                                <!-- Paragraph 1 -->
+                                <p>Over the years, there have been several moments I have looked into the possibility of creating my own game for the GameBoy, sadly my lack of confidence always scared me away. But projects like An Infestation have been great for my confidence in my programming skills and especially good at teaching me to go with my gut and create what I want! So that would be one of my first lessons learnt, and an addition to the main lesson of An Infestation's development.</p>
+                                <p>Another obvious lesson, based on my personal accomplishments above, was learning about the limitation of a system or hardware. Most of my game development experience up until this point has been in Unity, and like most modern techniques, the sky is the limit! You feel like you can create anything your heart desires, but that is not the case for older systems or hardware and something I have always wanted to experience for myself. I think this kind of experience will be incredibly valuable in the future, especially with the release of the highly anticipated PlayDate, which I plan to play around within development when mine arrives!</p>
+                                <p>The final lesson (and goal for this year (2022)) is to get my hands dirty in development more often. The creation of this game has been inspirational, and I want that feeling more much often!</p>
+                                <!-- SECTION 4 -->
+                            </div>
+
+                        </div>
+                        <!-- MAIN CONTENT SECTION -->
+
+                    </div>
+                    <!-- LEFT PANEL -->
+
+                    <!-- RIGHT PANEL -->
+                    <div id='frontpage-images' style="padding: 0px; padding-right: 15px; padding-top: 15px; margin: 0px;">
+
+                        <!-- TITLE SECTION -->
+                        <div class="project-title">
+
+                            <!-- Project Logo -->
+                            <img src="../images/digging1989-squarecover.png" style="border-radius: 10px; height:100%; width:100%; display: block; margin-left: auto; margin-right: auto; margin-bottom: 40px; margin-top: 0px;"/>
+
+                            <!-- buttons-->
+                            <div>
+                                <a class="project-download-btn" style="margin-left: auto; margin-right: auto; width: 100%;" href="https://github.com/Jeffrey-W23/DiggingSimulator1989">SOURCE CODE</a>
+                            </div>
+
+                            <!-- buttons-->
+                            <div>
+                                <a class="project-download-btn" style="margin-left: auto; margin-right: auto; width: 100%; background-color:darkslateblue" href="https://piquantinteractive.itch.io/digging-simulator-1989">PLAY ONLINE (ITCH.IO)</a>
+                            </div>
+                            
+                            <!-- Info section -->
+                            <div style="margin-bottom: 25px;">
+                                <div style="margin-top: 35px;">
+                                    <span style="color: #b3b3b3; font-weight: bold; float: left;">DEVELOPED:</span>
+                                    <span style="color: #b3b3b3; float: right;">01/2022</span>
+                                    <hr class="line-seperator" style="height: 2px; background: #47474700;">
+                                </div>
+                                
+                                <div>
+                                    <span style="color: #b3b3b3; font-weight: bold; float: left;">STATUS:</span>
+                                    <span style="color: #b3b3b3; float: right;">FINISHED</span>
+                                    <hr class="line-seperator" style="height: 2px;background: #47474700;">
+                                </div>
+                                
+                                <div>
+                                    <span style="color: #b3b3b3; font-weight: bold; float: left;">FRAMEWORK:</span>
+                                    <span style="color: #b3b3b3; float: right;">GBDK</span>
+                                    <hr class="line-seperator" style="height: 2px; background: #47474700;">
+                                </div>
+                                
+                                <div>
+                                    <span style="color: #b3b3b3; font-weight: bold; float: left;">LANGUAGE:</span>
+                                    <span style="color: #b3b3b3; float: right;">C</span>
+                                    <hr class="line-seperator" style="height: 2px; background: #47474700;">
+                                    <hr class="line-seperator" style="height: 2px; background: #47474700;">
+                                </div>
+                            </div>
+                            <!-- Info section -->
+
+                            <!-- Project Description -->
+                            <div style="padding-bottom: 15px;">
+                                <hr class="line-seperator" style="height: 2px; background: #474747;">
+                                <p style="color: #b3b3b3; text-align: left;">Digging Simulator 1989 is a basic recreation/prequel of my classic, boring and practical joke game Digging Simulator 2015 for the original Nintendo GameBoy using the GBDK library and written in C.</p>
+                                <p style="color: #b3b3b3; text-align: left;">Digging Sim is an actual GameBoy game, meaning it can run on a real system using either an Everdrive or other similar cartridge solutions, as well as other third-party systems and emulators.</p>
+                            </div>
+                        </div>
+                        <!-- TITLE SECTION -->
+
+                        <!-- BLOG POST SECTIONS -->
+                        <div class="project-posts">
+                            <h5 style="margin-bottom: 30px;">BLOG POSTS</h5>
+                            <p><a id="project-post-links" href="../blog-posts/post1-17-01-2022.html">A Dream Come True, I Made A GameBoy Game!</a><br/><a style="font-size:12px;"> Jan 17, 2022</a></p>
+                        </div>
+                        <!-- BLOG POST SECTIONS -->
+
+                    </div>
+                    <!-- RIGHT PANEL -->
+
+                    <!-- SCRIPT FOR PREVIEW SLIDES -->
+                    <script>
+                        
+                        // index for the current active preview slide
+                        var nSlideIndex = 1;
+
+                        // Function for moving to the next slide with arrows
+                        function PlusSlides(nIndex) 
+                        {
+                            // Run the function for changing slides
+                            DisplayDiv(nSlideIndex += nIndex);
+                        }
+                        
+                        // Function for setting the current slide by index
+                        function CurrentPreviewSlide(nIndex)
+                        {
+                            // Run the function for changing slides
+                            DisplayDiv(nSlideIndex = nIndex);
+                        }
+                        
+                        // Main function for changing preview slides
+                        function DisplayDiv(nIndex)
+                        {
+                            // variable for the for loops
+                            var i;
+                            
+                            // Get all the slides and buttons
+                            var slides = document.getElementsByClassName("PreviewSlide");
+                            var btns = document.getElementsByClassName("preview");
+                        
+                            // If the passed in number is greater than the slides amount
+                            if (nIndex > slides.length) 
+                            {
+                                // set the slide index to 1
+                                nSlideIndex = 1
+                            }
+                        
+                            // If the passed in number is less than 1
+                            if (nIndex < 1) 
+                            {
+                                // set the slide index to the number of slides
+                                nSlideIndex = slides.length
+                            }
+                        
+                            // loop through all the preview slides
+                            for (i = 0; i < slides.length; i++) 
+                            {
+                                // set the visual elements of all inactive preview slides
+                                slides[i].style.display = "none";
+                            }
+
+                            // Loop through all the preview buttons
+                            for (i = 0; i < btns.length; i++) 
+                            {
+                                // Set the visual elements of all inactive preview buttons
+                                btns[i].className = btns[i].className.replace(" w3-opacity-off", "");
+                            }
+
+                            // Set the visual elements of the active preview and its button
+                            slides[nSlideIndex-1].style.display = "block";
+                            btns[nSlideIndex-1].className += " w3-opacity-off";
+                        }
+                    </script>
+                    <!-- SCRIPT FOR PREVIEW SLIDES -->
+                    <!------------------------------------------------------------------->
+
+                </div>
+            </div>
+            <!-- page content -->
+
+        </div>
+        <!-- Main content frame -->
+
+    </section>
+    <!-- Main content background -->
+
+    <!-- CONTACT MODAL -->
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4" style="background-color: #1E1F23;">
+
+            <!-- MODAL HEADER -->
+            <header class="w3-container w3-darker-grey">
+                <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright" style="position:center; font-size:41px;">&times;</span>
+                <h2 style="color: #b3b3b3; margin-top: 20px; margin-bottom: 20px;">CONTACT ME</h2>
+            </header>
+            <!-- MODAL HEADER -->
+
+            <!-- MODAL CONTENT -->
+            <div class="row" id="contactmodal-frame" style="vertical-align:middle; text-align:center;">
+                <div class="col-md-12" style="vertical-align:middle;">
+                    <div class="row" style="vertical-align:middle; background-color: transparent; margin-bottom:0px;">
+
+                        <!-- Contact Image -->
+                        <div id='contactmodal-images'>
+                            <img src="../images/profilepic.png" id="contactimage" style="width:100%; height:100%; width:100%;" alt="Thomas" />
+                        </div>
+
+                        <!-- Contact Information -->
+                        <div id="contactmodal-text">
+                            <div style="width:100%; height:100%; background-color: transparent; padding-left:20px; padding-right:20px;">
+                                <h1 style="color: #b3b3b3; text-align: left;">I'M THOMAS WILTSHIRE</h1>
+                                <hr class="line-seperator" width="100%" align="right">
+                                <div style="text-align: left;"><h6 style="color: #b3b3b3; text-align: left; display: inline; margin-right:10px;">LOCATION:</h6><a style="color: #b3b3b3; text-align: left; display: inline; font-size:15px;" href="https://www.google.com/maps/@-37.8861393,145.2645268,14z?hl=en">FERNTREE GULLY, VICTORIA AUSTRALIA</a></div>
+                                <div style="text-align: left;"><h6 style="color: #b3b3b3; text-align: left; display: inline; margin-right:10px;">EMAIL:</h6><a style="color: #b3b3b3; text-align: left; display: inline; font-size:15px;" href="mailto:thomas.wiltshire14@icloud.com">THOMAS.WILTSHIRE14@ICLOUD.COM</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- MODAL CONTENT -->
+
+            <!-- MODAL FOOTER -->
+            <footer class="w3-container w3-darker-grey" style="padding: 10px; padding-bottom:0px;">
+                <div class="container">
+                    <div class="row" style="margin-bottom:5px;">
+                        <div class="col-md-6 mb-0 mb-lg-0" style="margin: auto;">
+                            <ul class="list-inline mb-0" style="text-align:center;">
+
+                                <!-- Twitter -->
+                                <li class="list-inline-item">
+                                    <a class="btn btn-social text-center rounded-circle" style="color: #b3b3b3;" href="https://twitter.com/Jeffrey_W23">
+                                        <i class="fab fa-fw fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <!-- Twitter -->
+
+                                <!-- Instagram -->
+                                <li class="list-inline-item">
+                                    <a class="btn btn-social text-center rounded-circle" style="color: #b3b3b3;" href="https://www.instagram.com/thomaswiltshire/">
+                                        <i class="fab fa-fw fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <!-- Instagram -->
+
+                                <!-- Github -->
+                                <li class="list-inline-item">
+                                    <a class="btn btn-social text-center rounded-circle" style="color: #b3b3b3;" href="https://github.com/Jeffrey-W23">
+                                        <i class="fab fa-fw fa-github"></i>
+                                    </a>
+                                </li>
+                                <!-- Github -->
+
+                                <!-- LinkedIn -->
+                                <li class="list-inline-item">
+                                    <a class="btn btn-social text-center rounded-circle" style="color: #b3b3b3;" href="https://www.linkedin.com/in/thomaswiltshire14/">
+                                        <i class="fab fa-fw fa-linkedin-in"></i>
+                                    </a>
+                                </li>
+                                <!-- LinkedIn -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- MODAL FOOTER -->
+
+        </div>
+    </div>
+    <!-- CONTACT MODAL -->
+
+    <!-- Footer -->
+    <footer class="py-5" style="background-color: #2a2a2a;">
+
+        <!-- Social Icons -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-5 mb-lg-0" style="margin: auto;">
+                    <ul class="list-inline mb-0" style="text-align:center;">
+
+                        <!-- Twitter -->
+                        <li class="list-inline-item">
+                            <a class="btn btn-social text-center rounded-circle" style="color: #b3b3b3;" href="https://twitter.com/Jeffrey_W23">
+                                <i class="fab fa-fw fa-twitter"></i>
+                            </a>
+                        </li>
+                        <!-- Twitter -->
+
+                        <!-- Instagram -->
+                        <li class="list-inline-item">
+                            <a class="btn btn-social text-center rounded-circle" style="color: #b3b3b3;" href="https://www.instagram.com/thomaswiltshire/">
+                                <i class="fab fa-fw fa-instagram"></i>
+                            </a>
+                        </li>
+                        <!-- Instagram -->
+
+                        <!-- Github -->
+                        <li class="list-inline-item">
+                            <a class="btn btn-social text-center rounded-circle" style="color: #b3b3b3;" href="https://github.com/Jeffrey-W23">
+                                <i class="fab fa-fw fa-github"></i>
+                            </a>
+                        </li>
+                        <!-- Github -->
+
+                        <!-- LinkedIn -->
+                        <li class="list-inline-item">
+                            <a class="btn btn-social text-center rounded-circle" style="color: #b3b3b3;" href="https://www.linkedin.com/in/thomaswiltshire14/">
+                                <i class="fab fa-fw fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <!-- LinkedIn -->
+
+                        <!-- Email -->
+                        <li class="list-inline-item">
+                            <a class="btn btn-social text-center rounded-circle" style="color: #b3b3b3;" href="mailto:thomas.wiltshire14@icloud.com">
+                                <i class="fab fas fa-envelope"></i>
+                            </a>
+                        </li>
+                        <!-- Email -->
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Social Icons -->
+
+        <!-- Copyright -->
+        <div class="container" style="margin-top: 30px;">
+            <p class="m-0 text-center" style="color: #b3b3b3;">COPYRIGHT &copy; THOMAS WILTSHIRE 2022</p>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+
+</body>
+<!-- Body -->
+
+</html>
+
+<!-- Template Used -->
+<!-- https://startbootstrap.com/template-overviews/freelancer/ -->
